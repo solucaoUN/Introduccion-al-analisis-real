@@ -6,5 +6,5 @@ Cualquier duda escribir al correo en mi perfil de Git o a eochoaq@unal.edu.co.
 
 Cabe aclarar que no se promueve de ninguna manera que los estudiantes usen este solucionario para quices
 o demás actividades evaluativas, lo que buscamos con este proyecto es que las personas cuenten con ideas
-de como resolver los ejercicios en los que puedan presentar dificultadesl.
+de como resolver los ejercicios en los que puedan presentar dificultades.
 
