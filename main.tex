@@ -1,0 +1,67 @@
+\documentclass[12pt,a4paper]{report} 
+\usepackage[T1]{fontenc}
+\usepackage[spanish]{babel}
+\usepackage{mathrsfs}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{yhmath}
+\usepackage[breaklinks = true]{hyperref}
+\usepackage{caption}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{tikz}
+\setlength\parindent{0pt}
+
+\newcommand{\bb}[1]{\mathbb{#1}}
+
+
+
+
+%%%%%%
+\usepackage{newunicodechar}
+\usepackage{fontspec}
+
+\setmainfont{CMU Serif}
+\setsansfont{CMU Sans Serif}
+\setmonofont{CMU Typewriter Text}
+
+\newfontface{\pencilfont}{DejaVu Sans}[Scale=MatchUppercase]
+
+\newunicodechar{✎}{{\pencilfont ✎}}
+\newunicodechar{☠}{{\pencilfont ☠}}
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={170mm,245mm},
+ left=20mm,
+ top=20mm,
+ }
+
+
+\usepackage{indentfirst}
+
+
+
+%%%%%%%
+
+\title{Introducción al Análisis Real - Solutions Manual}
+\author{mmanosalva}
+\date{\today}
+
+
+
+\begin{document}
+
+\maketitle
+\tableofcontents
+\cleardoublepage
+
+\chapter{Espacios métricos}
+\input{1}
+
+
+
+
+\end{document}
