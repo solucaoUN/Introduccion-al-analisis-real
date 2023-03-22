@@ -139,7 +139,55 @@
 
 Note que la prueba no debe depender del dibujo, sin embargo hacer dibujos puede ser de ayuda para tener una idea de la demostración, como ocurrió en este caso
 
+\begin{theorem}[Teorema 9]
 
+Dado $(E,d)$ en espacio métrico, tenemos que:
+
+\begin{itemize}
+\item[1)]$E$ es cerrado
+
+\item[2)] $\emptyset$ es cerrado
+
+\item[3)] Unión finita de cerrados es cerrada.
+
+\item[4)]Intersección arbitraria de cerrados es cerrada.
+
+\end{itemize}
+\end{theorem}
+
+\begin{proof}
+Note que $E^C=$ $\emptyset$ luego el complemento de $E$ es abierto. 
+\end{proof}
+
+\begin{proof}
+Por definición $E$ es abierto, luego $\emptyset$ es cerrado.
+\end{proof}
+
+\begin{proof}
+Consideremos $C_i$ una familia de cerrados, luego
+
+$$\left(\bigcup_{i=1}^n C_i\right)^C=\bigcap_{i=1}^n C_i^C$$
+
+Y como intersección finita de abiertos es abierto, entonces acabamos.
+\end{proof}
+
+\begin{proof}
+Nuevamente consideremos $C_i$ una familia de cerrados, entonces:
+
+$$\left(\bigcap_{i \in I}C_i\right)^C=\bigcup_{i\in I}C_i^C$$
+
+Y como unión arbitraria de abiertos es abierto, entonces acabamos.
+
+\end{proof}
+
+\end{itemize}
+
+\begin{itemize}
+\item[✎]Sea $(E,d)$ un espacio métrico $\{p\}=\bigcap_{r>0} B[p, r]$\\
+
+\begin{proof}
+Suponga que $\{p\}\neq \bigcap_{r>0} B[p, r]$, luego existe $x\in \bigcap_{r>0} B[p, r]$ tal que $x\neq p$, entonces $x \in B[p,r]$ para todo $r>0$, pero $x\neq p$, por tando $d(x,p)>0$, así existe $0<r<d(x,p)$ tal que $x\not \in B[p,r]$, contradicción.
+ \end{proof}
 \end{itemize}
 
 
@@ -244,7 +292,7 @@ Y acabamos esta sección.
 
     \item[✎]\textbf{Verdadero: } \\
     \begin{proof}
-        Como en las pruebas anteriores note que si $r\leq1$ entonces para todo $x\in \mathbb{R}$, $B(x,r)\setminus\{x\}=$\O y por tanto $B(x,r)\setminus\{x\}\cap \mathbb{R}=$\O, luego $\mathbb{R}^{\prime}=$\O
+        Como en las pruebas anteriores note que si $r\leq1$ entonces para todo $x\in \mathbb{R}$, $B(x,r)\setminus\{x\}=$$\emptyset$ y por tanto $B(x,r)\setminus\{x\}\cap \mathbb{R}=$\O, luego $\mathbb{R}^{\prime}=$\O
     \end{proof}
 
 
@@ -389,16 +437,69 @@ Sabemos que $\overline{A}=X\setminus int(A^C)$. En efecto $X\setminus int(A^C)\c
 
 \textbf{Falso:} Contraejemplo: Considere $(\R,d_1)$, sabemos que $\partial \Q=\R$ y que $\partial \R= $\O, luego $\partial \Q=\R\neq\partial(\partial \Q)=\partial \R=$\O
 
-\item $X=int(A)\cup \partial(A) \cup A^C$
+\item $X=int(A)\cup \partial(A) \cup A^C$\\
 
 \begin{proof}
 Tenemos que $\partial A=\bar{A} \cap \overline{A^C}$, luego
 
 \begin{align*}
-int(A)\cup (\overline{A}\cap \overline{A^C}) \cup A^C&=int(A)\cup (\overline{A}\cup A^C\cap \overline{A^C}\cup A^C)
+int(A)\cup (\overline{A}\cap \overline{A^C}) \cup A^C&=int(A)\cup (\overline{A}\cup A^C\cap \overline{A^C}\cup A^C)\\
+&=int(A)\cup (X\cap (X\setminus int(A)\cup A^C))\\
+&=int(A)\cup (X\setminus int(A))\\
+&=X
 \end{align*}
 \end{proof}
 
+\begin{note}
+Aquí usamos varias de las propiedades de las notas en el capítulo del concepto de clausura, derivado y frontera, note que además usamos la propiedad anterior en la prueba cuando afirmamos que $\overline{A}\cup A^C=X$, note también que usamos que $(A^C)^C=A$ pero pues ustedes ya vieron conjuntos allí.
+\end{note}
+
+\item $int(int(A))=int(A)$\\
+
+\begin{proof}
+ Tenemos que $int(A)$ es abierto, luego como un conjunto es abierto si y solo si es igual a su interior entonces $int(int(A))=int(A)$
+\end{proof}
+
+
+\item Si $\partial A$ es abierto entonces $A=$\O\\
+
+\textbf{Falso:} Contraejemplo: Considere $(R,d_1)$, luego $\partial \Q=\R$ y $\R$ es abierto pero $\Q\neq$\O.
+
+
+
+\item Si $X=\mathbb{R}^n$ y $A$ es $d_1$-abierto entonces $A$ es $d_2$-abierto.\\
+
+\begin{proof}
+Suponga que $A$ es $d_1$-abierto, entonces para todo $x\in A$, existe $r$ tal que:
+
+$$B_1(x,r)=\{y\in \R^{n} : d_1(x,y)<r\}\subseteq A$$
+
+Y como $d_2(x,y)\leq d_1(x,y)$, entonces existe $r^{\prime}$ $B_2(x,r^{\prime})\subseteq B_1(x,r)\subseteq A$, luego $A$ es $d_2-$abierto
+
+\end{proof}
+
+\begin{note}
+Para este caso estamos usando la definición de métrica equivalente, note que si $d_2(x,y)\leq d_1(x,y)$ entonces exiete $C\in \R$ tal que $d_1(x,y)\leq C d_2(x,y)$, luego eso es lo que nos garantiza la exitencia de ese radio $r^{\prime}$ de tal manera que $B_2(x,r^{\prime})\subseteq B_1(x,r)$. 
+\end{note}
+
+\begin{note}
+Note que en las notas hace falta hacer énfasis en esta definición, sin embargo este tipo de detalles se suelen cubrir en clase, en cualquier caso el lector puede buscar en algún medio externo la definición de métrica equivalente y notar este detalle sutil.
+\end{note}
+
+
+
+\item Si $A \subseteq Y \subseteq X$ y $A$ es $Y$-abierto entonces $A$ es $X$-abierto.\\
+
+\textbf{Falso: } Contraejemplo: Si $E=\mathbb{R}$ con $d(x, y)=|x-y|$ el conjunto $\left[0, \frac{1}{3}\right)$ no es abierto en $\mathbb{R}$ pero es abierto en $\left(E_1,\left.d\right|_{E_1 \times E_1}\right)$ con $E_1=\left[0, \frac{1}{2}\right)$. Simplemente observe que $B_{E_1}\left(0, \frac{1}{3}\right)=\left[0, \frac{1}{3}\right)$.
+
+\item Si $x \in X$ entonces para todo $r>0$ se tiene que $\overline{B(x, r)}=B[x, r]$.\\
+
+\textbf{Falso:} Contraejemplo: Sea $(\R,d_d)$, entonces $\overline{B(0,1)}=\overline{\{0\}}=0$ ya que $\{0\}$ es cerrado con la métrica discreta, pero $B[0,1]=\R$, luego no son iguales.
 
 \end{itemize}
 
+\begin{note}
+Sobre este parcial como se puede notar los ejercicios no son tan complejos si se nos permite usar las propiedades de las notas (que se ven también en clase), pero es probable que para ser usadas en el parcial el estudiante deba demostrarlas, en cuyo caso recomendamos entender muy bien las ideas de cada una de las pruebas, la idea nunca es memorizar las pruebas o las propiedades sino entender un poco la geometría del asunto y las ideas principales de cada prueba.
+\end{note}
+
+\section{El conjunto de Cantor ☠☠☠☠☠ }
