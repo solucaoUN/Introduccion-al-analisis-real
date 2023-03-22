@@ -1,3 +1,4 @@
+%!TEX root = main.tex
 \section{Algunos ejercicios al lector: }
 
 \begin{itemize}
@@ -186,7 +187,7 @@ Y como unión arbitraria de abiertos es abierto, entonces acabamos.
 \item[✎]Sea $(E,d)$ un espacio métrico $\{p\}=\bigcap_{r>0} B[p, r]$\\
 
 \begin{proof}
-Suponga que $\{p\}\neq \bigcap_{r>0} B[p, r]$, luego existe $x\in \bigcap_{r>0} B[p, r]$ tal que $x\neq p$, entonces $x \in B[p,r]$ para todo $r>0$, pero $x\neq p$, por tando $d(x,p)>0$, así existe $0<r<d(x,p)$ tal que $x\not \in B[p,r]$, contradicción.
+Suponga que $\{p\}\neq \bigcap_{r>0} B[p, r]$, luego existe $x\in \bigcap_{r>0} B[p, r]$ tal que $x\neq p$, entonces $x \in B[p,r]$ para todo $r>0$, pero $x\neq p$, por tanto $d(x,p)>0$, así existe $0<r<d(x,p)$ tal que $x\not \in B[p,r]$, contradicción.
  \end{proof}
 \end{itemize}
 
@@ -322,7 +323,7 @@ $$
 d_1(p, q)=|p-q|=d_{\infty}(p,q)
 $$
 
-Entonces como $\mathbb{N}$ es cerrado en $(\mathbb{R},d_1)$, tambien es cerrado en $(\mathbb{R},d_{\infty})$
+Entonces como $\mathbb{N}$ es cerrado en $(\mathbb{R},d_1)$, también es cerrado en $(\mathbb{R},d_{\infty})$
 
     \end{proof}
 
@@ -362,7 +363,7 @@ Entonces como $\mathbb{N}$ es cerrado en $(\mathbb{R},d_1)$, tambien es cerrado 
     \textbf{Verdadero:}\\
     
     \begin{proof}
-        Supongamos que $A$ es acortado inferiormente en $\mathbb{R}$, entonces exite $i=\inf(A)$, veamos que $i\in A$. Supongamos que $i \not \in A$, entonces $i \in \mathbb{R}\setminus A$, $\mathbb{R}\setminus A$ es abierto porque $A$ es cerrado, entonces exite $\epsilon>0$ tal que $B(i,\epsilon)=(i-\epsilon,i+\epsilon)\subseteq \mathbb{R}\setminus A$, por otro lado como $i=\inf(A)$ existe $b\in A$ tal que $i\leq b< i+\epsilon$, luego $b\in (i-\epsilon,i+\epsilon)\subseteq \mathbb{R}\setminus A$. Contradicción, luego $i \in A$, es decir $i=\min(A)$.
+        Supongamos que $A$ es acortado inferiormente en $\mathbb{R}$, entonces existe $i=\inf(A)$, veamos que $i\in A$. Supongamos que $i \not \in A$, entonces $i \in \mathbb{R}\setminus A$, $\mathbb{R}\setminus A$ es abierto porque $A$ es cerrado, entonces existe $\epsilon>0$ tal que $B(i,\epsilon)=(i-\epsilon,i+\epsilon)\subseteq \mathbb{R}\setminus A$, por otro lado como $i=\inf(A)$ existe $b\in A$ tal que $i\leq b< i+\epsilon$, luego $b\in (i-\epsilon,i+\epsilon)\subseteq \mathbb{R}\setminus A$. Contradicción, luego $i \in A$, es decir $i=\min(A)$.
         
     \end{proof}
     
@@ -471,7 +472,7 @@ Aquí usamos varias de las propiedades de las notas en el capítulo del concepto
 
 \begin{proof}
 Suponga que $A$ es $d_1$-abierto, entonces para todo $x\in A$, existe $r$ tal que:
-
+ 
 $$B_1(x,r)=\{y\in \R^{n} : d_1(x,y)<r\}\subseteq A$$
 
 Y como $d_2(x,y)\leq d_1(x,y)$, entonces existe $r^{\prime}$ $B_2(x,r^{\prime})\subseteq B_1(x,r)\subseteq A$, luego $A$ es $d_2-$abierto
@@ -479,7 +480,7 @@ Y como $d_2(x,y)\leq d_1(x,y)$, entonces existe $r^{\prime}$ $B_2(x,r^{\prime})\
 \end{proof}
 
 \begin{note}
-Para este caso estamos usando la definición de métrica equivalente, note que si $d_2(x,y)\leq d_1(x,y)$ entonces exiete $C\in \R$ tal que $d_1(x,y)\leq C d_2(x,y)$, luego eso es lo que nos garantiza la exitencia de ese radio $r^{\prime}$ de tal manera que $B_2(x,r^{\prime})\subseteq B_1(x,r)$. 
+Para este caso estamos usando la definición de métrica equivalente, note que si $d_2(x,y)\leq d_1(x,y)$ entonces existe $C\in \R$ tal que $d_1(x,y)\leq C d_2(x,y)$, luego eso es lo que nos garantiza la existencia de ese radio $r^{\prime}$ de tal manera que $B_2(x,r^{\prime})\subseteq B_1(x,r)$. 
 \end{note}
 
 \begin{note}
@@ -502,4 +503,36 @@ Note que en las notas hace falta hacer énfasis en esta definición, sin embargo
 Sobre este parcial como se puede notar los ejercicios no son tan complejos si se nos permite usar las propiedades de las notas (que se ven también en clase), pero es probable que para ser usadas en el parcial el estudiante deba demostrarlas, en cuyo caso recomendamos entender muy bien las ideas de cada una de las pruebas, la idea nunca es memorizar las pruebas o las propiedades sino entender un poco la geometría del asunto y las ideas principales de cada prueba.
 \end{note}
 
-\section{El conjunto de Cantor ☠☠☠☠☠ }
+\section{El conjunto de Cantor ☠☠☠☠☠}
+
+\begin{note}
+En esta sección solo trataremos el problema de probar que el conjunto de cantor es perfecto, es decir que todo elemento del conjunto pertenece a su derivado. Quizás luego pongamos un diagrama de la prueba de que no es contable, un resultado más fuerte que quizás se podría sugerir es revisar la prueba de que todo conjunto perfecto no puede ser contable.
+\end{note}
+
+\begin{itemize}[label={✎}]
+
+\item El conjunto de Cantor es perfecto:\\
+
+
+\begin{proof}
+Para demostrar que el conjunto de Cantor $C$ es perfecto, para cada $x \in C$ y para cada $\epsilon>0$ se debe encontrar un punto $y \in C-\{x\}$ tal que $|x-y|<\epsilon$.
+
+Para buscar $y$, recordemos que $C$ se construye como la intersección de conjuntos $C_0 \supset C_1 \supset C_2 \supset C_3 \supset \cdots$ donde $C_n$ es una unión de $2^n$ intervalos disjuntos cada uno de longitud $3^{-n}$, y recordemos también que $C$ tiene intersección no vacía con cada uno de esos $2^n$ intervalos.
+
+Elija $n$ tal que $3^{-n}<\epsilon$.
+Sea $[a, b]$ el intervalo de $C_n$ que contiene a $x$.
+Cuando se quita el tercio medio de $[a, b]$, se obtienen dos intervalos $\left[a, b^{\prime}\right],\left[b^{\prime \prime}, b\right]$ de $C_{n+1}$. El punto $x$ está contenido en uno de esos dos intervalos, y hay un punto $y \in C$ que está contenido en el otro de esos dos intervalos. Por lo tanto, $y \neq x$ y $|x-y|<\epsilon$.
+\end{proof}
+
+\begin{note}
+        Enlace para ver la prueba de que todo conjunto perfecto no es contable: 
+
+        \href{https://math.stackexchange.com/questions/201922/proof-that-a-perfect-set-is-uncountable}{\textcolor{blue}{Enlace.}} 
+\end{note}
+
+\item El conjunto de Cantor es no contable
+        
+\end{itemize}
+
+\subsection{Sucesiones ☠☠☠☠☠}
+

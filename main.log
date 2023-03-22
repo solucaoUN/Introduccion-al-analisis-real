@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.3.18)  22 MAR 2023 00:37
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.3.18)  22 MAR 2023 13:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1528,10 +1528,13 @@ Package fontspec Info: DejaVu Sans scale = 0.9300347279758177.
 Package fontspec Info: DejaVu Sans scale = 0.9300347279758177.
 
 
+Package fontspec Info: DejaVu Sans scale = 0.9300347279758177.
+
+
 Package fontspec Info: Font family 'DejaVuSans(0)' created for font 'DejaVu
 (fontspec)             Sans' with options
 (fontspec)             [BoldFont={},ItalicFont={},SmallCapsFont={},Scale=MatchU
-ppercase].
+ppercase,AutoFakeBold=2.5].
 (fontspec)              
 (fontspec)              This font family consists of the following NFSS
 (fontspec)             series/shapes:
@@ -1540,6 +1543,10 @@ ppercase].
 (fontspec)             <->s*[0.9300347279758177]"DejaVu
 (fontspec)             Sans/OT:script=latn;language=dflt;"
 (fontspec)             - 'small caps'  (m/sc) with NFSS spec.: 
+(fontspec)             - 'bold' (b/n) with NFSS spec.:
+(fontspec)             <->s*[0.9300347279758177]"DejaVu
+(fontspec)             Sans/OT:script=latn;language=dflt;embolden=2.5;"
+(fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 
 (C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.s
@@ -1744,113 +1751,113 @@ LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
 ]
 Capítulo 1.
 (1.tex
-Underfull \hbox (badness 10000) in paragraph at lines 4--5
+Underfull \hbox (badness 10000) in paragraph at lines 5--6
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 7.
+(mdframed)              on input line 8.
 Package hyperref Info: bookmark level for unknown replacementproof defaults to 
-0 on input line 7.
+0 on input line 8.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 40.
+(mdframed)              on input line 41.
 [2
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 53--54
+Underfull \hbox (badness 10000) in paragraph at lines 54--55
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 56.
+(mdframed)              on input line 57.
 
-Underfull \hbox (badness 10000) in paragraph at lines 67--68
+Underfull \hbox (badness 10000) in paragraph at lines 68--69
 
  []
 
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 69.
+(mdframed)              on input line 70.
 [3]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 129.
+(mdframed)              on input line 130.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 142.
+(mdframed)              on input line 143.
 Package hyperref Info: bookmark level for unknown theorem defaults to 0 on inpu
-t line 142.
+t line 143.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 159.
+(mdframed)              on input line 160.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 163.
+(mdframed)              on input line 164.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 167.
-Package mdframed Info: Not enough space on this page on input line 172.
+(mdframed)              on input line 168.
+Package mdframed Info: Not enough space on this page on input line 173.
  [4]
-Package mdframed Info: Not enough space on this page on input line 172.
+Package mdframed Info: Not enough space on this page on input line 173.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 175.
+(mdframed)              on input line 176.
 
-Underfull \hbox (badness 10000) in paragraph at lines 186--187
+Underfull \hbox (badness 10000) in paragraph at lines 187--188
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 189.
+(mdframed)              on input line 190.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 208.
+(mdframed)              on input line 209.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 216.
-Package mdframed Info: Not enough space on this page on input line 224.
+(mdframed)              on input line 217.
+Package mdframed Info: Not enough space on this page on input line 225.
 [5]
-Package mdframed Info: Not enough space on this page on input line 224.
+Package mdframed Info: Not enough space on this page on input line 225.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 229.
+(mdframed)              on input line 230.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 248.
+(mdframed)              on input line 249.
 Package mdframed Info: Box was splittet wrong
  starting loop to iterate the splitting point
-(mdframed)              on input line 257.
+(mdframed)              on input line 258.
  [6]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 267.
+(mdframed)              on input line 268.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 279.
+(mdframed)              on input line 280.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 295.
+(mdframed)              on input line 296.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 309.
-Package mdframed Info: Not enough space on this page on input line 327.
+(mdframed)              on input line 310.
+Package mdframed Info: Not enough space on this page on input line 328.
  [7]
-Package mdframed Info: Not enough space on this page on input line 327.
+Package mdframed Info: Not enough space on this page on input line 328.
 
-Underfull \hbox (badness 10000) in paragraph at lines 329--330
+Underfull \hbox (badness 10000) in paragraph at lines 330--331
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 332.
+(mdframed)              on input line 333.
 
-Overfull \hbox (10.71701pt too wide) in paragraph at lines 340--341
+Overfull \hbox (10.71701pt too wide) in paragraph at lines 341--342
 []\TU/CMUSerif(0)/m/n/12 En particular $\OML/cmm/m/it/12 B[]\OT1/cmr/m/n/12 (\O
 ML/cmm/m/it/12 a; r[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 6^^R \OML/cmm/m/it/12 A
 []$\TU/CMUSerif(0)/m/n/12 , pero como $\OML/cmm/m/it/12 d[]\OT1/cmr/m/n/12 (\OM
@@ -1862,142 +1869,148 @@ m/it/12 a; r[]\OT1/cmr/m/n/12 ) \OMS/cmsy/m/n/12 ^^R
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 352.
+(mdframed)              on input line 353.
 Package hyperref Info: bookmark level for unknown note defaults to 0 on input l
-ine 352.
+ine 353.
 
-Underfull \hbox (badness 10000) in paragraph at lines 360--361
+Underfull \hbox (badness 10000) in paragraph at lines 361--362
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 362--363
+Underfull \hbox (badness 10000) in paragraph at lines 363--364
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 365.
+(mdframed)              on input line 366.
 [8]
-Package mdframed Info: Not enough space on this page on input line 367.
+Package mdframed Info: Not enough space on this page on input line 368.
 
-Underfull \hbox (badness 10000) in paragraph at lines 369--370
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 377--378
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 392--394
+Underfull \hbox (badness 10000) in paragraph at lines 378--379
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 393--395
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 398.
+(mdframed)              on input line 399.
 [9]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 415.
+(mdframed)              on input line 416.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 421.
+(mdframed)              on input line 422.
 
-Underfull \hbox (badness 10000) in paragraph at lines 430--431
+Underfull \hbox (badness 10000) in paragraph at lines 431--432
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 433.
+(mdframed)              on input line 434.
 
-Underfull \hbox (badness 10000) in paragraph at lines 436--437
+Underfull \hbox (badness 10000) in paragraph at lines 437--438
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 440--441
+Underfull \hbox (badness 10000) in paragraph at lines 441--442
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 443.
+(mdframed)              on input line 444.
 [10]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 454.
+(mdframed)              on input line 455.
 
-Underfull \hbox (badness 10000) in paragraph at lines 457--458
-
- []
-
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 460.
-
-Underfull \hbox (badness 10000) in paragraph at lines 464--465
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 470--471
+Underfull \hbox (badness 10000) in paragraph at lines 458--459
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 473.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 482.
-Package mdframed Info: mdframed detected package amsthm 
- changed the theorem header of amsthm
-(mdframed)              on input line 486.
+(mdframed)              on input line 461.
 
-Underfull \hbox (badness 10000) in paragraph at lines 491--492
+Underfull \hbox (badness 10000) in paragraph at lines 465--466
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 495--496
+Underfull \hbox (badness 10000) in paragraph at lines 471--472
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 474.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 483.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 487.
+
+Underfull \hbox (badness 10000) in paragraph at lines 492--493
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 496--497
 
  []
 
 [11]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 502.
-Package mdframed Info: Not enough space on this page on input line 503.
-
-
-LaTeX Font Warning: Font shape `TU/DejaVuSans(0)/b/n' undefined
-(Font)              using `TU/DejaVuSans(0)/m/n' instead on input line 505.
-
-LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/m/n' will be
-(Font)              scaled to size 16.07106pt on input line 505.
+(mdframed)              on input line 503.
+Package mdframed Info: Not enough space on this page on input line 504.
 LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/b/n' will be
-(Font)              scaled to size 16.07106pt on input line 505.
+(Font)              scaled to size 16.07106pt on input line 506.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 509.
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--515
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 518.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 528.
+LaTeX Font Info:    Font shape `TU/DejaVuSans(0)/b/n' will be
+(Font)              scaled to size 13.39255pt on input line 537.
 ) [12] (main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
-
-LaTeX Font Warning: Some font shapes were not available, defaults substituted.
-
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 9C44A0329FE342E1DFD4CCB585956658;938.
+(rerunfilecheck)             Checksum: 0C8708FA4B789CAE1458603597488DDF;1089.
  ) 
 Here is how much of TeX's memory you used:
- 40780 strings out of 411472
- 963870 string characters out of 5817452
+ 40798 strings out of 411472
+ 964420 string characters out of 5817452
  1867012 words of memory out of 5000000
- 60309 multiletter control sequences out of 15000+600000
- 534201 words of font info for 158 fonts, out of 8000000 for 9000
+ 60323 multiletter control sequences out of 15000+600000
+ 534217 words of font info for 160 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,14n,121p,923b,1240s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,14n,124p,925b,1240s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (13 pages).
