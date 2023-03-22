@@ -5,4 +5,4 @@
 \contentsline {section}{\numberline {1.3}Quiz 5: }{7}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Ejercicios adicionales.}{8}{section.1.4}%
 \contentsline {section}{\numberline {1.5}El conjunto de Cantor ☠☠☠☠☠}{12}{section.1.5}%
-\contentsline {subsection}{\numberline {1.5.1}Sucesiones ☠☠☠☠☠}{12}{subsection.1.5.1}%
+\contentsline {section}{\numberline {1.6}Sucesiones ☠☠☠☠☠}{12}{section.1.6}%
