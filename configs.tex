@@ -17,7 +17,7 @@
 \usepackage{bm}
 \usepackage{enumitem}
 \usepackage[breaklinks = true]{hyperref}
-
+\usepackage{lipsum}
 
 \newcommand\N{\ensuremath{\mathbb{N}}}
 \newcommand\R{\ensuremath{\mathbb{R}}}
@@ -152,3 +152,43 @@
  }
 
 \usepackage{indentfirst}
+
+\usepackage[most]{tcolorbox}
+\tcbuselibrary{most}
+
+\tcbset {
+  base/.style={
+    arc=7mm, 
+    bottomtitle=0.5mm,
+    boxrule=0mm,
+    colbacktitle=Black, 
+    coltitle=white, 
+    fonttitle=\bfseries, 
+    left=2.5mm,
+    leftrule=1mm,
+    right=3.5mm,
+    title={#1},
+    toptitle=0.75mm, 
+  }
+}
+
+
+\newtcolorbox{subbox}[1]{
+  colframe=black!90!white,
+  base={#1}
+}
+
+\newtcolorbox{arrowbox}[1]{enhanced,title=#1,colbacktitle=NavyBlue!80!white,
+  coltitle=white,attach boxed title to top left={xshift=-3mm, yshift=-0.5mm, -},boxrule=0pt,
+  after skip=1cm,before skip=1cm,right skip=0cm,breakable,fonttitle=\bfseries,
+  toprule=0pt,bottomrule=0pt,rightrule=0pt,leftrule=3pt,colframe=NavyBlue,colback=NavyBlue!3!white,arc=0mm,
+  skin=enhancedlast jigsaw,sharp corners,boxed title style={
+    frame code={ 
+      \fill[NavyBlue!80!white](frame.south west)--(frame.north west)--(frame.north east)--
+      ([xshift=3mm]frame.east)--(frame.south east)--cycle;
+      \draw[line width=1mm,NavyBlue!80!white]([xshift=2mm]frame.north east)--([xshift=5mm]frame.east)--
+      ([xshift=2mm]frame.south east);
+      \fill[NavyBlue!80!white](frame.south west)--+(4mm,-2mm)--+(4mm,2mm)--cycle;
+    }
+  }
+}

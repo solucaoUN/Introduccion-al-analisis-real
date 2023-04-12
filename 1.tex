@@ -1,4 +1,11 @@
 %!TEX root = main.tex
+
+El curso de Introducción al Análisis Real es uno de los más pesados en la carrera de matemáticas y los estudiantes carecen casi que de toda ayuda (no hay monitorias y los espacios en clase a veces son insuficientes), por este motivos decidimos hacer este solucionario de las notas de Introducción al Análisis Real de los profesores Leonardo Rendón y Serafín Bautista, esto más que un solucionario es una guía de lectura de las notas, aquí encontrarás muchos delos conceptos o ideas del curso desde un punto de vista más de estudiante que ha sufrido esa materia y que sabe lo compleja que puede llegar a ser.\\
+
+Esperamos que las soluciones de los ejercicios que aportamos acá sirvan de guía para entender los conceptos y mecanismos que se deben usar para atacar este tipo de problemas.\\
+
+Muchos éxitos - mmanosalva y eochoaq
+
 \section{Algunos ejercicios al lector: }
 
 \begin{itemize}
@@ -535,4 +542,52 @@ Cuando se quita el tercio medio de $[a, b]$, se obtienen dos intervalos $\left[a
 \end{itemize}
 
 \section{Sucesiones ☠☠☠☠☠}
+
+Este capítulo es cosa densa, mucho cuidado.
+
+\subsection{Algunos ejercicios al lector:}
+
+En esta sección también hay algunos ejercicios que el libro dice que son triviales,pero lo que es trivial hay que demostrarlo.
+
+\begin{itemize}[label={✎}]
+
+\item Es fácil demostrar que $n_k\geq k$ (Inducción)
+
+\begin{proof}
+Supongamos que la secuencia comienza en $k=1$. Entonces, lo más pequeño que puede ser $n_1$ es 1. Por lo tanto, $n_k \geq k$ es verdadero para $k=1$. Ahora, asumimos por inducción que $n_k \geq k$ para algún $k$. Dado que lo más pequeño que puede ser $n_{k+1}$ es $n_k+1$, obtenemos
+$$
+n_{k+1} \geq n_k+1 \geq k+1.
+$$
+\end{proof}
+
+(Para esta prueba es clave saber que tanto $k$ como $n_k$ son naturales.)
+
+\begin{note}
+Note que una subsecesión podría verse como un subconjunto de una sucesión ya que los puntos $\{x_{n_1},x_{n_2},\ldots\}\subseteq\{x_1,x_2,\ldots\}$. Esto es lo que nos permite ver que toda subsucesión de una sucesión acotada es acotada.
+
+
+\end{note}
+
+\begin{note}
+En el teorema 10 lo que nos quieren decir es que $S\subseteq E$ es cerrado si y solo si cualquier sucesión convergente en el espacio que es definida en $S$ converge en $S$, o sea su límite pertenece a $S$, algo de esperar.
+\end{note}
+
+\begin{note}
+Note que en la proposición 21 lo que nos están diciendo es que $a$ es un punto de acumulación (hay infinitos puntos ahí muy cerca de $a$ para cualquier $\epsilon$) 
+\end{note}
+
+\item En la proposición 22 se hace la prueba para sucesiones crecientes pero no decrecientes, veamos ese caso:\\
+
+\begin{proof}
+Sea $(a_n)_{n  \in \N}$ una sucesión decreciente y acotada en $(\R,d_1)$, como $(a_n)_{n\in \N}$ es acotada entonces es acotada inferiormente y por lo tanto existe $I=\inf\{a_n: n\in \N\}$. Veamos que el $\lim_{n\to \infty}a_n=I$. Dado $\epsilon>0$ por la propiedad de aproximación existe $N\in \N$, tal que $I+\epsilon>a_N$ y como $(a_n)_{n\in \N}$ es decreciente
+
+$$I+\epsilon>a_N\geq a_n\quad \text{si }n \geq N$$
+
+Por otro lado $I+\epsilon>a_n>I-\epsilon$ (ya que $I=\inf\{a_n: n\in \N\}$), Así $|a_n-I|<\epsilon$ para todo $n\geq N$, luego $\lim_{n\to\infty}a_n=I$
+\end{proof}
+
+
+\end{itemize}
+
+
 
