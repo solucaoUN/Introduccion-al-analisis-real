@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.4.11)  13 APR 2023 20:57
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.4.11)  15 APR 2023 21:12
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1748,206 +1748,7 @@ File: pgflibraryfadings.code.tex 2023-01-15 v3.1.10 (3.1.10)
 (C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/latex/tcolorbox\tcbposter
 .code.tex
 Library (tcolorbox): 'tcbposter.code.tex' version '6.0.3'
-))
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/latex/pstricks\pstricks.s
-ty
-Package: pstricks 2022/19/23 v0.72 LaTeX wrapper for `PSTricks' (RN,HV)
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\pst-xkey.
-tex
-File: pst-xkey.tex 2005/11/25 v1.6 PSTricks specialization of xkeyval (HA)
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
-Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.t
-ex
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.
-tex
-\XKV@toks=\toks60
-\XKV@tempa@toks=\toks61
-)
-\XKV@depth=\count394
-File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
-)))
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks
-.tex
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.t
-ex `pst-fp' v0.06, 2020/11/20 (hv)
-\pstFP@xs=\count395
-\pstFP@xia=\count396
-\pstFP@xib=\count397
-\pstFP@xfa=\count398
-\pstFP@xfb=\count399
-\pstFP@rega=\count400
-\pstFP@regb=\count401
-\pstFP@regs=\count402
-\pstFP@times=\count403
-)
-\psLoopIndex=\count404
-
-`PSTricks' v3.18  <2022/11/28> (tvz,hv)
-\pst@dima=\dimen340
-\pst@dimb=\dimen341
-\pst@dimc=\dimen342
-\pst@dimd=\dimen343
-\pst@dimg=\dimen344
-\pst@dimh=\dimen345
-\pst@dimm=\dimen346
-\pst@dimn=\dimen347
-\pst@dimo=\dimen348
-\pst@dimp=\dimen349
-\pst@hbox=\box135
-\pst@ibox=\box136
-\pst@boxg=\box137
-\pst@cnta=\count405
-\pst@cntb=\count406
-\pst@cntc=\count407
-\pst@cntd=\count408
-\pst@cntg=\count409
-\pst@cnth=\count410
-\pst@cntm=\count411
-\pst@cntn=\count412
-\pst@cnto=\count413
-\pst@cntp=\count414
-\@zero=\count415
-\pst@toks=\toks62
---- We are running latex or xelatex ---
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/xelatex/xetex-pstricks\ps
-tricks.con
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\xdvipdfm
-x.cfg))
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks
--color.tex)
-\psunit=\dimen350
-\psxunit=\dimen351
-\psyunit=\dimen352
-\pst@C@@rType=\count416
-\pslinewidth=\dimen353
-\psk@startLW=\dimen354
-\psk@endLW=\dimen355
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks
--arrows.tex
-\pshooklength=\dimen356
-\pshookwidth=\dimen357
-)
-\pst@customdefs=\toks63
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks
--dots.tex)
-\pslinearc=\dimen358
-\pst@symbolStep=\dimen359
-\pst@symbolWidth=\dimen360
-\pst@symbolLinewidth=\dimen361
-\everypsbox=\toks64
-\psframesep=\dimen362
-\pslabelsep=\dimen363
-\sh@wgridXunit=\dimen364
-\sh@wgridYunit=\dimen365
-\pst@shift=\dimen366
-\ps@imagectr=\count417
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/xelatex/xetex-pstricks\ps
-tricks.con
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\xdvipdfm
-x.cfg
-Using PSTricks configuration for LaTeX+dvipdfmx
-)))
-File: pstricks.tex 2022/11/28 v3.18 `PSTricks' (tvz,hv)
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pst-fp.t
-ex `pst-fp' v0.06, 2020/11/20 (hv))
-File: pst-fp.tex 2020/11/20 v0.06 `PST-fp' (hv)
-
->>> Loading XeTeX special macros
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pstricks\pstricks
--xetex.def))
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/latex/pst-plot\pst-plot.s
-ty
-Package: pst-plot 2011/06/05 v1.00 LaTeX wrapper for `pst-plot' (HV)
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\pst-xkey.st
-y
-Package: pst-xkey 2005/11/25 v1.6 package wrapper for pst-xkey.tex (HA)
-)
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/latex/multido\multido.sty
-Package: multido 2004/05/17 package wrapper for PSTricks `multido.tex', (HV/RN)
-
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/multido\multido.t
-ex  v1.42, 2010/05/14 <tvz>
-\multido@count=\count418
-\multidocount=\count419
-\multido@stuff=\toks65
-)
-File: multido.tex 2010/05/14 v1.42 `multido' (tvz,hv)
-)
-Package: pst-plot 2021/09/23 package wrapper for pst-plot.tex (hv)
-
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pst-plot\pst-plot
-.tex
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pst-tools\pst-too
-ls.tex `PST-tools' v0.12, 2021/09/23 (hv)
-\randomi=\count420
-\ranval=\count421
-)
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pstricks-add\pstr
-icks-add.tex
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pst-node\pst-node
-.tex  v1.43, 2022/01/31
-\psrow=\count422
-\pscol=\count423
-\psmatrixcnt=\count424
-\psrowsep=\skip131
-\pscolsep=\skip132
-\pst@args=\count425
-\num@pts=\count426
-\pst@argcnt=\count427
-)
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pst-arrow\pst-arr
-ow.tex `pst-arrow' v0.05, 2021/11/16 (dr,hv))
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pst-3d\pst-3d.tex
-`PST-3d' v1.11, 2010/02/14 (tvz))
-(C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/generic/pst-math\pst-math
-.tex `pst-math' v0.64 , (CJ,hv)) `pstricks-add' v3.93, 2022/11/21 (dr,hv)
-\psparallelogramsep=\dimen367
-\pst@cntC=\count428
-\pst@stepcount=\count429
-\chart@ColorIndex=\dimen368
-\chart@ColorStep=\dimen369
-\pst@chartHeight=\dimen370
-\pst@chartStackDepth=\dimen371
-\pst@chartStackWidth=\dimen372
-\chart@Toggle=\count430
-\psVectorCtr=\count431
-)
- v1.94, 2022/11/21 (tvz,hv)
-\pstRadUnit=\dimen373
-\pstRadUnitInv=\dimen374
-\pst@linecnt=\count432
-\RCD@file=\read5
-\psxlabelsep=\dimen375
-\psylabelsep=\dimen376
-\psk@subticksize=\dimen377
-\pst@xticksizeA=\dimen378
-\pst@xticksizeB=\dimen379
-\pst@xticksizeC=\dimen380
-\pst@yticksizeA=\dimen381
-\pst@yticksizeB=\dimen382
-\pst@yticksizeC=\dimen383
-\@digitcounter=\count433
-\psk@llx=\dimen384
-\psk@lly=\dimen385
-\psk@urx=\dimen386
-\psk@ury=\dimen387
-\pst@xunit=\dimen388
-\pst@yunit=\dimen389
-)
-File: pst-plot.tex 2022/11/21 1.94 `pst-plot' (tvz,hv)
-)) (main.aux
+))) (main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
@@ -2092,7 +1893,7 @@ ine 11.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-\c@lstlisting=\count434
+\c@lstlisting=\count394
 LaTeX Font Info:    Trying to load font information for U+msa on input line 14.
 
 (C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
@@ -2388,7 +2189,40 @@ Underfull \hbox (badness 10000) in paragraph at lines 579--580
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
 (mdframed)              on input line 582.
-[13]) [14] (main.aux
+
+Underfull \hbox (badness 10000) in paragraph at lines 589--590
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 591.
+[13]
+Package mdframed Info: Not enough space on this page on input line 598.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 601.
+Package hyperref Info: bookmark level for unknown lemma defaults to 0 on input 
+line 601.
+
+Overfull \hbox (2.40172pt too wide) in paragraph at lines 601--602
+[][][]\TU/CMUSansSerif(0)/b/n/12 Lema 1. [][]\TU/CMUSerif(0)/m/n/12 Si $\OT1/cm
+r/m/n/12 (\OML/cmm/m/it/12 b[]\OT1/cmr/m/n/12 )[]$ \TU/CMUSerif(0)/m/n/12 es un
+a sucesión convergente (que converge a $\OML/cmm/m/it/12 b$\TU/CMUSerif(0)/m/n/
+12 ), entonces $\OT1/cmr/m/n/12 (\OMS/cmsy/m/n/12 ^^@\OML/cmm/m/it/12 b[]\OT1/c
+mr/m/n/12 )[]$
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 605.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 615.
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 621.
+) [14] (main.aux
 LaTeX Info: Redefining \. on input line 23.
 LaTeX Info: Redefining \% on input line 23.
 )
@@ -2396,12 +2230,12 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 (rerunfilecheck)             Checksum: E4F50FFE887E74F45668AFF68A1C0A60;1297.
  ) 
 Here is how much of TeX's memory you used:
- 51294 strings out of 411464
- 1196589 string characters out of 5817203
- 1935549 words of memory out of 5000000
- 70656 multiletter control sequences out of 15000+600000
+ 47446 strings out of 411464
+ 1134578 string characters out of 5817203
+ 1867290 words of memory out of 5000000
+ 66884 multiletter control sequences out of 15000+600000
  534209 words of font info for 159 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 89i,14n,124p,859b,1242s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 89i,14n,124p,910b,1238s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
 Output written on main.pdf (15 pages).

@@ -586,21 +586,50 @@ $$I+\epsilon>a_N\geq a_n\quad \text{si }n \geq N$$
 Por otro lado $I+\epsilon>a_n>I-\epsilon$ (ya que $I=\inf\{a_n: n\in \N\}$), Así $|a_n-I|<\epsilon$ para todo $n\geq N$, luego $\lim_{n\to\infty}a_n=I$
 \end{proof}
 
+\item Ejercicio proposición 23\\
+
+\begin{theorem}{Proposición 23:}
+
+Sean $(a_n)_{n\in \N}$ y $(b_n)_{n\in \N}$ sucesiones en $(\R,d_1)$, si $(a_n)_{n\in \N}$ y $(b_n)_{n \in \N}$ son convergentes, entonces:
+
+\begin{itemize}
+    \item $(a_n\pm b_n)_{n\in \N}$ es convergente y $\lim_{n \to \infty}(a_n\pm b_n)=\lim_{n \to \infty} a_n\pm \lim_{n \to \infty} b_n $
+\end{itemize}
+\end{theorem}
+
+\begin{lemma}
+Si $(b_n)_{n\in \N}$ es una sucesión convergente (que converge a $b$), entonces $(-b_n)_{n\in \N}$ es convergente y converge a $-b$.
+\end{lemma}
+
+\begin{proof}
+Tenemos que $(b_n)_{n\in \N}$ es convergente y converge a $b$, es decir para todo $\epsilon>0$ existe $N\in \N$ tal que si $n>N$ $|b_n-b|<\epsilon$, luego:
+
+$$|-b_n+b|=|-1(b_n-b)|=|-1||b_n-b|=|b_n-b|<\epsilon$$
+
+Luego $(-b_n)_{n\in\N}$ es convergente y converge a $-b$
+\end{proof}
+
+Con este lema podemos hacer la prueba del teorema solo para $((a_n)_{n\in \N}+(b_n)_{n\in \N})_{n\in \N}$ ya que el caso de la resta es corolario de esto, note que basta considerar la sucesión $(-b_n)_{n\in \N}$ y usar el resultado para la suma.//
+
+\begin{proof}
+    Tenemos que $(a_n)_{n\in N}$ y $(b_n)_{n\in \N}$ son convergentes, es decir para todo $\epsilon>0$ existen $N_1\in \N$ y $N_2\in \N$ tales que si $n>N_1$ $|a_n-a|<\frac{\epsilon}{2}$ y si $n>N_2$, $|b_n-b|<\frac{\epsilon}{2}$, luego si $n>\max\{N_1,N_2\}$, entonces.
+
+    $$|a_n+b_n-a-b|\leq |a_n-a|+|b_n-b|=\frac{\epsilon}{2}+\frac{\epsilon}{2}=\epsilon$$
+\end{proof}
+
+\begin{note}
+En estas pruebas siempre al escribirlas debemos saber las cotas que vamos a usar, pero esto no significa que siempre debamos ver a ojo que cota usar, usando la definición nos hubiéramos dado cuenta que la suma de las cotas nos iba a dar $2\epsilon$, por eso escogemos $\frac{\epsilon}{2}$, porque queremos que la suma sea menor que $\epsilon$, en análisis esto se hace para que las demostraciones tengan un mejor estilo, escritura y forma, se supone que con práctica el estudiante debería ser capaz de ver algunas de estas cotas sin mucho esfuerzo, pero si esto no se te da bien no te preocupes, a mí tampoco.
+\end{note} 
+
+
+
+
+
+
 
 
 \end{itemize}
 
-
-
-
-\begin{center}
-    \begin{pspicture}(-1,-1)(4,4)
-        \psset{yunit=1, xunit=1}
-        \psaxes[labels=all,tickstyle=full, ticksize=2pt ]{->}(0,0)(-4.1,-4.1)(4.1,4.1)
-
-        %graph goes here
-
-    \end{pspicture}
-\end{center}
+ 
 
 
