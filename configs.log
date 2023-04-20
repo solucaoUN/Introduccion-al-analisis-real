@@ -1,0 +1,2654 @@
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.4.11)  18 APR 2023 13:50
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./configs.tex
+(configs.tex
+LaTeX2e <2022-11-01> patch level 1
+L3 programming layer <2023-03-30>
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \usepackage[T1]{
+                    fontenc}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \usepackage[spanish]{
+                         babel}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \usepackage{
+                textcomp}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 \usepackage{
+                url}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \usepackage{
+                graphicx}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \usepackage{
+                float}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \usepackage{
+                booktabs}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.8 \usepackage{
+                enumitem}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \usepackage{
+                 emptypage}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \usepackage{
+                 subcaption}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.12 \usepackage{
+                 multicol}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \usepackage[usenames,dvipsnames]{
+                                      xcolor}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \usepackage{
+                 amsmath, amsfonts, mathtools, amsthm, amssymb}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.15 \usepackage{
+                 mathrsfs}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \usepackage{
+                 animate}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.17 \usepackage{
+                 cancel}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \usepackage{
+                 bm}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \usepackage{
+                 enumitem}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 \usepackage[breaklinks = true]{
+                                    hyperref}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 \usepackage{
+                 lipsum}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.29 \usepackage{
+                 systeme}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+! Undefined control sequence.
+l.32 \definecolor
+                 {correct}{HTML}{009900}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.32 \definecolor{c
+                   orrect}{HTML}{009900}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no H in font nullfont!
+Missing character: There is no T in font nullfont!
+Missing character: There is no M in font nullfont!
+Missing character: There is no L in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 9 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no 0 in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 32--35
+[]
+ []
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \usepackage{
+                 tikz}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.43 \usepackage{
+                 tikz-cd}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+! Undefined control sequence.
+l.44 \usetikzlibrary
+                    {intersections, angles, quotes, calc, positioning}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.44 \usetikzlibrary{i
+                      ntersections, angles, quotes, calc, positioning}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no q in font nullfont!
+Missing character: There is no u in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+! Undefined control sequence.
+l.45 \usetikzlibrary
+                    {arrows.meta}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no a in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no a in font nullfont!
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 \usepackage{
+                 pgfplots}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+! Undefined control sequence.
+l.47 \pgfplotsset
+                 {compat=1.13}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no c in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no 3 in font nullfont!
+! Undefined control sequence.
+l.48 \tikzset
+             {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no / in font nullfont!
+Missing character: There is no . in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no y in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no C in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no [ in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no g in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 2 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no ] in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no r in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no < in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no - in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 44--51
+[]
+ []
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.54 \usepackage{
+                 thmtools}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.55 \usepackage[framemethod=TikZ]{
+                                   mdframed}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+! Undefined control sequence.
+l.56 \mdfsetup
+              {skipabove=1em,skipbelow=0em}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 \mdfsetup{s
+                kipabove=1em,skipbelow=0em}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 1 in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no k in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 0 in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no m in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 56--57
+[] 
+ []
+
+! Undefined control sequence.
+l.59 \theoremstyle
+                  {definition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.59 \theoremstyle{d
+                    efinition}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no d in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no i in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 59--60
+[] 
+ []
+
+! Undefined control sequence.
+l.61 \declaretheoremstyle
+                         [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.61 \declaretheoremstyle[
+                          
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+! Undefined control sequence.
+l.62     headfont=\bfseries\sffamily\color
+                                          {ForestGreen!70!black}, bodyfont=\...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 61--69
+[]
+ []
+
+
+Overfull \hbox (31.75pt too wide) in paragraph at lines 61--69
+\TU/lmss/bx/n/10 Forest-
+ []
+
+
+Overfull \hbox (71.90001pt too wide) in paragraph at lines 61--69
+\TU/lmss/bx/n/10 Green!70!black,
+ []
+
+
+Overfull \hbox (26.01pt too wide) in paragraph at lines 61--69
+\TU/lmss/bx/n/10 body-
+ []
+
+
+Overfull \hbox (29.85pt too wide) in paragraph at lines 61--69
+\TU/lmss/bx/n/10 font=\TU/lmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (17.22pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 md-
+ []
+
+
+Overfull \hbox (38.09pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 framed=
+ []
+
+
+Overfull \hbox (65.58pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 linewidth=2pt,
+ []
+
+
+Overfull \hbox (24.2pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 right-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (59.79001pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 topline=false,
+ []
+
+
+Overfull \hbox (18.06pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 bot-
+ []
+
+
+Overfull \hbox (20.55pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 tom-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (18.89pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 line-
+ []
+
+
+Overfull \hbox (84.8pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 color=ForestGreen,
+ []
+
+
+Overfull \hbox (23.33pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 back-
+ []
+
+
+Overfull \hbox (33.93001pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 ground-
+ []
+
+
+Overfull \hbox (92.58pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 color=ForestGreen!5,
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 ]thm-
+ []
+
+
+Overfull \hbox (26.69pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 green-
+ []
+
+
+Overfull \hbox (15.84pt too wide) in paragraph at lines 61--69
+\TU/lmr/m/n/10 box 
+ []
+
+! Undefined control sequence.
+l.70 \declaretheoremstyle
+                         [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 \declaretheoremstyle[
+                          
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.71     headfont=\bfseries\sffamily\color
+                                          {NavyBlue!70!black}, bodyfont=\nor...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (22.78pt too wide) in paragraph at lines 70--78
+[]\TU/lmr/m/n/10 [
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 head-
+ []
+
+
+Overfull \hbox (113.83pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 font=\TU/lmss/bx/n/10 NavyBlue!70!black,
+ []
+
+
+Overfull \hbox (26.01pt too wide) in paragraph at lines 70--78
+\TU/lmss/bx/n/10 body-
+ []
+
+
+Overfull \hbox (29.85pt too wide) in paragraph at lines 70--78
+\TU/lmss/bx/n/10 font=\TU/lmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (17.22pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 md-
+ []
+
+
+Overfull \hbox (38.09pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 framed=
+ []
+
+
+Overfull \hbox (65.58pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 linewidth=2pt,
+ []
+
+
+Overfull \hbox (24.2pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 right-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (59.79001pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 topline=false,
+ []
+
+
+Overfull \hbox (18.06pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 bot-
+ []
+
+
+Overfull \hbox (20.55pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 tom-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (18.89pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 line-
+ []
+
+
+Overfull \hbox (74.34pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 color=NavyBlue,
+ []
+
+
+Overfull \hbox (23.33pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 back-
+ []
+
+
+Overfull \hbox (33.93001pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 ground-
+ []
+
+
+Overfull \hbox (82.12001pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 color=NavyBlue!5,
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 ]thm-
+ []
+
+
+Overfull \hbox (21.67pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 blue-
+ []
+
+
+Overfull \hbox (15.84pt too wide) in paragraph at lines 70--78
+\TU/lmr/m/n/10 box 
+ []
+
+! Undefined control sequence.
+l.79 \declaretheoremstyle
+                         [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.79 \declaretheoremstyle[
+                          
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.80     headfont=\bfseries\sffamily\color
+                                          {NavyBlue!70!black}, bodyfont=\nor...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (22.78pt too wide) in paragraph at lines 79--87
+[]\TU/lmr/m/n/10 [
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 head-
+ []
+
+
+Overfull \hbox (113.83pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 font=\TU/lmss/bx/n/10 NavyBlue!70!black,
+ []
+
+
+Overfull \hbox (26.01pt too wide) in paragraph at lines 79--87
+\TU/lmss/bx/n/10 body-
+ []
+
+
+Overfull \hbox (29.85pt too wide) in paragraph at lines 79--87
+\TU/lmss/bx/n/10 font=\TU/lmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (17.22pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 md-
+ []
+
+
+Overfull \hbox (38.09pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 framed=
+ []
+
+
+Overfull \hbox (65.58pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 linewidth=2pt,
+ []
+
+
+Overfull \hbox (24.2pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 right-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (59.79001pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 topline=false,
+ []
+
+
+Overfull \hbox (18.06pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 bot-
+ []
+
+
+Overfull \hbox (20.55pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 tom-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (18.89pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 line-
+ []
+
+
+Overfull \hbox (71.56pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 color=NavyBlue
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 ]thm-
+ []
+
+
+Overfull \hbox (21.67pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 blue-
+ []
+
+
+Overfull \hbox (15.56pt too wide) in paragraph at lines 79--87
+\TU/lmr/m/n/10 line 
+ []
+
+! Undefined control sequence.
+l.88 \declaretheoremstyle
+                         [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.88 \declaretheoremstyle[
+                          
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.89     headfont=\bfseries\sffamily\color
+                                          {RawSienna!70!black}, bodyfont=\no...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (22.78pt too wide) in paragraph at lines 88--96
+[]\TU/lmr/m/n/10 [
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 head-
+ []
+
+
+Overfull \hbox (119.69pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 font=\TU/lmss/bx/n/10 RawSienna!70!black,
+ []
+
+
+Overfull \hbox (26.01pt too wide) in paragraph at lines 88--96
+\TU/lmss/bx/n/10 body-
+ []
+
+
+Overfull \hbox (29.85pt too wide) in paragraph at lines 88--96
+\TU/lmss/bx/n/10 font=\TU/lmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (17.22pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 md-
+ []
+
+
+Overfull \hbox (38.09pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 framed=
+ []
+
+
+Overfull \hbox (65.58pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 linewidth=2pt,
+ []
+
+
+Overfull \hbox (24.2pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 right-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (59.79001pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 topline=false,
+ []
+
+
+Overfull \hbox (18.06pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 bot-
+ []
+
+
+Overfull \hbox (20.55pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 tom-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (18.89pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 line-
+ []
+
+
+Overfull \hbox (79.90001pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 color=RawSienna,
+ []
+
+
+Overfull \hbox (23.33pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 back-
+ []
+
+
+Overfull \hbox (33.93001pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 ground-
+ []
+
+
+Overfull \hbox (87.68001pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 color=RawSienna!5,
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 ]thm-
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 red-
+ []
+
+
+Overfull \hbox (15.84pt too wide) in paragraph at lines 88--96
+\TU/lmr/m/n/10 box 
+ []
+
+! Undefined control sequence.
+l.97 \declaretheoremstyle
+                         [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.97 \declaretheoremstyle[
+                          
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.98     headfont=\bfseries\sffamily\color
+                                          {RawSienna!70!black}, bodyfont=\no...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.105     qed=\qedsymbol
+                        
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (22.78pt too wide) in paragraph at lines 97--107
+[]\TU/lmr/m/n/10 [
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 head-
+ []
+
+
+Overfull \hbox (119.69pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 font=\TU/lmss/bx/n/10 RawSienna!70!black,
+ []
+
+
+Overfull \hbox (26.01pt too wide) in paragraph at lines 97--107
+\TU/lmss/bx/n/10 body-
+ []
+
+
+Overfull \hbox (29.85pt too wide) in paragraph at lines 97--107
+\TU/lmss/bx/n/10 font=\TU/lmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 num-
+ []
+
+
+Overfull \hbox (45.32pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 bered=no,
+ []
+
+
+Overfull \hbox (17.22pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 md-
+ []
+
+
+Overfull \hbox (38.09pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 framed=
+ []
+
+
+Overfull \hbox (65.58pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 linewidth=2pt,
+ []
+
+
+Overfull \hbox (24.2pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 right-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (59.79001pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 topline=false,
+ []
+
+
+Overfull \hbox (18.06pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 bot-
+ []
+
+
+Overfull \hbox (20.55pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 tom-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (18.89pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 line-
+ []
+
+
+Overfull \hbox (79.90001pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 color=RawSienna,
+ []
+
+
+Overfull \hbox (23.33pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 back-
+ []
+
+
+Overfull \hbox (33.93001pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 ground-
+ []
+
+
+Overfull \hbox (87.68001pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 color=RawSienna!1,
+ []
+
+
+Overfull \hbox (2.78pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (82.28pt too wide) in paragraph at lines 97--107
+\TU/lmr/m/n/10 qed=]thmproofbox 
+ []
+
+
+! LaTeX Error: The font size command \normalsize is not defined:
+               there is probably something wrong with the class file.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.107 
+      
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[1]
+! Undefined control sequence.
+l.108 \declaretheoremstyle
+                          [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.108 \declaretheoremstyle[
+                           
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.109     headfont=\bfseries\sffamily\color
+                                           {NavyBlue!70!black}, bodyfont=\no...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (22.78pt too wide) in paragraph at lines 108--117
+[]\TU/lmr/m/n/10 [
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 head-
+ []
+
+
+Overfull \hbox (113.83pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 font=\TU/lmss/bx/n/10 NavyBlue!70!black,
+ []
+
+
+Overfull \hbox (26.01pt too wide) in paragraph at lines 108--117
+\TU/lmss/bx/n/10 body-
+ []
+
+
+Overfull \hbox (29.85pt too wide) in paragraph at lines 108--117
+\TU/lmss/bx/n/10 font=\TU/lmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 num-
+ []
+
+
+Overfull \hbox (45.32pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 bered=no,
+ []
+
+
+Overfull \hbox (17.22pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 md-
+ []
+
+
+Overfull \hbox (38.09pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 framed=
+ []
+
+
+Overfull \hbox (65.58pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 linewidth=2pt,
+ []
+
+
+Overfull \hbox (24.2pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 right-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (59.79001pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 topline=false,
+ []
+
+
+Overfull \hbox (18.06pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 bot-
+ []
+
+
+Overfull \hbox (20.55pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 tom-
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 line=false,
+ []
+
+
+Overfull \hbox (18.89pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 line-
+ []
+
+
+Overfull \hbox (74.34pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 color=NavyBlue,
+ []
+
+
+Overfull \hbox (23.33pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 back-
+ []
+
+
+Overfull \hbox (33.93001pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 ground-
+ []
+
+
+Overfull \hbox (82.12001pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 color=NavyBlue!1,
+ []
+
+
+Overfull \hbox (2.78pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 ]thm-
+ []
+
+
+Overfull \hbox (13.05pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 ex-
+ []
+
+
+Overfull \hbox (16.67pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 pla-
+ []
+
+
+Overfull \hbox (13.89pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 na-
+ []
+
+
+Overfull \hbox (20.56pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 tion-
+ []
+
+
+Overfull \hbox (15.84pt too wide) in paragraph at lines 108--117
+\TU/lmr/m/n/10 box 
+ []
+
+! Undefined control sequence.
+l.119 \declaretheorem
+                     [style=thmgreenbox, name=Definición]{definition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.119 \declaretheorem[
+                      style=thmgreenbox, name=Definición]{definition}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.120 \declaretheorem
+                     [style=thmbluebox, numbered=no, name=Ejemplo]{eg}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.121 \declaretheorem
+                     [style=thmredbox, name=Proposición]{prop}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.122 \declaretheorem
+                     [style=thmredbox, name=Teorema]{theorem}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.123 \declaretheorem
+                     [style=thmredbox, name=Lema]{lemma}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.124 \declaretheorem
+                     [style=thmredbox, numbered=no, name=Corolario]{corollary}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (110.09pt too wide) in paragraph at lines 119--125
+[]\TU/lmr/m/n/10 [style=thmgreenbox,
+ []
+
+
+Overfull \hbox (118.78pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 name=Definición]definition
+ []
+
+
+Overfull \hbox (85.07pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 [style=thmbluebox,
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 num-
+ []
+
+
+Overfull \hbox (45.32pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 bered=no,
+ []
+
+
+Overfull \hbox (79.31pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 name=Ejemplo]eg
+ []
+
+
+Overfull \hbox (80.93001pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 [style=thmredbox,
+ []
+
+
+Overfull \hbox (105.0pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 name=Proposición]prop
+ []
+
+
+Overfull \hbox (80.93001pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 [style=thmredbox,
+ []
+
+
+Overfull \hbox (106.99pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 name=Teorema]theorem
+ []
+
+
+Overfull \hbox (80.93001pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 [style=thmredbox,
+ []
+
+
+Overfull \hbox (86.79001pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 name=Lema]lemma
+ []
+
+
+Overfull \hbox (80.93001pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 [style=thmredbox,
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 num-
+ []
+
+
+Overfull \hbox (45.32pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 bered=no,
+ []
+
+
+Overfull \hbox (112.63pt too wide) in paragraph at lines 119--125
+\TU/lmr/m/n/10 name=Corolario]corollary 
+ []
+
+! Undefined control sequence.
+l.126 \declaretheorem
+                     [style=thmproofbox, name=\textit{Demostración}]{replace...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.126 \declaretheorem[
+                      style=thmproofbox, name=\textit{Demostración}]{replace...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Environment proof undefined.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.127 \renewenvironment{proof}
+                              [1][\proofname]{\vspace{-10pt}\begin{replaceme...
+
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (109.83pt too wide) in paragraph at lines 126--128
+[]\TU/lmr/m/n/10 [style=thmproofbox,
+ []
+
+
+Overfull \hbox (169.54002pt too wide) in paragraph at lines 126--128
+\TU/lmr/m/n/10 name=\TU/lmr/m/it/10 Demostración\TU/lmr/m/n/10 ]replacementproo
+f
+ []
+
+! Undefined control sequence.
+l.129 \declaretheorem
+                     [style=thmblueline, numbered=no, name=Nota]{note}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.129 \declaretheorem[
+                      style=thmblueline, numbered=no, name=Nota]{note}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (104.79001pt too wide) in paragraph at lines 129--130
+[]\TU/lmr/m/n/10 [style=thmblueline,
+ []
+
+
+Overfull \hbox (22.5pt too wide) in paragraph at lines 129--130
+\TU/lmr/m/n/10 num-
+ []
+
+
+Overfull \hbox (45.32pt too wide) in paragraph at lines 129--130
+\TU/lmr/m/n/10 bered=no,
+ []
+
+
+Overfull \hbox (74.17pt too wide) in paragraph at lines 129--130
+\TU/lmr/m/n/10 name=Nota]note 
+ []
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.135 \usepackage{
+                  newunicodechar}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.136 \usepackage{
+                  fontspec}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+! Undefined control sequence.
+l.138 \setmainfont
+                  {CMU Serif}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.138 \setmainfont{C
+                    MU Serif}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.139 \setsansfont
+                  {CMU Sans Serif}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.140 \setmonofont
+                  {CMU Typewriter Text}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (43.89pt too wide) in paragraph at lines 138--141
+[]\TU/lmr/m/n/10 CMU
+ []
+
+
+Overfull \hbox (19.76pt too wide) in paragraph at lines 138--141
+\TU/lmr/m/n/10 Serif
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 138--141
+\TU/lmr/m/n/10 CMU
+ []
+
+
+Overfull \hbox (20.06pt too wide) in paragraph at lines 138--141
+\TU/lmr/m/n/10 Sans
+ []
+
+
+Overfull \hbox (19.76pt too wide) in paragraph at lines 138--141
+\TU/lmr/m/n/10 Serif
+ []
+
+
+Overfull \hbox (23.89pt too wide) in paragraph at lines 138--141
+\TU/lmr/m/n/10 CMU
+ []
+
+
+Overfull \hbox (25.83pt too wide) in paragraph at lines 138--141
+\TU/lmr/m/n/10 Type-
+ []
+
+
+Overfull \hbox (26.17pt too wide) in paragraph at lines 138--141
+\TU/lmr/m/n/10 writer
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 138--141
+\TU/lmr/m/n/10 Text 
+ []
+
+! Undefined control sequence.
+l.142 \newfontface
+                  {\pencilfont}{DejaVu Sans}[Scale=MatchUppercase,AutoFakeBo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.142 \newfontface{\pencilfont
+                              }{DejaVu Sans}[Scale=MatchUppercase,AutoFakeBo...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.142 \newfontface{\pencilfont}{D
+                                 ejaVu Sans}[Scale=MatchUppercase,AutoFakeBo...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (52.37pt too wide) in paragraph at lines 142--143
+[]\TU/lmr/m/n/10 DejaVu
+ []
+
+
+Overfull \hbox (214.05pt too wide) in paragraph at lines 142--143
+\TU/lmr/m/n/10 Sans[Scale=MatchUppercase,AutoFakeBold=2.5] 
+ []
+
+! Undefined control sequence.
+l.144 \newunicodechar
+                     {✎}{{\pencilfont ✎}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.144 \newunicodechar{✎
+                       }{{\pencilfont ✎}}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no ✎ in font [lmroman10-regular]:mapping=tex-text;!
+! Undefined control sequence.
+l.144 \newunicodechar{✎}{{\pencilfont
+                                      ✎}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ✎ in font [lmroman10-regular]:mapping=tex-text;!
+! Undefined control sequence.
+l.145 \newunicodechar
+                     {☠}{{\pencilfont ☠}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ☠ in font [lmroman10-regular]:mapping=tex-text;!
+! Undefined control sequence.
+l.145 \newunicodechar{☠}{{\pencilfont
+                                      ☠}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+Missing character: There is no ☠ in font [lmroman10-regular]:mapping=tex-text;!
+
+Overfull \hbox (25.6pt too wide) in paragraph at lines 144--146
+[]\TU/lmr/m/n/10 ✎✎
+ []
+
+
+Overfull \hbox (5.6pt too wide) in paragraph at lines 144--146
+\TU/lmr/m/n/10 ☠☠ 
+ []
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.147 \usepackage{
+                  geometry}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+! Undefined control sequence.
+l.148  \geometry
+                {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.149  a
+        4paper,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (57.54001pt too wide) in paragraph at lines 149--154
+[]\TU/lmr/m/n/10 a4paper,
+ []
+
+
+Overfull \hbox (12.22pt too wide) in paragraph at lines 149--154
+\TU/lmr/m/n/10 to-
+ []
+
+
+Overfull \hbox (88.33pt too wide) in paragraph at lines 149--154
+\TU/lmr/m/n/10 tal=170mm,245mm,
+ []
+
+
+Overfull \hbox (51.39pt too wide) in paragraph at lines 149--154
+\TU/lmr/m/n/10 left=20mm,
+ []
+
+
+Overfull \hbox (51.67pt too wide) in paragraph at lines 149--154
+\TU/lmr/m/n/10 top=20mm,
+ []
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.155 \usepackage{
+                  indentfirst}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.157 \usepackage[most]{
+                        tcolorbox}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+! Undefined control sequence.
+l.158 \tcbuselibrary
+                    {most}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.158 \tcbuselibrary{m
+                      ost}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (41.16pt too wide) in paragraph at lines 158--159
+[]\TU/lmr/m/n/10 most 
+ []
+
+! Undefined control sequence.
+l.160 \tcbset
+              {
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.161   b
+         ase/.style={
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.171     title={#
+                  1},
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (74.55pt too wide) in paragraph at lines 161--175
+[]\TU/lmr/m/n/10 base/.style=
+ []
+
+
+Overfull \hbox (45.58pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 arc=7mm,
+ []
+
+
+Overfull \hbox (18.06pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 bot-
+ []
+
+
+Overfull \hbox (26.94pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 tomti-
+ []
+
+
+Overfull \hbox (51.11pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 tle=0.5mm,
+ []
+
+
+Overfull \hbox (64.76001pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 boxrule=0mm,
+ []
+
+
+Overfull \hbox (15.55pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 col-
+ []
+
+
+Overfull \hbox (23.33pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 back-
+ []
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (83.90001pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 tle=black!10!white,
+ []
+
+
+Overfull \hbox (22.22pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 colti-
+ []
+
+
+Overfull \hbox (45.56pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 tle=white,
+ []
+
+
+Overfull \hbox (20.56pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 font-
+ []
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (22.08pt too wide) in paragraph at lines 161--175
+\TU/lmr/m/n/10 tle=\TU/lmr/bx/n/10 ,
+ []
+
+
+Overfull \hbox (62.42pt too wide) in paragraph at lines 161--175
+\TU/lmr/bx/n/10 left=2.5mm,
+ []
+
+
+Overfull \hbox (20.27pt too wide) in paragraph at lines 161--175
+\TU/lmr/bx/n/10 left-
+ []
+
+
+Overfull \hbox (56.63pt too wide) in paragraph at lines 161--175
+\TU/lmr/bx/n/10 rule=1mm,
+ []
+
+
+Overfull \hbox (70.2pt too wide) in paragraph at lines 161--175
+\TU/lmr/bx/n/10 right=3.5mm,
+ []
+
+
+Overfull \hbox (11.49pt too wide) in paragraph at lines 161--175
+\TU/lmr/bx/n/10 ti-
+ []
+
+
+Overfull \hbox (30.81pt too wide) in paragraph at lines 161--175
+\TU/lmr/bx/n/10 tle=1,
+ []
+
+
+Overfull \hbox (20.44pt too wide) in paragraph at lines 161--175
+\TU/lmr/bx/n/10 top-
+ []
+
+
+Overfull \hbox (11.49pt too wide) in paragraph at lines 161--175
+\TU/lmr/bx/n/10 ti-
+ []
+
+
+Overfull \hbox (64.66pt too wide) in paragraph at lines 161--175
+\TU/lmr/bx/n/10 tle=0.75mm,
+ []
+
+! Undefined control sequence.
+l.177 \newtcolorbox
+                   {subbox}[1]{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.177 \newtcolorbox{s
+                     ubbox}[1]{
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.179   base={#
+               1}
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+
+Overfull \hbox (61.46pt too wide) in paragraph at lines 177--181
+[]\TU/lmr/m/n/10 subbox[1]
+ []
+
+
+Overfull \hbox (15.55pt too wide) in paragraph at lines 177--181
+\TU/lmr/m/n/10 col-
+ []
+
+
+Overfull \hbox (97.54001pt too wide) in paragraph at lines 177--181
+\TU/lmr/m/n/10 frame=black!93!white,
+ []
+
+
+Overfull \hbox (31.72pt too wide) in paragraph at lines 177--181
+\TU/lmr/m/n/10 base=1
+ []
+
+! Undefined control sequence.
+l.182 \newtcolorbox
+                   {arrowbox}[1]{enhanced,title=#1,colbacktitle=NavyBlue!80!...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.182 \newtcolorbox{a
+                     rrowbox}[1]{enhanced,title=#1,colbacktitle=NavyBlue!80!...
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! You can't use `macro parameter character #' in horizontal mode.
+l.182 \newtcolorbox{arrowbox}[1]{enhanced,title=#
+                                                 1,colbacktitle=NavyBlue!80!...
+Sorry, but I'm not programmed to handle this case;
+I'll just pretend that you didn't ask for it.
+If you're in the wrong mode, you might be able to
+return to the right one by typing `I}' or `I$' or `I\par'.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   [
+l.188       \fill[
+                  NavyBlue!80!white](frame.south west)--(frame.north west)--...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   [
+l.188       \fill[
+                  NavyBlue!80!white](frame.south west)--(frame.north west)--...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+! Undefined control sequence.
+l.190       \draw
+                 [line width=1mm,NavyBlue!80!white]([xshift=2mm]frame.north ...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing number, treated as zero.
+<to be read again> 
+                   [
+l.192       \fill[
+                  NavyBlue!80!white](frame.south west)--+(4mm,-2mm)--+(4mm,2...
+A number should have been here; I inserted `0'.
+(If you can't figure out why I needed to see a number,
+look up `weird error' in the index to The TeXbook.)
+
+! Illegal unit of measure (pt inserted).
+<to be read again> 
+                   [
+l.192       \fill[
+                  NavyBlue!80!white](frame.south west)--+(4mm,-2mm)--+(4mm,2...
+Dimensions can be in units of em, ex, in, pt, pc,
+cm, mm, dd, cc, bp, or sp; but yours is a new one!
+I'll assume that you meant to say pt, for printer's points.
+To recover gracefully from this error, it's best to
+delete the erroneous units; e.g., type `2' to delete
+two letters. (See Chapter 27 of The TeXbook.)
+
+
+Overfull \hbox (290.51001pt too wide) in paragraph at lines 182--196
+[]\TU/lmr/m/n/10 arrowbox[1]enhanced,title=1,colbacktitle=NavyBlue!80!white,
+ []
+
+
+Overfull \hbox (22.22pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 colti-
+ []
+
+
+Overfull \hbox (73.06pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 tle=white,attach
+ []
+
+
+Overfull \hbox (25.84pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 boxed
+ []
+
+
+Overfull \hbox (10.0pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 ti-
+ []
+
+
+Overfull \hbox (11.11pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 tle
+ []
+
+
+Overfull \hbox (8.89pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 to
+ []
+
+
+Overfull \hbox (14.45pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 top
+ []
+
+
+Overfull \hbox (57.57pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 left=xshift=-
+ []
+
+
+Overfull \hbox (24.44pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 3mm,
+ []
+
+
+Overfull \hbox (35.62pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 yshift=-
+ []
+
+
+Overfull \hbox (32.22pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 0.5mm,
+ []
+
+
+Overfull \hbox (3.33pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 -
+ []
+
+
+Overfull \hbox (60.33pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 ,boxrule=0pt,
+ []
+
+
+Overfull \hbox (11.39pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 af-
+ []
+
+
+Overfull \hbox (12.25pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 ter
+ []
+
+
+Overfull \hbox (72.59pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 skip=1cm,before
+ []
+
+
+Overfull \hbox (66.76001pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 skip=1cm,right
+ []
+
+
+Overfull \hbox (136.63pt too wide) in paragraph at lines 182--196
+\TU/lmr/m/n/10 skip=0cm,breakable,fonttitle=\TU/lmr/bx/n/10 ,
+ []
+
+
+Overfull \hbox (582.95001pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 toprule=0pt,bottomrule=0pt,rightrule=0pt,leftrule=3pt,colframe=
+NavyBlue,colback=NavyBlue!3!white,arc=0mm,
+ []
+
+
+Overfull \hbox (93.72pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 skin=enhancedlast
+ []
+
+
+Overfull \hbox (16.28pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 jig-
+ []
+
+
+Overfull \hbox (48.96pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 saw,sharp
+ []
+
+
+Overfull \hbox (19.43001pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 cor-
+ []
+
+
+Overfull \hbox (54.0pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 ners,boxed
+ []
+
+
+Overfull \hbox (11.49pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 ti-
+ []
+
+
+Overfull \hbox (12.93001pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 tle
+ []
+
+
+Overfull \hbox (32.16pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 style=
+ []
+
+
+Overfull \hbox (28.69pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 frame
+ []
+
+
+Overfull \hbox (31.78pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 code=
+ []
+
+
+Overfull \hbox (33.43001pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 [Navy-
+ []
+
+
+Overfull \hbox (136.24pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 Blue!80!white](frame.south
+ []
+
+
+Overfull \hbox (32.49pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 west)–
+ []
+
+
+Overfull \hbox (64.09pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 (frame.north
+ []
+
+
+Overfull \hbox (32.49pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 west)–
+ []
+
+
+Overfull \hbox (64.09pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 (frame.north
+ []
+
+
+Overfull \hbox (30.09pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 east)–
+ []
+
+
+Overfull \hbox (134.84pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 ([xshift=3mm]frame.east)–
+ []
+
+
+Overfull \hbox (63.89pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 (frame.south
+ []
+
+
+Overfull \hbox (30.09pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 east)–
+ []
+
+
+Overfull \hbox (27.94pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 cycle;
+ []
+
+
+Overfull \hbox (21.23pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 [line
+ []
+
+
+Overfull \hbox (297.04001pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 width=1mm,NavyBlue!80!white]([xshift=2mm]frame.north
+ []
+
+
+Overfull \hbox (30.09pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 east)–
+ []
+
+
+Overfull \hbox (134.84pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 ([xshift=5mm]frame.east)–
+ []
+
+
+Overfull \hbox (132.29pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 ([xshift=2mm]frame.south
+ []
+
+
+Overfull \hbox (27.53pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 east);
+ []
+
+
+Overfull \hbox (33.43001pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 [Navy-
+ []
+
+
+Overfull \hbox (136.24pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 Blue!80!white](frame.south
+ []
+
+
+Overfull \hbox (32.49pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 west)–
+ []
+
+
+Overfull \hbox (45.34pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 +(4mm,-
+ []
+
+
+Overfull \hbox (35.13pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 2mm)–
+ []
+
+
+Overfull \hbox (76.64pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 +(4mm,2mm)–
+ []
+
+
+Overfull \hbox (27.94pt too wide) in paragraph at lines 182--196
+\TU/lmr/bx/n/10 cycle;
+ []
+
+
+! LaTeX Error: \usepackage before \documentclass.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.197 \usepackage{
+                  pythontex}
+\usepackage may only appear in the document preamble, i.e.,
+between \documentclass and \begin{document}.
+
+)
+! Emergency stop.
+<*> ./configs.tex
+                 
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 42 strings out of 411464
+ 722 string characters out of 5817203
+ 1849290 words of memory out of 5000000
+ 20368 multiletter control sequences out of 15000+600000
+ 512319 words of font info for 36 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 24i,5n,25p,137b,82s stack positions out of 10000i,1000n,20000p,200000b,200000s
+Output written on configs.pdf (1 page).

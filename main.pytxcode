@@ -1,13 +1,6 @@
-=>PYTHONTEX#sympy#default#default#0#block#####9#
-f = x**3 + cos(x)**5
-g = Integral(f, x)
-=>PYTHONTEX#sympy#default#default#1#i#####14#
-g
-=>PYTHONTEX#sympy#default#default#2#i#####14#
-g.doit()
 =>PYTHONTEX:SETTINGS#
 version=0.18
-outputdir=pythontex-files-test
+outputdir=pythontex-files-main
 workingdir=.
 workingdirset=false
 gobble=none

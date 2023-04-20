@@ -199,7 +199,7 @@ Suponga que $\{p\}\neq \bigcap_{r>0} B[p, r]$, luego existe $x\in \bigcap_{r>0} 
 \end{itemize}
 
 
-
+\newpage
 \section{Quiz 4:}
 
 \begin{itemize}
@@ -228,6 +228,35 @@ Esto ocurre ya que estamos tomando bolas en $\mathbb{R}$. (Este argumento es par
 
 
 Note que esas bolas son abiertas y unión arbitraria de abiertos es abierto, efectivamente esas bolas cubren $\mathbb{R}\setminus \mathbb{N}$ entonces acabamos.
+
+\begin{center}
+\begin{tikzpicture}
+% Eje horizontal
+\draw[-latex] (-2,0) -- (11,0) node[below]{$x$};
+
+% Eje vertical
+\draw[-latex] (0,-1) -- (0,2) node[left]{$y$};
+
+% Intervalo (-\infty,0)
+\node[black!90,below] at (-2,-0.5) {$-\infty$};
+\node[black!90,above right] at (0,0.5) {$0$};
+
+% Bolas alrededor de los números naturales
+\foreach \x in {1,...,6}
+{
+\draw[thick,black!90,dashed] (\x+0.5,1) circle (0.5);
+\filldraw[black!90] (\x+0.5,1) circle (2pt) node[font=\tiny, above] {\x$+\frac{1}{2}$};
+}
+
+% Unión de bolas
+\draw[thick,black!90,dashed] (0.5,1) -- (1,1) (1.5,1) -- (2,1) (2.5,1) -- (3,1) (3.5,1) -- (4,1) (4.5,1) -- (5,1) (5.5,1) -- (6,1) (-1,0) -- (7,0);
+\node[black!90] at (6.5,1) {$\ldots$};
+\node[black!90] at (3.5,-0.5) {$\bigcup_{i\in\mathbb{N}} B\left(i+\frac{1}{2},\frac{1}{2}\right)$};
+\node[black!90] at (7.5,1) {$\ldots$};
+
+\end{tikzpicture}
+
+\end{center}
     
 \end{proof}
 
@@ -266,6 +295,8 @@ Y sabemos que $B(a,r_a)\cap E_1$ es abierto en $E_1$ y como unión arbitraria de
 
 Y acabamos esta sección.
 \end{itemize}
+
+\newpage
 
 \section{Quiz 5: }
 
@@ -541,6 +572,7 @@ Cuando se quita el tercio medio de $[a, b]$, se obtienen dos intervalos $\left[a
         
 \end{itemize}
 
+\newpage
 \section{Sucesiones ☠☠☠☠☠}
 
 Este capítulo es cosa densa, mucho cuidado.
@@ -572,9 +604,6 @@ Note que una subsecesión podría verse como un subconjunto de una sucesión ya 
 En el teorema 10 lo que nos quieren decir es que $S\subseteq E$ es cerrado si y solo si cualquier sucesión convergente en el espacio que es definida en $S$ converge en $S$, o sea su límite pertenece a $S$, algo de esperar.
 \end{note}
 
-\begin{note}
-Note que en la proposición 21 lo que nos están diciendo es que $a$ es un punto de acumulación (hay infinitos puntos ahí muy cerca de $a$ para cualquier $\epsilon$) 
-\end{note}
 
 \item En la proposición 22 se hace la prueba para sucesiones crecientes pero no decrecientes, veamos ese caso:\\
 
@@ -621,15 +650,201 @@ Con este lema podemos hacer la prueba del teorema solo para $((a_n)_{n\in \N}+(b
 En estas pruebas siempre al escribirlas debemos saber las cotas que vamos a usar, pero esto no significa que siempre debamos ver a ojo que cota usar, usando la definición nos hubiéramos dado cuenta que la suma de las cotas nos iba a dar $2\epsilon$, por eso escogemos $\frac{\epsilon}{2}$, porque queremos que la suma sea menor que $\epsilon$, en análisis esto se hace para que las demostraciones tengan un mejor estilo, escritura y forma, se supone que con práctica el estudiante debería ser capaz de ver algunas de estas cotas sin mucho esfuerzo, pero si esto no se te da bien no te preocupes, a mí tampoco.
 \end{note} 
 
+Recordemos que en este punto estamos trabajando con los REALES, ya que vamos a comenzar con el capítulo de límite superior e inferior.
+
+\newpage
+
+\subsection{Límite superior y límite inferior:}
+
+Esta sección puede resultar confusa en un inicio, aquí trataremos de desglosar un poco la idea fundamental de todo.
+
+\begin{basedtikz}
+
+
+\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+
+\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1.5]
+%uncomment if require: \path (0,472); %set diagram left start at 0, and has height of 472
+
+%Curve Lines [id:da44573902991754766] 
+\draw  [dash pattern={on 0.84pt off 2.51pt}]  (141.52,165.81) .. controls (164.19,155.81) and (164.19,308.48) .. (178.57,308.29) .. controls (192.95,308.1) and (201.52,180.48) .. (216.57,178.29) .. controls (231.62,176.1) and (232.95,316.76) .. (249.57,297.29) .. controls (266.19,277.81) and (258.19,196.48) .. (272.57,191.29) .. controls (286.95,186.1) and (272.29,282.77) .. (296.19,281.81) .. controls (320.09,280.85) and (313.07,223.21) .. (320.07,211.71) .. controls (327.07,200.21) and (328.62,283.28) .. (345,281) .. controls (361.38,278.72) and (358.07,222.21) .. (365.07,211.71) .. controls (372.07,201.21) and (375.37,284.12) .. (388.19,281.14) .. controls (401.01,278.16) and (398.57,221.71) .. (405.07,212.21) .. controls (411.57,202.71) and (413.52,290.14) .. (425.52,281.14) .. controls (437.52,272.14) and (431.57,231.21) .. (439.57,213.21) .. controls (447.57,195.21) and (453.65,285.77) .. (462.19,281.14) .. controls (470.73,276.52) and (465.52,219.81) .. (485,211) ;
+%Straight Lines [id:da2292557377025013] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (120.19,281.14) -- (498.86,280.48) ;
+%Straight Lines [id:da021754386863272357] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}]  (119.52,210.48) -- (500.19,209.81) ;
+%Straight Lines [id:da9184013042125718] 
+\draw [color={rgb, 255:red, 208; green, 2; blue, 27 }  ,draw opacity=1 ]   (119.57,165.21) -- (148,165.21) -- (155.6,178.17) -- (221.57,178.21) -- (225.64,191.21) -- (278.14,191.21) -- (280.64,209.71) -- (322.19,209.81) ;
+%Straight Lines [id:da2894532143841366] 
+\draw [color={rgb, 255:red, 208; green, 2; blue, 27 }  ,draw opacity=1 ]   (120.8,309.77) -- (184,309.85) -- (187.02,299.72) -- (252.4,300.17) -- (258,280.97) -- (293.2,281.37) ;
+%Straight Lines [id:da09981137612794089] 
+\draw    (228.95,146.57) -- (201.73,172.52) ;
+\draw [shift={(200.29,173.9)}, rotate = 316.36] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+%Straight Lines [id:da7736001528911756] 
+\draw    (240.95,147.9) -- (239.69,183.91) ;
+\draw [shift={(239.62,185.9)}, rotate = 272.01] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+%Straight Lines [id:da01875292146375851] 
+\draw    (223.62,137.9) -- (140.23,158.75) ;
+\draw [shift={(138.29,159.24)}, rotate = 345.96] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+%Straight Lines [id:da685154290163863] 
+\draw    (212.95,355.9) -- (152.67,319.6) ;
+\draw [shift={(150.95,318.57)}, rotate = 31.05] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+%Straight Lines [id:da47753478631845336] 
+\draw    (236.29,347.9) -- (217.17,309.03) ;
+\draw [shift={(216.29,307.24)}, rotate = 63.81] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (7.65,-2.3) .. controls (4.86,-0.97) and (2.31,-0.21) .. (0,0) .. controls (2.31,0.21) and (4.86,0.98) .. (7.65,2.3)   ;
+%Shape: Rectangle [id:dp6544720458561455] 
+\draw  [dash pattern={on 4.5pt off 4.5pt}] (118.95,126.57) -- (502.29,126.57) -- (502.29,366.57) -- (118.95,366.57) -- cycle ;
+
+% Text Node
+\draw (418,194.3) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize]  {$\limsup x_{n}$};
+% Text Node
+\draw (420.67,288.3) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize]  {$\liminf x_{n}$};
+% Text Node
+\draw (231.33,129.97) node [anchor=north west][inner sep=0.75pt]  [font=\tiny]  {$\sup _{k\geq n} x_{k}$};
+% Text Node
+\draw (226.67,354.64) node [anchor=north west][inner sep=0.75pt]  [font=\tiny]  {$\inf_{k\geq n} x_{k}$};
+% Text Node
+\draw (478.14,134.26) node [anchor=north west][inner sep=0.75pt]    {$\mathbb{R}$};
+
+
+\end{tikzpicture}
+\end{basedtikz}
 
 
 
+Dada $\left(x_n\right)_{n \in \mathbb{N}}$ acotada en $\mathbb{R}$ existen $\alpha, \beta \in \mathbb{R}$ tales que $\alpha \leq x_n \leq \beta$ para todo $n \in \mathbb{N}$. Si $X_n=\left\{x_k: k \geq n\right\}$ tomamos
+$$
+\begin{aligned}
+& b_n=\sup X_n, \mathrm{y} \\
+& a_n=\inf X_n .
+\end{aligned}
+$$
+De esta forma tenemos que
+$$
+\alpha \leq a_1 \leq a_2 \leq \cdots \leq a_{n-1} \leq a_n \leq \cdots \leq b_n \leq b_{n-1} \leq \cdots \leq b_1 \leq \beta .
+$$
+
+\begin{note}
+Todo esto se tiene porque primero estamos en los reales y la sucesión es acotada, podemos garantizar el Sup y el Ínf, note que:
+
+$$X_1=\{x_1,x_2,\ldots\} \quad \text{y}\quad X_2=\{x_2,x_3,\ldots\}$$
+
+Luego $\sup X_1$ o es $x_1$ o está en $X_2$ y $\sup X_2$ o es $x_2$ o está en $X_3$, luego razonando de esta forma nos damos cuenta que $\sup X_n\leq \sup X_{n-1}$, por eso $b_n\leq b_{n-1}$.
+\end{note}
+
+\begin{note}
+Todo esto pasa ya que el supremo es mayor o igual que todos los elementos de $X_n$, luego si el supremo de $X_n$ fuera $x_n$, entonces el supremo de $X_{n+1}$ sería más pequeño, y en caso de que no fuera $x_n$, entonces el supremo de $X_n$ y $X_{n+1}$ serían iguales.
+\end{note}
+
+Además todos estos $b_n=\sup X_n<\beta$ ya que la sucesión es acotada, para $a_n=\inf X_n$ se razona de la misma forma para llegar a que $a_n\leq a_{n+1}$, espero que esto sea suficiente para entender digamos un poco este tema, es algo que en un inicio cuesta, pero que entenderlo bien es muy muy clave, este tipo de aclaraciones Omar al menos la suele dar en clase, pero en este curso no todos los profesores son tan buenos. 
 
 
 
+\begin{definition}
+Definimos el límite inferior (denotado por líminf $x_n$ ) y el límite superior (notado por $\left.\operatorname{lím} \sup x_n\right)$ de $\left(x_n\right)_{n \in \mathbb{N}}$ como
+$$
+\begin{aligned}
+& \liminf x_n=\sup a_n=\lim _{n \rightarrow \infty} a_n, \quad y \\
+& \lim \sup x_n=\inf b_n=\lim _{n \rightarrow \infty} b_n .
+\end{aligned}
+$$    
+\end{definition}
+
+A continuación presentamos una definición un poco más chingona de límites superior e inferior, son equivalentes en realidad las definiciones, pero esta definición es agradable porque nos evita pensar en $X_n$ y desviar nuestra atención.
+
+\begin{definition}
+
+Definimos el límite inferior (denotado por líminf $x_n$ ) y el límite superior (notado por $\left.\operatorname{lím} \sup x_n\right)$ de $\left(x_n\right)_{n \in \mathbb{N}}$ como:
+
+$$    \begin{aligned}
+\lim \inf x_n & =\lim _{n \rightarrow \infty}\left(\inf _{k \geq n} x_k\right) \\
+\lim \sup x_n & =\lim _{n \rightarrow \infty}\left(\sup _{k \geq n} x_k\right)
+\end{aligned}$$
+
+\end{definition}
+
+Ahora pasemos con los ejercicios del Quiz 6: 
+
+\newpage
+\section{Quiz 6:}
 
 \end{itemize}
 
- 
+\begin{itemize}[label={✎}]
+    \item 
+
+    \item
+
+    \item
+    
+    \item Falso: Considere $(\R,d_1)$, (note que en $\R$, $d_2=d_1$), entonces si tomamos una sucesión constante, $(x_n)_{n\in\N}=(-1)^na_n$ no converge, por ejemplo: si $(a_n)_{n\in \N}=1$, entonces:
+
+    $$(x_n)_{n\in \N}=\{-1,1,-1,1,-1,1,\ldots\}$$ 
+
+    Vemos que $(x_n)_{n\in\N}$ no converge, para ello veamos que el límite superior no es igual al límite inferior\\
+
+    Note que $\lim_{n \to \infty} \left( \inf_{k\geq n} x_k \right)=\lim_{n \to \infty} -a_n=\lim_{n \to \infty} -1=-1$ y por otro lado el $\lim_{n \to \infty} \left( \sup_{k\geq n} x_k\right)=\lim_{n \to \infty} a_n=\lim_{n \to \infty} 1=1$
+
+    \item Verdadero:\\ \begin{proof} 
+    Observe que para todo $\epsilon>0$, existe $N\in \N$ tal que $\frac{1}{N}<\epsilon$, entonces si $n>N$:
+
+
+    $$\left| \frac{1}{n} \right|<\epsilon$$
+
+    Luego:
+
+    $$\lim _{n \rightarrow \infty}\left(\sup _{k \geq n} \frac{(-1)^n}{n}\right)$$
+
+    Veamos entonces quien es el $\sup_{k\geq n}\frac{(-1)^n}{n}$.
+
+    \begin{align*}
+        &\sup X_2=\sup \left\{\frac{1}{2},-\frac{1}{3},\frac{1}{4},\ldots\right\}\\
+        &\sup X_3=\sup\left\{-\frac{1}{3},\frac{1}{4},-\frac{1}{5},\ldots\right\}\\
+        &\sup X_4=\sup\left\{\frac{1}{4},-\frac{1}{5},\frac{1}{6},\ldots\right\}\\
+        &\sup X_5=\sup\left\{-\frac{1}{5},\frac{1}{6},-\frac{1}{7},\ldots\right\}\\
+        & \mathrel{\phantom{=askldfjaddsl}}\vdots
+    \end{align*}
+
+    Note que si $n$ es par entonces:
+
+    $$\lim _{n \rightarrow \infty}\left(\sup_{k \geq n} \frac{(-1)^n}{n}\right)=\lim_{n \to \infty} \frac{1}{n}=0$$
+
+    Si $n$ es impar:
+
+    $$\lim _{n \rightarrow \infty}\left(\sup _{k \geq n} \frac{(-1)^n}{n}\right)=\lim_{n \to \infty} \frac{1}{2n+1}=0$$
+    
+    No es necesario probar este límite ya que probamos el caso general $\frac{1}{n}$ da 0.
+
+    \end{proof} 
+
+
+    \item Falso: 
+
+        $$\liminf \frac{(-1)^n n}{n+1}=\lim _{n \rightarrow \infty}\left(\inf_{k \geq n} \frac{(-1)^nn}{n+1}\right)$$
+
+        Veamos entonces quién es el $\inf_{k\geq n} \frac{(-1)^nn}{n+1}$:
+
+        \begin{align*}
+            &\inf X_1=\inf \left\{-\frac{1}{2},\frac{2}{3},-\frac{3}{4},\ldots\right\}=-1\\
+            &\inf X_2=\inf \left\{\frac{2}{3},-\frac{3}{4},\frac{4}{5},\ldots\right\}=-1\\
+            &\inf X_3=\inf \left\{-\frac{3}{4},\frac{4}{5},-\frac{5}{6},\ldots\right\}=-1\\
+            &\inf X_4=\inf \left\{\frac{4}{5},-\frac{5}{6},\frac{6}{7},\ldots\right\}=-1\\
+            &\inf X_5=\inf \left\{-\frac{5}{6},\frac{6}{7},-\frac{7}{8},\ldots\right\}=-1\\
+            & \mathrel{\phantom{=askaldfjasl}}\vdots
+        \end{align*}
+
+        Luego el $\inf_{k\geq n} \frac{(-1)^nn}{n+1}$ siempre es -1, por tanto:
+
+        $$\liminf \frac{(-1)^n n}{n+1}=\lim _{n \rightarrow \infty}\left(\inf_{k \geq n} \frac{(-1)^nn}{n+1}\right)=\lim_{n \to \infty} -1=-1$$
+
+
+
+
+    \item
+
+    \item
+\end{itemize}
+
+
+
 
 
