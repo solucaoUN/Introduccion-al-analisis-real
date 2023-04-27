@@ -1,3 +1,4 @@
+%!TEX root = main.tex
 \usepackage[T1]{fontenc}
 \usepackage[spanish]{babel}
 \usepackage{textcomp}
@@ -42,7 +43,7 @@
 \usepackage{tikz}
 \usepackage{tikz-cd}
 \usetikzlibrary{intersections, angles, quotes, calc, positioning}
-\usetikzlibrary{arrows.meta}
+\usetikzlibrary{arrows.meta,shapes.misc,shadows,calc}
 \usepackage{pgfplots}
 \pgfplotsset{compat=1.13}
 \tikzset{
@@ -53,7 +54,7 @@
 \makeatother
 \usepackage{thmtools}
 \usepackage[framemethod=TikZ]{mdframed}
-\mdfsetup{skipabove=1em,skipbelow=0em}
+\mdfsetup{skipabove=1em,skipbelow=1em}
 
 
 \theoremstyle{definition}
@@ -137,7 +138,7 @@
 \renewenvironment{proof}[1][\proofname]{\vspace{-10pt}\begin{replacementproof}}{\end{replacementproof}}
 
 \declaretheorem[style=thmblueline, numbered=no, name=Nota]{note}
-\declaretheorem[style=mblue, numbered=no, name=Tikz:]{temp}
+\declaretheorem[style=thmblueline, numbered=no,name=]{temp}
 
 
 \newcommand{\bb}[1]{\mathbb{#1}}
@@ -287,3 +288,21 @@
 \end{scope}
 \end{tikzpicture}%
 }
+
+
+\usepackage{titlesec}
+
+\newcommand\titlebar{%
+\tikz[baseline,trim left=2.1cm,trim right=3cm] {
+    \fill [RawSienna!15] (2.5cm,-1ex) rectangle (\textwidth+2.1cm,2.5ex);
+    \node [
+        fill=RawSienna!50!white,
+        anchor= base east,
+        rounded rectangle,
+        minimum height=3.5ex] at (3cm,0) {
+        \textbf{\arabic{chapter}.\thesection.}
+    };
+}%
+}
+\titleformat{\section}{\Large}{\titlebar}{0.1cm}{}
+\renewcommand*{\thesection}{\arabic{section}}

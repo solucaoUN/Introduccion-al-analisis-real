@@ -8,7 +8,7 @@ Muchos éxitos - mmanosalva y eochoaq
 
 \section{Algunos ejercicios al lector: }
 
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
     \item [✎] Probar que $(\mathbb{R}^n,d_1)$ y $(\mathbb{R}^n,d_{\infty})$ son espacios métricos.\\
 
     \begin{proof}
@@ -78,12 +78,8 @@ Muchos éxitos - mmanosalva y eochoaq
 
         \item[✎] Dado $(E, d)$ un espacio métrico, toda bola abierta es un conjunto abierto. En efecto, dados $B_E(p, r)$ (con $r>0$ y $\left.p \in E\right)$ y $q \in B_E(p, r)$, tomamos $r^{\prime}=r-d(p, q)$ de donde se tiene que $B_E\left(q, r^{\prime}\right) \subset B_E(p, r)$ (verifique esta contenencia como ejercicio).
 
-        \begin{center}
-            
-
-\tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
-
-\begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+       \begin{basedtikz}
+       \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,472); %set diagram left start at 0, and has height of 472
 
 %Shape: Rectangle [id:dp36732556175622055] 
@@ -132,7 +128,9 @@ Muchos éxitos - mmanosalva y eochoaq
 
 
 \end{tikzpicture}
-        \end{center}
+       \end{basedtikz}
+
+
         \begin{proof}
             Sea $x \in B_E(q,r^{\prime})$, entonces;
 
@@ -162,35 +160,35 @@ Dado $(E,d)$ en espacio métrico, tenemos que:
 
 \end{itemize}
 \end{theorem}
-
+\vspace*{0.3cm}
 \begin{proof}
-Note que $E^C=$ $\emptyset$ luego el complemento de $E$ es abierto. 
-\end{proof}
 
-\begin{proof}
-Por definición $E$ es abierto, luego $\emptyset$ es cerrado.
-\end{proof}
+\begin{itemize}
+\item Note que $E^C=$ $\emptyset$ luego el complemento de $E$ es abierto. 
 
-\begin{proof}
-Consideremos $C_i$ una familia de cerrados, luego
+\item Por definición $E$ es abierto, luego $\emptyset$ es cerrado.
+
+\item Consideremos $C_i$ una familia de cerrados, luego
 
 $$\left(\bigcup_{i=1}^n C_i\right)^C=\bigcap_{i=1}^n C_i^C$$
 
 Y como intersección finita de abiertos es abierto, entonces acabamos.
-\end{proof}
 
-\begin{proof}
-Nuevamente consideremos $C_i$ una familia de cerrados, entonces:
+\item Nuevamente consideremos $C_i$ una familia de cerrados, entonces:
 
 $$\left(\bigcap_{i \in I}C_i\right)^C=\bigcup_{i\in I}C_i^C$$
 
 Y como unión arbitraria de abiertos es abierto, entonces acabamos.
 
+\end{itemize}
+
 \end{proof}
+
+
 
 \end{itemize}
 
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
 \item[✎]Sea $(E,d)$ un espacio métrico $\{p\}=\bigcap_{r>0} B[p, r]$\\
 
 \begin{proof}
@@ -199,10 +197,9 @@ Suponga que $\{p\}\neq \bigcap_{r>0} B[p, r]$, luego existe $x\in \bigcap_{r>0} 
 \end{itemize}
 
 
-\newpage
 \section{Quiz 4:}
 
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
 \item[✎] \textbf{Falso: }Observamos que vía la definición de abierto $\mathbb{Q}$ no puede ser abierto ya que toda bola con centro en un racional va a tener irracionales dentro que no están en $\mathbb{Q}$ y por tanto la bola no está contenida en $\mathbb{Q}$, luego no es abierto.
 
 De hecho es la forma de argumentar esto, vía la densidad de $\mathbb{Q}$ en $\mathbb{R}$ que ya conocemos de los cursos anteriores.
@@ -220,16 +217,8 @@ Esto ocurre ya que estamos tomando bolas en $\mathbb{R}$. (Este argumento es par
 \item[✎] \textbf{Verdadero: }$B(0,\frac{1}{2})=\{x\in \mathbb{R} : d_d(0,x)<\frac{1}{2}\}=\{0\}=\{x \in \mathbb{R} : d_d(0,x)\leq \frac{1}{4}\}=B[0,\frac{1}{4}]$
 
 \item[✎]\textbf{Verdadero: }\\
-\begin{proof}
-    Para ver que los naturales son cerrados con $d_1$, veamos que su complemento es abierto. Observe que:
 
-
-    $$\displaystyle \mathbb{R}\setminus\mathbb{N}=(-\infty,0)\bigcup_{i \in \mathbb{N}}B\left(i+\frac{1}{2},\frac{1}{2}\right)$$
-
-
-Note que esas bolas son abiertas y unión arbitraria de abiertos es abierto, efectivamente esas bolas cubren $\mathbb{R}\setminus \mathbb{N}$ entonces acabamos.
-
-\begin{center}
+\begin{basedtikz}
 \begin{tikzpicture}
 % Eje horizontal
 \draw[-latex] (-2,0) -- (11,0) node[below]{$x$};
@@ -256,7 +245,16 @@ Note que esas bolas son abiertas y unión arbitraria de abiertos es abierto, efe
 
 \end{tikzpicture}
 
-\end{center}
+\end{basedtikz}
+
+\begin{proof}
+    Para ver que los naturales son cerrados con $d_1$, veamos que su complemento es abierto. Observe que:
+
+
+    $$\displaystyle \mathbb{R}\setminus\mathbb{N}=(-\infty,0)\bigcup_{i \in \mathbb{N}}B\left(i+\frac{1}{2},\frac{1}{2}\right)$$
+
+
+Note que esas bolas son abiertas y unión arbitraria de abiertos es abierto, efectivamente esas bolas cubren $\mathbb{R}\setminus \mathbb{N}$ entonces acabamos.
     
 \end{proof}
 
@@ -296,11 +294,10 @@ Y sabemos que $B(a,r_a)\cap E_1$ es abierto en $E_1$ y como unión arbitraria de
 Y acabamos esta sección.
 \end{itemize}
 
-\newpage
 
 \section{Quiz 5: }
 
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
     \item[✎]\textbf{Verdadero: }\\
     \begin{proof}
         Sea $x \in \mathbb{R}$ entonces $(B(x,\frac{1}{3})\setminus \{x\})=\text{\O}$, luego $(B(x,\frac{1}{3})\setminus \{x\})\cap \mathbb{Q}=$\O, por tanto $\mathbb{Q}^{\prime}=$\O.\\ 
@@ -392,7 +389,7 @@ Entonces como $\mathbb{N}$ es cerrado en $(\mathbb{R},d_1)$, también es cerrado
 \end{note}
 
 
-\begin{itemize}
+\begin{itemize}[leftmargin=*]
 
 \item[]\textbf{En cada caso determine si el enunciado es verdadero o falso. Si es verdadero demuéstrelo de lo contrario dé un contra ejemplo.}
 
@@ -465,7 +462,7 @@ Los siguientes ejercicios fueron propuestos en 2023-1 en el primer parcial de an
 
 Sean $(X, d)$ es un espacio métrico y $A$ es un subconjunto de $X$. En cada caso determine si la proposición es verdadera o falsa y demuéstrela o dé un contra-ejemplo según sea el caso.
 
-\begin{itemize}[label={☠}]
+\begin{itemize}[label={☠},leftmargin=*]
 \item $X=\overline{A}\cup A^{C}$\\
 
 \begin{proof}
@@ -547,7 +544,7 @@ Sobre este parcial como se puede notar los ejercicios no son tan complejos si se
 En esta sección solo trataremos el problema de probar que el conjunto de cantor es perfecto, es decir que todo elemento del conjunto pertenece a su derivado. Quizás luego pongamos un diagrama de la prueba de que no es contable, un resultado más fuerte que quizás se podría sugerir es revisar la prueba de que todo conjunto perfecto no puede ser contable.
 \end{note}
 
-\begin{itemize}[label={✎}]
+\begin{itemize}[label={✎},leftmargin=*]
 
 \item El conjunto de Cantor es perfecto:\\
 
@@ -572,7 +569,6 @@ Cuando se quita el tercio medio de $[a, b]$, se obtienen dos intervalos $\left[a
         
 \end{itemize}
 
-\newpage
 \section{Sucesiones ☠☠☠☠☠}
 
 Este capítulo es cosa densa, mucho cuidado.
@@ -581,7 +577,7 @@ Este capítulo es cosa densa, mucho cuidado.
 
 En esta sección también hay algunos ejercicios que el libro dice que son triviales,pero lo que es trivial hay que demostrarlo.
 
-\begin{itemize}[label={✎}]
+\begin{itemize}[label={✎},leftmargin=*]
 
 \item Es fácil demostrar que $n_k\geq k$ (Inducción)
 
@@ -638,7 +634,7 @@ $$|-b_n+b|=|-1(b_n-b)|=|-1||b_n-b|=|b_n-b|<\epsilon$$
 Luego $(-b_n)_{n\in\N}$ es convergente y converge a $-b$
 \end{proof}
 
-Con este lema podemos hacer la prueba del teorema solo para $((a_n)_{n\in \N}+(b_n)_{n\in \N})_{n\in \N}$ ya que el caso de la resta es corolario de esto, note que basta considerar la sucesión $(-b_n)_{n\in \N}$ y usar el resultado para la suma.//
+Con este lema podemos hacer la prueba del teorema solo para $((a_n)_{n\in \N}+(b_n)_{n\in \N})_{n\in \N}$ ya que el caso de la resta es corolario de esto, note que basta considerar la sucesión $(-b_n)_{n\in \N}$ y usar el resultado para la suma.
 
 \begin{proof}
     Tenemos que $(a_n)_{n\in N}$ y $(b_n)_{n\in \N}$ son convergentes, es decir para todo $\epsilon>0$ existen $N_1\in \N$ y $N_2\in \N$ tales que si $n>N_1$ $|a_n-a|<\frac{\epsilon}{2}$ y si $n>N_2$, $|b_n-b|<\frac{\epsilon}{2}$, luego si $n>\max\{N_1,N_2\}$, entonces.
@@ -652,7 +648,6 @@ En estas pruebas siempre al escribirlas debemos saber las cotas que vamos a usar
 
 Recordemos que en este punto estamos trabajando con los REALES, ya que vamos a comenzar con el capítulo de límite superior e inferior.
 
-\newpage
 
 \subsection{Límite superior y límite inferior:}
 
@@ -724,7 +719,7 @@ $$
 $$
 
 \begin{note}
-Todo esto se tiene porque primero estamos en los reales y la sucesión es acotada, podemos garantizar el Sup y el Ínf, note que:
+Todo esto se tiene porque primero estamos en los reales y la sucesión es acotada, podemos garantizar el Sup y el Ínf, note que:\\
 
 $$X_1=\{x_1,x_2,\ldots\} \quad \text{y}\quad X_2=\{x_2,x_3,\ldots\}$$
 
@@ -762,19 +757,43 @@ $$    \begin{aligned}
 
 \end{definition}
 
-Ahora pasemos con los ejercicios del Quiz 6: 
 
-\newpage
 \section{Quiz 6:}
 
 \end{itemize}
 
-\begin{itemize}[label={✎}]
+\begin{itemize}[label={✎},leftmargin=*]
     \item 
 
-    \item
+    \item Verdadero:\\
 
-    \item
+    \begin{proof}
+    Tenemos que $(a_n)$ es convergente, luego:
+
+    \begin{align*}
+        a=\lim_{n \to \infty} a_n&=\lim_{n \to \infty} a_{n+1}\\
+        &=2\lim_{n \to \infty}(a_n)^2-\lim_{n \to \infty} a_{n-1}\\
+        &=2a^2-a\\
+        &=a(2a-1)
+    \end{align*}
+    
+    Entonces $(2a-1)=1$, por tanto $a=1$.
+    \end{proof}
+
+
+    \item Verdadero:\\
+
+    \begin{proof}
+    Tenemos que existe $m\in \N$ tal que $a_n=b_n$ para todo $n\geq m$, luego como $a_n$ es convergente, para todo $\epsilon>0$, existe un $N\in \N$ tal que si $n>\max\{N,m\}$, entonces:
+
+    $$|b_n-a|=|a_n-a|<\epsilon$$
+
+    Luego $b_n$ es convergente y además converge a $a$
+    \end{proof}
+
+\begin{note}
+Usamos el máximo ya si $m$ es el máximo entonces a partir del punto en que $a_n=b_n$ ya tenemos convergencia, si $N$ es el máximo entonces desde antes de tener convergencia ya teníamos que $a_n=b_n$, luego es conveniente escoger $n>\max\{N,m\}$, para que se de $n$ en adelante tengamos tanto convergencia como que las sucesiones son iguales.
+\end{note}
     
     \item Falso: Considere $(\R,d_1)$, (note que en $\R$, $d_2=d_1$), entonces si tomamos una sucesión constante, $(x_n)_{n\in\N}=(-1)^na_n$ no converge, por ejemplo: si $(a_n)_{n\in \N}=1$, entonces:
 
@@ -782,7 +801,8 @@ Ahora pasemos con los ejercicios del Quiz 6:
 
     Vemos que $(x_n)_{n\in\N}$ no converge, para ello veamos que el límite superior no es igual al límite inferior\\
 
-    Note que $\lim_{n \to \infty} \left( \inf_{k\geq n} x_k \right)=\lim_{n \to \infty} -a_n=\lim_{n \to \infty} -1=-1$ y por otro lado el $\lim_{n \to \infty} \left( \sup_{k\geq n} x_k\right)=\lim_{n \to \infty} a_n=\lim_{n \to \infty} 1=1$
+    Note que $\lim_{n \to \infty} \left( \inf_{k\geq n} x_k \right)=\lim_{n \to \infty} -a_n=\lim_{n \to \infty} -1=-1$ y por otro lado el \\
+    $\lim_{n \to \infty} \left( \sup_{k\geq n} x_k\right)=\lim_{n \to \infty} a_n=\lim_{n \to \infty} 1=1$
 
     \item Verdadero:\\ \begin{proof} 
     Observe que para todo $\epsilon>0$, existe $N\in \N$ tal que $\frac{1}{N}<\epsilon$, entonces si $n>N$:
@@ -839,12 +859,113 @@ Ahora pasemos con los ejercicios del Quiz 6:
 
 
 
-    \item
+    \item Verdadero: Primero note que:
 
-    \item
+    $$\sqrt{n+1}-\sqrt{n} \left(\frac{\sqrt{n+1}+\sqrt{n}  }{\sqrt{n+1}+\sqrt{n} } \right)=\frac{1}{\sqrt{n+1}+\sqrt{n}}<\frac{1}{2\sqrt{n}}$$
+
+
+    \begin{proof}
+    
+    Para todo $\epsilon>0$ existe un  $N\in  \N$ tal que $N>\frac{1}{4\epsilon^2}$, luego si $n>N$:
+
+        $$\left|\frac{1}{2\sqrt{n} }\right|<\left|\frac{1}{2\sqrt{N} }\right|<\left|\frac{1}{2\sqrt{\frac{1}{4\epsilon^2}} }\right|=\epsilon$$
+
+
+Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
+    \end{proof}
+
+    
+
+    \item Falso: Contraejemplo: Sea $A=\{(x,e^x) : x\in \R\}$ y $B=\{(y,0): y\in \R\}$, luego note que $\overline{B}=B$ y $\overline{A}=A$.
+
+    $$A+B=\{(z,e^w): z,w\in \R\}=\{(x,y): x,y\in \R, y>0 \}$$
+
+    Luego $\overline{A+B}=\{(x,y):x,y\in \R,y\geq0\}\neq\overline{A}+\overline{B}$
+
+
+
 \end{itemize}
 
 
+\section{Completez}
 
+\subsection{Algunos ejercicios al lector}
 
+\begin{itemize}[label={✎},leftmargin=*]
+    \item Si $(x_n)$ es una sucesión convergente, entonces $(x_n)$ es una sucesión de Cauchy.
+
+    \begin{proof}
+    Sea $(x_n)$ una sucesión convergente, entonces para todo $\epsilon>0$, existe $N\in \N$ tal que si $n,m>N$, entonces $d(x_n,L)<\frac{\epsilon}{2}$ y $d(x_m,L)<\frac{\epsilon}{2}$. Así:
+
+    $$d(x_n,x_m)\leq d(x_n,L)+d(L,x_m)<\frac{\epsilon}{2}+\frac{\epsilon}{2}=\epsilon$$
+    \end{proof}
+
+    \item Si $(x_n)$ es una sucesión de Cauchy, entonces toda subsucesión también es de Cauchy.
+
+    \begin{proof}
+        Sea $(x_n)$ una sucesión de Cauchy, entonces para todo $\epsilon>0$, existe $N\in \N$ tal que si $m,n\geq N$, $d(x_n,x_m)<\epsilon$.\\
+
+        Considere $(x_{n_k})$ una subsucesión de $(x_n)$, luego como $n_k\geq k$, para todo $k\in \N$, en efecto si $L,M\geq k\geq N$ entonces $n_L,n_M\geq N$ y como $(x_n)$ es de Cauchy:
+
+        $$d(x_{n_L},x_{n_M})<\epsilon$$ 
+    \end{proof}
+\end{itemize}
+
+\section{Quiz 7}
+
+\begin{itemize}[label={✎},leftmargin=*]
+    \item Verdadero:\\
+
+    \begin{proof}
+        Sea $(x_n)$ una sucesión de Cauchy en $(\Z,d_1)$, luego para todo $\epsilon>0$, existe $N\in \N$ tal que si $n,m\geq N$, entonces:
+
+        $$|x_n-x_m|<\epsilon$$
+
+        Por tanto $x_n=x_m$, es decir $(x_n)$ es constante, entonces $\lim_{n \to \infty} x_n=x_m$, como $x_m \in \Z$, acabamos.
+    \end{proof}
+
+    \item Verdadero: veamos un resultado más elegante. Sea $(X,d_d)$ donde $d_d$ es la métrica discreta, entonces $X$ es completo.\\
+
+    \begin{proof}
+        Sea $(x_n)$ una sucesión de Cauchy en $(X,d_d)$, entonces para todo $\epsilon>0$, existe $N\in\N$ tal que si $m,n\geq N$, entonces:
+
+        $$d_d(x_n,x_m)<\epsilon$$
+
+        Sea $\epsilon=\frac{1}{2}$, entonces:
+
+        $$d_d(x_n,x_m)<\frac{1}{2}$$
+
+        Entonces $x_n=x_m$, luego $(x_n)$ es constante, por tanto converge en $X$.
+    \end{proof}
+
+    \item Verdadero:\\
+
+    \begin{proof}
+        Considere $(x_n)=\left( 1+\frac{1}{n} \right)^n$, esta sucesión es de Cauchy en $\Q$, es fácil ver que:
+
+        $$\lim_{n \to \infty} \left( 1+\frac{1}{n} \right)^n=e$$
+
+        Ejercicio: Pruebe que $e$ no es racional.
+    \end{proof} 
+
+    \item Verdadero:\\ 
+
+    \begin{proof}
+        Sabemos que $(\R^m,d_2)$ es completo, luego si $(a_n)$ es de Cauchy, entonces es convergente, tenemos que $(b_n)$ es convergente, por tanto $(a_n+b_n)$ es convergente, y toda sucesión convergente es de Cauchy.
+    \end{proof}
+
+    \item Verdadero:\\
+
+    \begin{proof}
+        Sabemos que $(R^m,d_2)$ es completo, luego si $(x_n)$ es una sucesión de Cauchy en $(\R^m,d_2)$, para todo $\epsilon>0$, existe $N\in \N$ tal que si $n>N$:
+
+        $$d_2(x_n,L)\leq \epsilon$$
+
+        Luego como $d_{\infty}(x,y)\leq d_2(x,y)$:
+
+        $$d_{\infty}(x_n,L)\leq d_2(x_n,L)<\epsilon$$
+
+        i.e. $(\R^m,d_{\infty})$ es completo.
+    \end{proof}
+\end{itemize}
 
