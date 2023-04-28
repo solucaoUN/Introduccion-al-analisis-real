@@ -11,4 +11,6 @@
 \contentsline {section}{\numberline {7}Quiz 6:}{16}{section.1.7}%
 \contentsline {section}{\numberline {8}Completez}{19}{section.1.8}%
 \contentsline {subsection}{\numberline {8.1}Algunos ejercicios al lector}{19}{subsection.1.8.1}%
-\contentsline {section}{\numberline {9}Quiz 7}{20}{section.1.9}%
+\contentsline {section}{\numberline {9}Quiz 7:}{20}{section.1.9}%
+\contentsline {section}{\numberline {10}Compacidad}{21}{section.1.10}%
+\contentsline {section}{\numberline {11}Quiz 8:}{21}{section.1.11}%

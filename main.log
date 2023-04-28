@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.4.11)  26 APR 2023 22:36
+This is XeTeX, Version 3.141592653-2.6-0.999994 (MiKTeX 23.1) (preloaded format=xelatex 2023.4.11)  28 APR 2023 07:34
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1416,56 +1416,56 @@ lse, topline=false, bottomline=false, linecolor=ForestGreen, backgroundcolor=Fo
 restGreen!5, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmgreenbox' on input line 68.
+(thmtools)             that uses `style=thmgreenbox' on input line 69.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=fa
 lse, topline=false, bottomline=false, linecolor=NavyBlue, backgroundcolor=NavyB
 lue!5, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmbluebox' on input line 77.
+(thmtools)             that uses `style=thmbluebox' on input line 78.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=fa
 lse, topline=false, bottomline=false, linecolor=NavyBlue ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmblueline' on input line 86.
+(thmtools)             that uses `style=thmblueline' on input line 87.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=fa
 lse, topline=false, bottomline=false, linecolor=RawSienna, backgroundcolor=RawS
 ienna!5, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmredbox' on input line 95.
+(thmtools)             that uses `style=thmredbox' on input line 96.
 Package thmtools Info: Key `numbered' (with value `no')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmproofbox' on input line 106.
+(thmtools)             that uses `style=thmproofbox' on input line 107.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=fa
 lse, topline=false, bottomline=false, linecolor=RawSienna, backgroundcolor=RawS
 ienna!1, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmproofbox' on input line 106.
+(thmtools)             that uses `style=thmproofbox' on input line 107.
 Package thmtools Info: Key `qed' (with value `\qedsymbol ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmproofbox' on input line 106.
+(thmtools)             that uses `style=thmproofbox' on input line 107.
 Package thmtools Info: Key `numbered' (with value `no')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmexplanationbox' on input line 116.
+(thmtools)             that uses `style=thmexplanationbox' on input line 117.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2pt, rightline=fa
 lse, topline=false, bottomline=false, linecolor=NavyBlue, backgroundcolor=NavyB
 lue!1, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=thmexplanationbox' on input line 116.
+(thmtools)             that uses `style=thmexplanationbox' on input line 117.
 Package thmtools Info: Key `mdframed' (with value ` linewidth=2.5pt, rightline=
 false, topline=false, bottomline=false, linecolor=NavyBlue, backgroundcolor=Nav
 yBlue!3, ')
 (thmtools)             is not a known style key.
 (thmtools)             Will pass this to every \declaretheorem
-(thmtools)             that uses `style=mblue' on input line 125.
+(thmtools)             that uses `style=mblue' on input line 126.
 Package thmtools Info: Automatically pulling in `thmdef-mdframed' on input line
- 130.
+ 131.
 
 (C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/latex/thmtools\thmdef-mdf
 ramed.sty
@@ -1927,7 +1927,7 @@ Package: nextpage 2009/09/03 v1.1a additional page commands
 \epigraphrule=\skip135
 )
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 23
-3.
+4.
 
 (C:\Users\MatMath.h\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -2510,35 +2510,64 @@ Package mdframed Info: mdframed detected package amsthm
  changed the theorem header of amsthm
 (mdframed)              on input line 944.
 
-Underfull \hbox (badness 10000) in paragraph at lines 951--952
+Underfull \hbox (badness 10000) in paragraph at lines 947--948
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 954.
+(mdframed)              on input line 950.
 
-Underfull \hbox (badness 10000) in paragraph at lines 957--958
+Underfull \hbox (badness 10000) in paragraph at lines 953--954
 
  []
 
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 960.
-) [21] (main.aux
+(mdframed)              on input line 956.
+
+Underfull \hbox (badness 10000) in paragraph at lines 978--979
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 981.
+[21]
+Underfull \hbox (badness 10000) in paragraph at lines 989--990
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 992.
+
+Underfull \hbox (badness 10000) in paragraph at lines 997--998
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1006--1007
+
+ []
+
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theorem header of amsthm
+(mdframed)              on input line 1009.
+) [22] (main.aux
 LaTeX Info: Redefining \. on input line 26.
 LaTeX Info: Redefining \% on input line 26.
 )
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: 3EA96AC5882DAF02546E7ADAAF682199;2038.
+(rerunfilecheck)             Checksum: 93675E355C5EA36CF4E3035D4EC648EC;2243.
  ) 
 Here is how much of TeX's memory you used:
- 51758 strings out of 411464
- 1226323 string characters out of 5817203
- 1927240 words of memory out of 5000000
- 71127 multiletter control sequences out of 15000+600000
+ 51767 strings out of 411464
+ 1226506 string characters out of 5817203
+ 1927237 words of memory out of 5000000
+ 71136 multiletter control sequences out of 15000+600000
  532510 words of font info for 151 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  89i,14n,124p,1009b,1250s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on main.pdf (22 pages).
+Output written on main.pdf (23 pages).

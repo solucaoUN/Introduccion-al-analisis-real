@@ -911,7 +911,7 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
     \end{proof}
 \end{itemize}
 
-\section{Quiz 7}
+\section{Quiz 7:}
 
 \begin{itemize}[label={✎},leftmargin=*]
     \item Verdadero:\\
@@ -941,11 +941,7 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
     \item Verdadero:\\
 
     \begin{proof}
-        Considere $(x_n)=\left( 1+\frac{1}{n} \right)^n$, esta sucesión es de Cauchy en $\Q$, es fácil ver que:
-
-        $$\lim_{n \to \infty} \left( 1+\frac{1}{n} \right)^n=e$$
-
-        Ejercicio: Pruebe que $e$ no es racional.
+        Supongamos que $\Q$ es completo. Considere una sucesión $(x_n)$ convergente definida en $\Q$, entonces es de Cauchy y como $\Q$ es completo, entonces $(x_n)$ converge en $\Q$, luego $\Q$ es cerrado, contradicción.
     \end{proof} 
 
     \item Verdadero:\\ 
@@ -957,15 +953,70 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
     \item Verdadero:\\
 
     \begin{proof}
-        Sabemos que $(R^m,d_2)$ es completo, luego si $(x_n)$ es una sucesión de Cauchy en $(\R^m,d_2)$, para todo $\epsilon>0$, existe $N\in \N$ tal que si $n>N$:
+        Sabemos que $(R^m,d_2)$ es completo, luego si $(x_n)$ es una sucesión de Cauchy en $(\R^m,d_{\infty})$, para todo $\epsilon>0$, existe $N\in \N$ tal que si $n>N$:
 
-        $$d_2(x_n,L)\leq \epsilon$$
+        $$d_{\infty}(x_n,L)\leq \frac{\epsilon}{n}$$
 
-        Luego como $d_{\infty}(x,y)\leq d_2(x,y)$:
+        Luego como $md_{\infty}(x,y)\geq d_2(x,y)$:
 
-        $$d_{\infty}(x_n,L)\leq d_2(x_n,L)<\epsilon$$
+        $$d_{2}(x_n,L)\leq md_{\infty}(x_n,L)<m\frac{\epsilon}{m}=\epsilon$$
 
         i.e. $(\R^m,d_{\infty})$ es completo.
-    \end{proof}
+    \end{proof}z
 \end{itemize}
+
+
+\section{Compacidad}
+
+Aquí toca tener particular cuidado con el teorema de Bolzano y sus implicaciones, pero también con la prueba que se presenta de Heine-Borel. Es muy importante a la hora de hacer los ejercicios tener claras todas las equivalencias que se dan al final del capítulo.
+
+
+
+\section{Quiz 8:}
+
+\begin{itemize}[label={✎},leftmargin=*]
+    \item Verdadero:\\
+
+    \begin{proof}
+    Supongamos que todo cubrimiento de $F$ por conjuntos cerrados admite un subcubrimiento finito, entonces en particular el cubrimiento:
+
+    $$F\subseteq\bigcup_{x \in E}\{x\} 
+        $$
+
+     Admite un subcubrimiento finito, luego el conjunto $F$ es finito y todo conjunto finito es compacto.
+    \end{proof}
+
+    \item Verdadero:\\
+
+    \begin{proof}
+    Considere el cubrimiento:
+
+    $$(0,1]\subseteq\bigcup_{i=1}^{\infty} 
+        \left(\frac{1}{n},2\right)$$
+
+    Note que este cubrimiento abierto no admite un subcubrimiento finito.\\
+
+    Note que por Heine-Borel esto es trivial.
+    \end{proof}
+
+    \item Falso: Considere el intervalo $(0,1)$ en $(\R,d_1)$, este conjunto totalmente acotado en $\R$ ya que es acotado, pero no es completo porque no es cerrado.
+
+    \item Falso: $(R,d_1)$ es completo, pero no es acotado y por tanto no es totalmente acotado.
+
+    \item Verdadero:\\
+
+    \begin{proof}
+    Sea $(X,d)$ un espacio métrico y $(x_n)$ una sucesión de Cauchy en $(X,d)$, como $(X,d)$ es secuencialmente compacto, $(x_n)$ tiene una subsucesión convergente, como $(x_n)$ es de Cauchy y tiene una subsucesión convegente, converge.
+    \end{proof}
+
+    \item Falso: Note que $(\R,d_1)$ es completo, pero no es compacto por Heine-Borel
+
+    \item Falso: Sea $(\R,d_d)$ donde $d_d$ es la métrica discreta, luego $\R$ es cerrado y acotado ya que $\R\subseteq B(0,2)$, note que el cubrimiento de abiertos:
+
+    $$\R\subseteq \bigcup_{i \in \R}\{x\}$$
+
+        No admite un subcubrimiento finito.
+\end{itemize}
+ 
+
 
