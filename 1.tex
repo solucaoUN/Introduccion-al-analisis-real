@@ -1,6 +1,6 @@
 %!TEX root = main.tex
 
-El curso de Introducción al Análisis Real es uno de los más pesados en la carrera de matemáticas y los estudiantes carecen casi que de toda ayuda (no hay monitorias y los espacios en clase a veces son insuficientes), por este motivos decidimos hacer este solucionario de las notas de Introducción al Análisis Real de los profesores Leonardo Rendón y Serafín Bautista, esto más que un solucionario es una guía de lectura de las notas, aquí encontrarás muchos delos conceptos o ideas del curso desde un punto de vista más de estudiante que ha sufrido esa materia y que sabe lo compleja que puede llegar a ser.\\
+El curso de Introducción al Análisis Real es uno de los más pesados en la carrera de matemáticas y los estudiantes carecen casi que de toda ayuda (no hay monitorias y los espacios en clase a veces son insuficientes), por estos motivos decidimos hacer este solucionario de las notas de Introducción al Análisis Real de los profesores Leonardo Rendón y Serafín Bautista, esto más que un solucionario es una guía de lectura de las notas, aquí encontrarás muchos de los conceptos o ideas del curso desde un punto de vista más de estudiante que ha sufrido esa materia y que sabe lo compleja que puede llegar a ser.\\
 
 Esperamos que las soluciones de los ejercicios que aportamos acá sirvan de guía para entender los conceptos y mecanismos que se deben usar para atacar este tipo de problemas.\\
 
@@ -994,7 +994,7 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
     \begin{proof}
         Sabemos que $(R^m,d_2)$ es completo, luego si $(x_n)$ es una sucesión de Cauchy en $(\R^m,d_{\infty})$, para todo $\epsilon>0$, existe $N\in \N$ tal que si $n>N$:
 
-        $$d_{\infty}(x_n,L)\leq \frac{\epsilon}{n}$$
+        $$d_{\infty}(x_n,L)<\frac{\epsilon}{m}$$
 
         Luego como $md_{\infty}(x,y)\geq d_2(x,y)$:
 
@@ -1093,7 +1093,7 @@ Falso: Sean $(a_n)=(-1)^n$ y $(b_n)=-(-1)^n$, luego $\limsup(a_n+b_n)=\lim _{n \
 \item Sea $(X,d)$ un espacio métrico y $A,C\subseteq X$, si $A\subseteq C\subseteq \overline{A}$, entonces para todo $c\in C$ y para todo $r>0$, $B(c,r)\cap A\neq \emptyset$:\\
 
 \begin{proof}
-Sea $c\in C$, entonces $c\in \overline{A}$, luego $c$ es un punto adherente, es decir para todo $r>0$, $B(c,r)\cap A=\neq \emptyset$.
+Sea $c\in C$, entonces $c\in \overline{A}$, luego $c$ es un punto adherente, es decir para todo $r>0$, $B(c,r)\cap A\neq \emptyset$.
 \end{proof}
 
 \item Sea $(X,d)$ un espacio métrico y $A,C\subseteq X$, entonces $(A\cup C)^{\prime}=A^{\prime}\cup C^{\prime}$:\\
@@ -1108,7 +1108,7 @@ Sea $c\in C$, entonces $c\in \overline{A}$, luego $c$ es un punto adherente, es 
 
 \end{proof}
 
-\item Sea $(X,d)$ un espacio métrico, si $S\supseteq X$, entonces $(S^{\prime})^{\prime}=S^{\prime}$.\\
+\item Sea $(X,d)$ un espacio métrico, si $S\subseteq X$, entonces $(S^{\prime})^{\prime}=S^{\prime}$.\\
 
 Falso: Sea $S=\left\{\frac{1}{n}: n\in \Z^+\right\}$, entonces $S^{\prime}=\{0\}$ y $(S^{\prime})^{\prime}=\emptyset$.\\
 
@@ -1127,27 +1127,26 @@ $$d(x_n,L)<\epsilon$$
 
 Note que:
 
-$$\dfrac{d(x_n,L)}{1+d(x_n,L)}<d(x_n,L)<\epsilon$$
+$$\dfrac{d(x_n,L)}{1+d(x_n,L)}\leq d(x_n,L)<\epsilon$$
 
 Luego $(x_n)$ también converge en $(X,d^{\prime})$, por tanto $(X,d^{\prime})$ es completo.
 \end{proof}
 
 \item Demuestre que si $(X,d)$ es un espacio métrico y $\{x,y,u,v\}\subseteq X$, entonces:
 
-$$|d(x,v)-d(y,u)|\leq d(x,y)|d(u,v)$$
+$$|d(x,v)-d(y,u)|\leq d(x,y)+d(u,v)$$
 
 \begin{proof}
-Supongamos que $|d(x,v)-d(y,u)|<0$, luego:
+Supongamos que $d(x,v)-d(y,u)<0$, luego:
 
 \begin{align*}
  |d(x,v)-d(y,u)|&=d(y,u)-d(x,v)\\
- &\leq d(y,u)-(d(x,y)+d(y,v))\\
- &\leq d(y,u)-(d(x,y)+d(y,u)+d(u,v))\\
- &=-d(x,y)-d(u,v)\\
- &\leq d(x,y)+d(u,v)  
+ &\leq d(y,x)+d(x,u)-d(x,v)\\
+ &\leq d(y,x)+d(x,v)+d(v,u)-d(x,v)\\
+ &=d(x,y)+d(u,v)  
 \end{align*}
 
-Ahora si $|d(x,v)-d(y,u)|>0$, entonces:
+Ahora si $d(x,v)-d(y,u)\geq0$, entonces:
 
 \begin{align*}
 |d(x,v)-d(y,u)|&=d(x,v)-d(y,u)\\
