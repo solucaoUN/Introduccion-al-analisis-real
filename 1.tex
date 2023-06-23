@@ -1150,7 +1150,7 @@ Ahora si $d(x,v)-d(y,u)\geq0$, entonces:
 
 \begin{align*}
 |d(x,v)-d(y,u)|&=d(x,v)-d(y,u)\\
-&\leq d(x,y)+d(y,v)-d(y,u)\\
+&\leq d(x,y)+d(y,v)-d(y,u)\\ :
 &\leq d(x,y)+d(y,u)+d(u,v)-d(y,u)\\
 &=d(x,y)+d(u,v)
 \end{align*}
@@ -1162,6 +1162,60 @@ Note que esto fue aplicar desigualdad triangular varias veces pero de la forma a
 
 \end{itemize}
 
+\section{Conexidad}
+
+\begin{note}
+Muchos teoremas en cálculo requieren de conexidad en su hipótesis, por eso es importante este capítulo, nos ayuda a formalizar y entender la idea de conexidad sobre al menos espacios métricos. Como bien lo dicen las notas, esto intuitivamente se puede pensar como que el conjunto es un solo pedazo en caso sea conexo, en este capítulo al menos no hay mucho que decir, pasemos a los ejercicios.
+\end{note}
+
+\section{Quiz 9}
+
+\begin{itemize}[label={✎},leftmargin=*]
+
+\item El espacio métrico $(\Z,d_1\mid_{\Z\times \Z})$ es conexo:\\
+
+Falso: Sea $A=\{0\}$, note que $B(0,1)=\{0\}$, luego $A$ es abierto, Ahora observe que $A$ es cerrado ya que su complemento es abierto.
+
+\item $\R$ con la métrica discreta es conexo:\\
+
+Falso: Nuevamente $A=\{0\}$ es abierto y cerrado al tiempo.
+
+\item Si $A$ es conexo en $(\R^n,d_2)$, entonces $A$ es conexo en $(\R_n,d_1)$
+
+
+\begin{proof}
+ Sabemos que $d_1$ y $d_2$ son métricas equivalentes en $\mathbb{R}^n$, es decir, que un conjunto es abierto en $(\mathbb{R}^n,d_2)$ si y sólo si es abierto en $(\mathbb{R}^n,d_1)$. Supongamos que $A$ es conexo en $(\mathbb{R}^n,d_2)$ y no es conexo en $(\mathbb{R}^n,d_1)$. Como $A$ no es conexo en $(\mathbb{R}^n,d_1)$, existen $X,Y$ abiertos en $(\mathbb{R}^n,d_1)$ tales que $X \cup Y=A$ y $X \cap Y=\emptyset$. Como $X,Y$ son abiertos en $(\mathbb{R}^n,d_1)$, también lo son en $(\mathbb{R}^n,d_2)$, luego, $A$ no es conexo en $(\mathbb{R}^n,d_2)$. Contradicción.
+\end{proof}
+
+
+
+\item Si $X\subseteq \R$ es conexo con la métrico usual entonces $\R\setminus X$ es conexo con la métrica usual:
+
+Falso: Obviamente los singleton son conexos, por ejemplo $\{0\}$ es conexo, pero $\R\setminus\{0\}$ ya no lo es, note que:
+
+$$\R=(-\infty,0)\cup (0,\infty)$$
+
+Dos abiertos y disyuntos distintos de vacío.
+
+\item Si $A\subseteq \R$ es conexo con la métrica usual, entonces $A\setminus \{a_1,\ldots,a_n\}$ donde $a_i\in A$ para todo $i$ es conexo.
+
+Falso: Considere $A=(-1,1)$ conexo en $\mathbb{R}$ con la métrica usual, y considere $A-\{0\}=(-1,0)\cup (0,1)$, luego $A-\{0\}$ es unión de abiertos disyuntos en $\mathbb{R}$ con la métrica usual, por lo tanto no es conexo
+
+\item Sean $(E,d)$ un espacio métrico y $A\subseteq E$, si $A$ es conexo, entonces $int(A)$ es conexo.\\
+
+Falso: Considere $(E,d)=(\mathbb{R}^2,d_2)$ y sea $A=B[-1;1]\cup B[1;1]$ conexo. Note que $int(A)=B(-1,1)\cup B(1,1)$, luego $int(A)$ es unión de abiertos disyuntos en $(\mathbb{R}^2,d_2)$ y por lo tanto no es conexo
+
+\item Sean $(E,d)$ un espacio métrico y $A\subseteq E$, si $int(A)$ es conexo entonces $A$ es conexo.\\
+
+Falso: Sea $(\R,d_1)$, recuerde que $int(\N)=\emptyset$, que es conexo, pero $\N$ no es conexo ya que no es un intervalo.
+\end{itemize}
+
+
+\section{Ejercicios 3:}
+
+\begin{note}
+Esta sección está pendiente
+\end{note}
 
 
 
