@@ -179,12 +179,17 @@ Claramente es continua ya que todos los puntos de $(\N,d_1)$ son aislados, no es
 
 \item  $(a, b)$ es homeomorfo con $B(p, r)$ (bola en $\mathbb{R}^2$ ).
 
-Falso: Sean $(0,1)$ y $B(0,1)$
+Falso: Sean $(0,1)$ y $B(0,1)$, tenemos que $B(0,1)\cong (\R^2,d_2)$ (la bola en $\R^2$).
 
+Supongamos que existe $f:B(0,1)\mapsto (0,1)$ tales que $f$ es un homeomorfismo, luego como $f$ es continua $f(B(0,1)\setminus\{0\})$ debe ser conexo en $(\R,d_1)$ ya que $f$ mapea conexos en conexos. Además como $f$ es biyectiva:
+
+$$f(B(0,1)\setminus\{0\})=(0,1)\setminus f(\{0\})$$
+
+$f(\{0\})=\{k\}$ con $k\in (0,1)$, luego $(0,1)\setminus f(\{0\})=(0,1)\setminus \{k\}=(0,k)\cup (k,1)$ y como $(0,k)$ y $(k,1)$ son abiertos disyuntos, luego $f(B(0,1)\setminus\{0\})$ no es conexo en $(\R,d_1)$, contradicción ya que $f$ es continua.
 
 \item   $(0,1) \cong B(0,1)$ (bola en $\left.\mathbb{R}^2\right)$.
 
-Falso: Note que esto es equivalente a ver que $\R$ es homeomorfo a $\R^2$, luego considere el contraejemplo del punto anterior.
+Falso: Note que esto es equivalente a ver que $(0,1)$ es homeomorfo a $\R^2$, luego considere el contraejemplo del punto anterior.
 \end{itemize}
 
 
