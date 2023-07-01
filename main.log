@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.6.20)  23 JUN 2023 10:39
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023/Arch Linux) (preloaded format=xelatex 2023.6.29)  30 JUN 2023 20:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1714,7 +1714,7 @@ Package: nextpage 2009/09/03 v1.1a additional page commands
 \epigraphrule=\skip135
 )
 LaTeX Font Info:    Trying to load font information for T1+ppl on input line 23
-4.
+2.
 
 (/usr/share/texmf-dist/tex/latex/psnfss/t1ppl.fd
 File: t1ppl.fd 2001/06/04 font definitions for T1/ppl.
@@ -2551,7 +2551,7 @@ Package rerunfilecheck Info: File `main.out' has not changed.
 Here is how much of TeX's memory you used:
  51924 strings out of 478628
  1237077 string characters out of 5848395
- 1921817 words of memory out of 5000000
+ 1921877 words of memory out of 5000000
  71077 multiletter control sequences out of 15000+600000
  532795 words of font info for 151 fonts, out of 8000000 for 9000
  40 hyphenation exceptions out of 8191
