@@ -12,6 +12,8 @@
 \usepackage{subcaption}
 \usepackage{multicol}
 \usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{pdfpages}
+\usepackage{svg}
 \usepackage{amsmath, amsfonts, mathtools, amsthm, amssymb}
 \usepackage{mathrsfs}
 \usepackage{animate}
@@ -138,7 +140,7 @@
 \renewenvironment{proof}[1][\proofname]{\vspace{-10pt}\begin{replacementproof}}{\end{replacementproof}}
 
 \declaretheorem[style=thmblueline, numbered=no, name=Nota]{note}
-\declaretheorem[style=thmblueline, numbered=no,name=]{temp}
+\declaretheorem[style=thmblueline, numbered=no,name=\phantom{.}]{temp}
 
 
 \newcommand{\bb}[1]{\mathbb{#1}}
