@@ -78,7 +78,8 @@ Muchos éxitos - mmanosalva y eochoaq
 
         \item[✎] Dado $(E, d)$ un espacio métrico, toda bola abierta es un conjunto abierto. En efecto, dados $B_E(p, r)$ (con $r>0$ y $\left.p \in E\right)$ y $q \in B_E(p, r)$, tomamos $r^{\prime}=r-d(p, q)$ de donde se tiene que $B_E\left(q, r^{\prime}\right) \subset B_E(p, r)$ (verifique esta contenencia como ejercicio).
 
-       \begin{basedtikz}
+       \begin{tikznt}
+       \centering
        \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
 %uncomment if require: \path (0,472); %set diagram left start at 0, and has height of 472
 
@@ -128,7 +129,7 @@ Muchos éxitos - mmanosalva y eochoaq
 
 
 \end{tikzpicture}
-       \end{basedtikz}
+       \end{tikznt}
 
 
         \begin{proof}
@@ -218,7 +219,8 @@ Esto ocurre ya que estamos tomando bolas en $\mathbb{R}$. (Este argumento es par
 
 \item[✎]\textbf{Verdadero: }\\
 
-\begin{basedtikz}
+\begin{tikznt}
+\centering
 \begin{tikzpicture}
 % Eje horizontal
 \draw[-latex] (-2,0) -- (11,0) node[below]{$x$};
@@ -245,7 +247,7 @@ Esto ocurre ya que estamos tomando bolas en $\mathbb{R}$. (Este argumento es par
 
 \end{tikzpicture}
 
-\end{basedtikz}
+\end{tikznt}
 
 \begin{proof}
     Para ver que los naturales son cerrados con $d_1$, veamos que su complemento es abierto. Observe que:
@@ -653,9 +655,8 @@ Recordemos que en este punto estamos trabajando con los REALES, ya que vamos a c
 
 Esta sección puede resultar confusa en un inicio, aquí trataremos de desglosar un poco la idea fundamental de todo.
 
-\begin{basedtikz}
-
-
+\begin{tikznt}
+\centering
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1.5]
@@ -702,7 +703,7 @@ Esta sección puede resultar confusa en un inicio, aquí trataremos de desglosar
 
 
 \end{tikzpicture}
-\end{basedtikz}
+\end{tikznt}
 
 
 
@@ -763,7 +764,7 @@ $$    \begin{aligned}
 \end{itemize}
 
 \begin{itemize}[label={✎},leftmargin=*]
-    \item 
+    \item Algún día pondré este punto xd
 
     \item Verdadero:\\
 
@@ -882,12 +883,9 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
 
     Luego $\overline{A+B}=\{(x,y):x,y\in \R,y\geq0\}\neq\overline{A}+\overline{B}$
 
-\begin{basedtikz}
+\begin{tikznt}
 
-
-
-\
-
+\centering
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
 \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
@@ -896,23 +894,23 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
 %Shape: Axis 2D [id:dp4652847509392579] 
 \draw [line width=0.75]  (226,302.24) -- (467.57,302.24)(250.16,68.43) -- (250.16,328.21) (460.57,297.24) -- (467.57,302.24) -- (460.57,307.24) (245.16,75.43) -- (250.16,68.43) -- (255.16,75.43)  ;
 %Curve Lines [id:da8298898165446982] 
-\draw [color={rgb, 255:red, 74; green, 144; blue, 226 }  ,draw opacity=1 ][line width=1.5]    (250.16,302.46) .. controls (364.97,293.29) and (422.57,178.29) .. (452.57,83.29) ;
+\draw [color={rgb, 255:black, 74; green, 144; blue, 226 }  ,draw opacity=1 ][line width=1.5]    (250.16,302.46) .. controls (364.97,293.29) and (422.57,178.29) .. (452.57,83.29) ;
 %Straight Lines [id:da64750689822923] 
 \draw    (267.26,301.96) -- (76.07,301.79) ;
-\draw [shift={(74.07,301.79)}, rotate = 0.05] [color={rgb, 255:red, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-4.9) .. controls (6.95,-2.3) and (3.31,-0.67) .. (0,0) .. controls (3.31,0.67) and (6.95,2.3) .. (10.93,4.9)   ;
+\draw [shift={(74.07,301.79)}, rotate = 0.05] [color={rgb, 255:black, 0; green, 0; blue, 0 }  ][line width=0.75]    (10.93,-4.9) .. controls (6.95,-2.3) and (3.31,-0.67) .. (0,0) .. controls (3.31,0.67) and (6.95,2.3) .. (10.93,4.9)   ;
 %Shape: Grid [id:dp05606117651750586] 
-\draw  [draw opacity=0][dash pattern={on 0.84pt off 2.51pt}] (80.57,82.29) -- (461.57,82.29) -- (461.57,303.29) -- (80.57,303.29) -- cycle ; \draw  [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}] (80.57,82.29) -- (80.57,303.29)(100.57,82.29) -- (100.57,303.29)(120.57,82.29) -- (120.57,303.29)(140.57,82.29) -- (140.57,303.29)(160.57,82.29) -- (160.57,303.29)(180.57,82.29) -- (180.57,303.29)(200.57,82.29) -- (200.57,303.29)(220.57,82.29) -- (220.57,303.29)(240.57,82.29) -- (240.57,303.29)(260.57,82.29) -- (260.57,303.29)(280.57,82.29) -- (280.57,303.29)(300.57,82.29) -- (300.57,303.29)(320.57,82.29) -- (320.57,303.29)(340.57,82.29) -- (340.57,303.29)(360.57,82.29) -- (360.57,303.29)(380.57,82.29) -- (380.57,303.29)(400.57,82.29) -- (400.57,303.29)(420.57,82.29) -- (420.57,303.29)(440.57,82.29) -- (440.57,303.29)(460.57,82.29) -- (460.57,303.29) ; \draw  [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}] (80.57,82.29) -- (461.57,82.29)(80.57,102.29) -- (461.57,102.29)(80.57,122.29) -- (461.57,122.29)(80.57,142.29) -- (461.57,142.29)(80.57,162.29) -- (461.57,162.29)(80.57,182.29) -- (461.57,182.29)(80.57,202.29) -- (461.57,202.29)(80.57,222.29) -- (461.57,222.29)(80.57,242.29) -- (461.57,242.29)(80.57,262.29) -- (461.57,262.29)(80.57,282.29) -- (461.57,282.29)(80.57,302.29) -- (461.57,302.29) ; \draw  [color={rgb, 255:red, 65; green, 117; blue, 5 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}]  ;
+\draw  [draw opacity=0][dash pattern={on 0.84pt off 2.51pt}] (80.57,82.29) -- (461.57,82.29) -- (461.57,303.29) -- (80.57,303.29) -- cycle ; \draw  [color={rgb, 255:black, 65; green, 117; blue, 5 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}] (80.57,82.29) -- (80.57,303.29)(100.57,82.29) -- (100.57,303.29)(120.57,82.29) -- (120.57,303.29)(140.57,82.29) -- (140.57,303.29)(160.57,82.29) -- (160.57,303.29)(180.57,82.29) -- (180.57,303.29)(200.57,82.29) -- (200.57,303.29)(220.57,82.29) -- (220.57,303.29)(240.57,82.29) -- (240.57,303.29)(260.57,82.29) -- (260.57,303.29)(280.57,82.29) -- (280.57,303.29)(300.57,82.29) -- (300.57,303.29)(320.57,82.29) -- (320.57,303.29)(340.57,82.29) -- (340.57,303.29)(360.57,82.29) -- (360.57,303.29)(380.57,82.29) -- (380.57,303.29)(400.57,82.29) -- (400.57,303.29)(420.57,82.29) -- (420.57,303.29)(440.57,82.29) -- (440.57,303.29)(460.57,82.29) -- (460.57,303.29) ; \draw  [color={rgb, 255:black, 65; green, 117; blue, 5 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}] (80.57,82.29) -- (461.57,82.29)(80.57,102.29) -- (461.57,102.29)(80.57,122.29) -- (461.57,122.29)(80.57,142.29) -- (461.57,142.29)(80.57,162.29) -- (461.57,162.29)(80.57,182.29) -- (461.57,182.29)(80.57,202.29) -- (461.57,202.29)(80.57,222.29) -- (461.57,222.29)(80.57,242.29) -- (461.57,242.29)(80.57,262.29) -- (461.57,262.29)(80.57,282.29) -- (461.57,282.29)(80.57,302.29) -- (461.57,302.29) ; \draw  [color={rgb, 255:black, 65; green, 117; blue, 5 }  ,draw opacity=1 ][dash pattern={on 0.84pt off 2.51pt}]  ;
 %Shape: Rectangle [id:dp49530930410291374] 
-\draw  [color={rgb, 255:red, 208; green, 2; blue, 27 }  ,draw opacity=1 ][fill={rgb, 255:red, 208; green, 2; blue, 27 }  ,fill opacity=0.04 ] (80.57,81.23) -- (460.57,81.23) -- (460.57,301.23) -- (80.57,301.23) -- cycle ;
+\draw  [color={rgb, 255:black, 208; green, 2; blue, 27 }  ,draw opacity=1 ][fill={rgb, 255:black, 208; green, 2; blue, 27 }  ,fill opacity=0.04 ] (80.57,81.23) -- (460.57,81.23) -- (460.57,301.23) -- (80.57,301.23) -- cycle ;
 %Straight Lines [id:da5634196667006672] 
 \draw    (289.57,302.43) -- (460.57,301.23) ;
 %Straight Lines [id:da44669637982766486] 
 \draw    (80.57,302.29) -- (294.78,302.34) ;
 
 % Text Node
-\draw (468,83) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 74; green, 144; blue, 226 }  ,opacity=1 ] [align=left] {$\displaystyle A$};
+\draw (468,83) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:black, 74; green, 144; blue, 226 }  ,opacity=1 ] [align=left] {$\displaystyle A$};
 % Text Node
-\draw (76,56) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 208; green, 2; blue, 27 }  ,opacity=1 ] [align=left] {$\displaystyle \overline{A+B}$};
+\draw (76,56) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:black, 208; green, 2; blue, 27 }  ,opacity=1 ] [align=left] {$\displaystyle \overline{A+B}$};
 % Text Node
 \draw (252.16,305.46) node [anchor=north west][inner sep=0.75pt]   [align=left] {0};
 % Text Node
@@ -923,7 +921,7 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
 
 \end{tikzpicture}
 
-\end{basedtikz}
+\end{tikznt}
 
 
 \end{itemize}
@@ -951,7 +949,23 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
 
         $$d(x_{n_L},x_{n_M})<\epsilon$$ 
     \end{proof}
+
+    \item Sea $(X,d)$ un espacio métrico. Una función $f:X \longrightarrow X$ se dice contractiva si existe una constante $K \in (0,1)$ tal que $d(f(x),f(y))\leq Kd(x,y)$ para todo $x,y \in X$. Sea $x_0 \in X$ cualquiera y $x_n=f(x_{n-1})$ para $n \in \mathbb{Z}^+$. Muestre que si $f$ es contractiva, la sucesión $(x_n)$ es de Cauchy.
+    \begin{proof}
+        Veamos que el conjunto $A=\{d(x_i,x_j)| i,j \in \mathbb{N}\}$ es acotado. Sean $x_i,x_j \in \{x_n\}_{n \in \mathbb{N}}$. Si $i=j$, entonces $d(x_i,x_j)=0$, así que tomemos $i \neq j$, sin pérdida de generalidad, supongamos que $i<j$, entonces
+        \begin{align*}
+            d(x_i,x_j)=d(f(x_{i-1},f(x_{j-1})) &\leq Kd(x_{i-1},x_{j-1})\\
+            &\leq K^2d(x_{i-2},x_{j-2})\\
+            &\vdots\\
+            &\leq K^id(x_0,x_{j-i})\\
+        \end{align*}
+        por lo tanto, $d(x_i,x_j)$ está acotado por 
+
+        
+    \end{proof}
 \end{itemize}
+
+
 
 \section{Quiz 7:}
 
@@ -1121,7 +1135,7 @@ Falso: Sea $S=\left\{\frac{1}{n}: n\in \Z^+\right\}$, entonces $S^{\prime}=\{0\}
 Sea $(x_n)$ una sucesión de Cauchy definida en $Y$, entonces $(x_n)$ converge en $X$ ya que $(X,d)$ es completo, por tanto $(x_n)$ es una sucesión convergente definida en $Y$ y $Y$ es cerrado si y solo si toda sucesión convergente definida en $Y$ converge en $Y$, por tanto $(x_n)$ converge en $Y$, es decir $(Y,d_y)$ es completo.
 \end{proof}
 
-\item Se $(X,d)$ es un espacio métrico completo, entonces $(X,d^{\prime})$ con $d^{\prime}(x,y)=\frac{d(x,y)}{1+d(x,y)}$ es completo.\\
+\item Se $(X,d)$ es un espacio métrico completo, entonces $(X,d^{\prime})$ con $d^{\prime}(x,y)=\dfrac{d(x,y)}{1+d(x,y)}$ es completo.\\
 
 \begin{proof}
 Sea $(x_n)$ una sucesión de Cauchy en $X$, entonces como $(X,d)$ es completo, existe $N\in \N$ tal que si $n>N$:
