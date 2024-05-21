@@ -8,11 +8,11 @@ A lo largo de este capítulo se notará un uso recurrente de todo lo que se ha v
 Para este capítulo es importante saberse todas las propiedades que se presentan al inicio ya que serán usadas en muchas demostraciones posteriores,también es importante tener claras las definiciones equivalentes de continuidad...
 \end{note}
 
-\section{Quiz 10}
+\subsection{Quiz 10}
 
 
 
-\begin{itemize}[label={✎},leftmargin=*]
+\begin{itemize}[leftmargin=*]
 
 \item Consideremos $(\mathbb{N},d_1)$ y $(E,d)$ espacio métrico. Si $f: \mathbb{N} \longrightarrow E$, entonces $f$ es continua.\\
 
@@ -62,9 +62,9 @@ Esta función es continua. Sea $A=(0,1)$ acotado en $(\mathbb{R}^+,d_1)$, sin em
 
 Este capítulo de las notas contiene ya uno de los acercamientos a lo que conocimos en cálculo diferencial, en particular el teorema del valor intermedio, aquí se puede intuir geométricamente la importancia de  la conexidad para este resultado y muchos más a lo largo del capítulo
 
-\section{Quiz 11:}
+\subsection{Quiz 11:}
 
-\begin{itemize}[label={✎},leftmargin=*]
+\begin{itemize}[leftmargin=*]
 
 \item  Si $f:[a, b] \rightarrow \mathbb{R}$ tal que $f(x)=x^3$ entonces $f$ es uniformemente continua.\\
 
@@ -120,18 +120,8 @@ Por tanto $\{f(x_n)\}_{n\in \N}$ converge
 
 \item El conjunto $B(0,1) \backslash\{0\}$ es conexo en $\left(\mathbb{R}^n, d_2\right)$ para $n \geq 2$.\\
 
-
-
-
-\begin{tikznt}
-\includegraphics{{Graphics/conexidad}}
-\end{tikznt}
-
-
-
 \begin{proof}
 Tenemos que $B(0,1)$ es conexo en $(\R^n,d_2)$, luego como $B(0,1)$ es abierto, en particular es arcoconexo, veamos que $B(0,1)\setminus \{0\}$ es arcoconexo en $(\R^n,d_2)$.\\
-
 Sean $x,y\in B(0,1)$, note que como $B(0,1)$ es arcoconexo, existe $z\in B(0,1)\setminus\{0\}$ tal que $\alpha: [a,b]\mapsto B(0,1)\setminus\{0\}$ tal que $\alpha(a)=x$ y $\alpha(b)=z$ y $\beta: [a,b]\mapsto B(0,1)\setminus\{0\}$ tal que $\alpha(a)=z$ y $\alpha(b)=y$, luego como composición de funciones continuas es continua $\alpha \circ \beta: [a,b]\mapsto B(0,1)\setminus \{0\}$ es un camino tal que $ \beta \circ \alpha (a)=x$ y $ \beta \circ \alpha(b)=y$, así $B(0,1)\setminus \{0\}$ es arcoconexo y por tanto conexo. 
 \end{proof}
 
@@ -153,11 +143,11 @@ Esta función mapea compactos en compactos ya que todo conjunto finito en $(\R,d
 
 \section{Homeomorfismos}
 
-Intuitivamente podemos pensar que los homeomorfismos nos permiten ver cuando dos espacios métricos tienen las mismas propiedades topológicas, esto ocurre ya que en muchas de las propiedades que se vieron en la sección anterior se probó que si $f$ es continua entonces mapea compactos en compactos, devuelve abiertos en abiertos, también toda sucesión convergente la mapea a una sucesión convergente, mapea conexos en conexos, etc. Note que el homeomorfismo pide que $f$ sea biyectiva y que $f^{-1}$ sea continua también, es decir que la inversa también cumple todas las propiedades antes mencionadas, esto nos da una correspondencia explícita entre cada conjunto que cumple una de las propiedades mencionadas en el espacio de salida con uno en el de llegada y viceversa, por tanto preservan la información topológica que nos interesa en este contexto.
+Intuitivamente podemos pensar que los homeomorfismos nos permiten ver cuando dos espacios métricos tienen las mismas propiedades topológicas, esto ocurre ya que en muchas de las propiedades que se vieron en la sección anterior se probó que si $f$ es continua entonces mapea compactos en compactos, devuelve abiertos en abiertos, también toda sucesión convergente la mapea a una sucesión convergente, mapea conexos en conexos, etc. Note que el homeomorfismo pide que $f$ sea biyectiva y que $f^{-1}$ sea continua también, es decir que la inversa también cumple todas las propiedades antes mencionadas, esto nos da una correspondencia explícita entre cada conjunto que cumple una de las propiedades mencionadas en el espacio de salida con uno en el de llegada y viceversa, por tanto preservan la información topológica que nos interesa en este contexto.\\
 
-\section{Quiz 12}
+\subsection{Quiz 12}
 
-\begin{itemize}[label={✎},leftmargin=*]
+\begin{itemize}[leftmargin=*]
     \item Dados $r_1, r_2>0$ y $a, b \in \mathbb{R}^n$, existe $f: B\left(a, r_1\right) \rightarrow B\left[b, r_2\right]$ homeomorfismo.
 
 Falso: Tome $(\R,d_1)$ y $r_1,r_2=1$ y $a,b=0$, entonces $[-1,1]$ es compacto, como $f^{-1}$ es continua y biyectiva, $f^{-1}([-1,1])=(-1,1)$, luego $(-1,1)$ es compacto como subespacio de $(\R,d_1)$, contradicción ya que $(-1,1)\cong \R$ y $\R$ no es compacto. 
@@ -203,12 +193,214 @@ Falso: Note que esto es equivalente a ver que $(0,1)$ es homeomorfo a $\R^2$, lu
 
 
 
-\section{Quiz 13}
+\subsection{Quiz 13}
 
-\begin{itemize}[label={✎},leftmargin=*]
+Determine si cada uno de los siguientes enunciados es verdadero o falso:
+
+\begin{itemize}[leftmargin=*]
    
-    \item Esto queda para latearlo en la U porque me da cule miedo escribirlo mal.
+\item  La sucesión $f_n: \mathbb{R} \rightarrow \mathbb{R}, n \in \mathbb{N}$, definida por
+
+$$
+f_n(x)= \begin{cases}1, & \text { si } n \leq x<n+1 \\ 0, & \text { en otro caso }\end{cases}
+$$
+converge uniformemente.\\
+
+\item  La sucesión $f_n:[0,1] \rightarrow \mathbb{R}, n \in \mathbb{N}$, definida por $f_n(x)=\left(1+\frac{1}{n}\right) x$, converge uniformemente.\\
+
+\item Si $f_n:[0,1] \rightarrow \mathbb{R}$ son tales que $f_n(x)=x^n$, entonces $\left\{f_n\right\}_{n \in \mathbb{N}}$ converge uniformemente.\\
+
+\item La sucesión $f_n(x)=\frac{x}{n}$ converge uniformemente en subconjuntos acotados de $\mathbb{R}$.\\
+
+\item  Si las sucesiones de funciones reales $f_n$ y $g_n$ convergen uniformemente, entonces $f_n+g_n$ converge uniformemente.
 
 \end{itemize}
+
+\section{Ejercicios 4:}
+
+\begin{itemize}
+
+    \item  Muestre que en $\left(\mathbb{R}, d_2\right)$, métrica usual:
+
+    \begin{itemize}
+        
+        \item $\lim _{x \rightarrow x_0} \dfrac{1}{x}=\dfrac{1}{x_0} ;$ donde $x_0 \neq 0$.
+        
+        \item  $\lim _{x \rightarrow 1} \dfrac{3 x}{x^2+1}=\dfrac{3}{2}$ (Usando la definición)
+        
+        \item $\lim _{(x, y) \rightarrow(0,0)} \dfrac{x^3 y}{x^2+y^2}=0$ (Usando la definición)
+        
+    \end{itemize}
+
+    \item Sean $U$ un abierto de $\mathbb{R}, a \in U$ y $\left(E_2, d_2\right)$ un espacio métrico. Considere una función $f: U \backslash\{a\} \rightarrow E_2$. Sea $f_{+}$la restricción de $f$ al conjunto $U \cap\{x \in \mathbb{R}: x>a\}$. Si existe $\lim _{x \rightarrow a^{+}} f_{+}(x)$, se le denomina límite lateral derecho de $f$ en a, y se denota $\lim _{x \rightarrow a^{+}} f(x)$. Similarmente, sea $f_{-}$la restricción de $f$ a $U \cap\{x \in \mathbb{R}$ : $x<a\}$. Si existe $\operatorname{lim}_{x \rightarrow a^{-}} f_{-}(x)$, se le denomina límite lateral izquierdo de $f$ en $a$, y se denota $\lim _{x \rightarrow a^{-}} f(x)$. Prueba que $\lim _{x \rightarrow a} f(x)$ existe si $y$ solo si existen $\lim _{x \rightarrow a^{+}} f(x), \lim _{x \rightarrow a^{-}} f(x) y \lim _{x \rightarrow a^{+}} f(x)=\lim _{x \rightarrow a^{-}} f(x)$.\\
+    
+    \item Sea $U=\{x \in \mathbb{R}: x>a\}$ par algún $a \in \mathbb{R}^{+}$y sea $f: U \rightarrow \mathbb{R}$ una función. Consideremos $g:\left(0, \frac{1}{a}\right) \rightarrow \mathbb{R}$ definida por $g(y)=f\left(\frac{1}{y}\right)$. Si $\lim _{y \rightarrow 0} g(y)$ existe diremos que $\lim _{x \rightarrow \infty} f(x)$ existe $y \lim _{y \rightarrow 0} g(y)=\lim _{x \rightarrow \infty} f(x)$. Pruebe que $\lim _{x \rightarrow \infty} f(x)$ existe si $y$ solo si para todo $\varepsilon>0$, existe $M \in \mathbb{R}^{+}$tal que si $x, y>M$, entonces $|f(x)-f(y)|<\varepsilon$.\\
+
+\item Estudie la continuidad de $f: \mathbb{R}^2 \rightarrow \mathbb{R}$, cuando:\\
+
+\begin{itemize}
+    \item[a)]
+$$
+f(x, y)= \begin{cases}\dfrac{1}{x^2+y^2}, & \text { si }(x, y) \neq(0,0) \\ 0, & \text { si }(x, y)=(0,0)\end{cases}
+$$
+\item[b)]
+$$
+f(x, y)= \begin{cases}\dfrac{x y}{x^2+y^2}, & \text { si }(x, y) \neq(0,0) \\ 0, & \text { si }(x, y)=(0,0)\end{cases}
+$$
+\item [c)]
+$$
+f(x, y)= \begin{cases}\dfrac{x^2 y}{x^2+y^2}, & \text { si }(x, y) \neq(0,0) \\ 0, & \text { si }(x, y)=(0,0)\end{cases}
+$$
+\end{itemize}
+
+5. Discuta la continuidad de $f: \mathbb{R} \rightarrow \mathbb{R}$, cuando:
+
+\begin{itemize}
+    \item[a)]
+$$
+f(x)= \begin{cases}x \operatorname{sen}\left(\frac{1}{x}\right), & \text { si } x \neq 0 \\ 0, & \text { si } x=0\end{cases}
+$$
+\item[b)]
+$$
+f(x)= \begin{cases}0, & \text { si } x \text { es irracional } \\ \dfrac{1}{q}, & \text { si } x=\frac{p}{q} \quad(p, q)=1, p \neq 0, q>0 \\ 1, & \text { si } x=0\end{cases}
+$$
+\end{itemize}
+
+\item Dada
+$$
+\begin{aligned}
+f:(0,1) & \rightarrow \mathbb{R} \\
+x & \mapsto \operatorname{sen}\left(\frac{1}{x}\right)
+\end{aligned}
+$$
+
+Demuestre que:
+
+\begin{itemize}
+    \item[a)] $f$ es continua pero no uniformemente continua en $(0,1)$.
+    
+    \item[b)] $\left\{\left(x, \operatorname{sen}\left(\frac{1}{x}\right)\right): x \in(0,1)\right\} \cup\{(0, x):-1 \leq x \leq 1\}$ es conexo.
+    
+    \item[c)] $\left\{\left(x, \operatorname{sen}\left(\frac{1}{x}\right)\right): x \in(0,1)\right\} \cup\{(0,0)\}$ no es conexo por caminos.
+
+\end{itemize}
+
+\item Sean $(E, d)$ espacio métrico, $S \subset E$ compacto y $S \neq \emptyset$. Si $p \in E$, entonces existe el mínimo de $\{d(p, x): x \in E\}$.
+
+\item En todo espacio métrico compacto, existe máx $\{d(p, q) ; p, q \in E\}$.
+
+\item Sea $f:\left(E_1, d_1\right) \rightarrow\left(E_2, d_2\right)$ un función continua. Si $E_1$ es compacto y $f$ es biyectiva, entonces $f^{-1}$ es continua.
+
+\item Sea $S$ un subconjunto denso en $\left(E_1, d_1\right)$. Si $\left(E_2, d_2\right)$ es compacto y $f: S \rightarrow E_2$ es uniformemente continua, entonces $f$ tiene una extensión a una función de $E_1$ en $E_2$ uniformemente continua y dicha extensión es única.
+
+\item Sean $\left(E_1, d_1\right),\left(E_2, d_2\right)$ espacios métricos y $f: E_1 \rightarrow E_2$ una función muestre que: $f$ es continua si y solo si para cada $X \subseteq E_1 f(\bar{X}), \subseteq \overline{f(X)}$
+
+\item Consideremos $\mathbb{R}$ con la métrica usual y $X \subseteq \mathbb{R}$. Si toda función $f: X \rightarrow \mathbb{R}$ continua es uniformemente continua muestre que $X$ es cerrado mas no necesariamente es compacto.
+
+\item Considenemos $\mathbb{R}$ con la métrica usual y $f:[a, b] \rightarrow \mathbb{R}$ una función continua. Muestre que $g:[a, b] \rightarrow \mathbb{R}$ definida por $g(x)=\max _{x \in[a, x]} f(x)$ es continua.
+
+\item Sea $F \neq \emptyset$ un subconjunto cerrado en $(E, d)$. Definamos
+
+$$
+\begin{aligned}
+\rho_F: E & \rightarrow \mathbb{R} \\
+x & \mapsto \rho_F(x)=\inf \{d(x, y): y \in F\}
+\end{aligned}
+$$
+
+Demuestre que:
+
+\begin{itemize}
+    \item [a)] $\rho_F(x)=0$ si $y$ solo si $x \in F$.
+
+    \item[b)] $\rho_F$ es uniformemente continua.
+
+    \item[c)] Dados $A, B$ subconjuntos cerrados y no vacios de $E$, con $A \cap B=\emptyset$, defina
+
+$$
+\begin{aligned}
+f: E & \rightarrow \mathbb{R} \\
+x & \mapsto f(x)=\frac{\rho_A(x)}{\rho_A(x)+\rho_B(x)} .
+\end{aligned}
+$$
+
+Entonces $f$ es continua en $E$ e $\operatorname{Im}(f) \subset[0,1]$. Además, $f(x)=0$ si $y$ solo si $x \in A$ y $f(x)=1$ si $y$ solo si $x \in B$.
+\end{itemize}
+
+\item Sean $V, V^{\prime}$ espacios vectoriales normados y $f: V \rightarrow V^{\prime}$ transformación lineal.
+
+\begin{itemize}
+    \item [a)] Si $f$ es continua en un punto, entonces $f$ es continua en $V$ y $f$ es uniformemente continua.
+
+    \item[b)] $f$ es continua si $y$ solo si $\left\{\frac{\|f(x)\|}{\|x\|}, x \neq 0\right\}$ es acotado.
+    
+    \item[c)] Si $V$ es de dimensión finita, entonces $f$ es continua.
+\end{itemize}
+
+\item Sea $f: X \times K \rightarrow \mathbb{R}^n$ continua, $K$ compacto en $\mathbb{R}^n$ y $X \subset \mathbb{R}^n$. Dado $x_0 \in X$, demuestre que para todo $\varepsilon>0$ existe $\delta>0$ tal que si $\left|x-x_0\right|<\delta$, entonces $\left|f(x, \alpha)-f\left(x_0, \alpha\right)\right|<\varepsilon$, para todo $\alpha \in K$.
+
+\item Considere los subconjuntos del plano:
+$$
+\begin{gathered}
+X=\left\{(x, y) \in \mathbb{R}^2: x^2+y^2=1\right\} \\
+Y=\left\{(x, y) \in \mathbb{R}^2: a^2 x^2+b^2 y^2=1, a, b \neq 0\right\} \\
+Z=\left\{(x, y) \in \mathbb{R}^2: x^2-y^2=1\right\} \\
+W=\left\{(x, y) \in \mathbb{R}^2: x^2=y\right\}
+\end{gathered}
+$$
+¿Cuáles de estos conjuntos son homeomorfos?
+
+\item Con la métrica Euclidiana, muestre que $[a, b]$ no es homeomorfo a la bola abierta $B(c, r)$ de $\mathbb{R}^2$.
+
+\item Dado $x \in X \subset \mathbb{R}^n$, definimos la componente conexa $C_x$ de $x$ en $X$, como la unzón de todos los conexos de $X$ que contienen a x. Demuestre que:
+
+\begin{itemize}
+    \item [a)] $C_z$ es conexo.
+
+    \item[b)] $C_x$ es cerrado en $X$.
+
+    \item[c)] Si $h$ : $X \rightarrow Y$ es un homeomorfismo y $h(x)=y$, entonces $h\left(C_x\right)=D_y$, con $D_y$ componente conexa de y en $Y$.
+
+    \item[d)] Verifique que $\left\{(x, y) \in \mathbb{R}^2: x^2=y^2\right\}$ no es homeomorfo a $\left\{(x, y) \in \mathbb{R}^2: y=\right.$ $\left.x^2\right\}$.
+\end{itemize}
+
+\item Sea $f:[0,1] \rightarrow[0,1]$ una función continua. Demuestre que existe $x_0 \in[0,1]$ tal que $f\left(x_0\right)=x_0$.
+
+\item Sea $a \in \mathbb{R}, 0<a<1$. Pruebe que
+$$
+\begin{aligned}
+f_n:[0, a] & \rightarrow \mathbb{R} \\
+x & \mapsto f_n(x)=x^n
+\end{aligned}
+$$
+converge uniformemente, ¿El resultado es válido si $a=1$ ?
+
+\item Dada una función real $f$ continua, considere la sucesión $\left\{f_n\right\}_{n \in \mathbb{N}}$, donde
+$$
+\begin{aligned}
+f_n: \mathbb{R} & \rightarrow \mathbb{R} \\
+x & \mapsto f_n(x)=f(x+1 / n)
+\end{aligned}
+$$
+¿Esta sucesión converge uniformemente?
+
+\item Sea $f_n:\left(E_1, d_1\right) \rightarrow\left(E_2, d_2\right)$ una sucesión de funciones acotadas. Si $f_n \xrightarrow{u} f$ en $E_1$ , $f: E_1 \rightarrow E_2$, demuestre que $f$ es acotada.
+
+\item Pruebe que el conjunto de las matrices de tamaño $n \times n$ con determinante 1 es cerrado y no acotado en $\mathbb{R}^{n^2}$, además tiene interior vacío.
+
+\item Sea $f_n[a, b] \rightarrow \mathbb{R}, \quad n \in \mathbb{N}$, una sucesión de funciones; donde cada $f_n$ es una función creciente. Si $f_n \rightarrow f$ en $[a, b]$ muestre que $f$ es creciente $y$ que si $f$ es continua entonces $f_n \xrightarrow{u} f$.\\
+
+Sugerencia: Para probar la convergencia uniforme dado $\epsilon>0$ usar la continuidad uniforme de $f$ en $[a, b]$ y que existen $x_0=a<x_1<\cdots<x_m=b$ tales que $\left|x_{j-1}-x_j\right|<\delta$; además existe $N \in \mathbb{N}$ tal que si $n \geq N \quad\left|f_n\left(x_j\right)-f\left(x_j\right)\right|<\frac{\epsilon}{5}, j=$ $0,1, \cdots, m$.
+
+\item Sean $f_n: E \rightarrow \mathbb{R}$ para $n=1, \cdots$ una sucesión de funciones continuas de valor real definidas en un espacio métrico compacto. Si $f$ es continua, $f_n \rightarrow f y$ $f_1 \leq f_2 \leq \cdots$ entonces muestre que $f_n \xrightarrow{u} f$.\\
+
+Sugerencia : dado $\epsilon>0$ defina $K_n=\left\{x \in E: f(x)-f_n(x) \geq \epsilon\right\}$, muestre que $K_n$ es compacto y use un teorema de encaje.
+
+\item El cono $\left\{(x, y, z) \in \mathbb{R}^3: z \geq 0, x^2+y^2-z=0\right\}$ es homeomorfo a $\mathbb{R}^2$ ?
+
+\item ¿El conjunto de las matrices invertibles $n \times n$ es abierto en $\mathbb{R}^{n^2}$ ?
+\end{itemize}
+
+
 
 

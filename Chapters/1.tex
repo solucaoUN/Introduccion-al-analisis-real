@@ -9,7 +9,7 @@ Muchos éxitos - mmanosalva y eochoaq
 \section{Algunos ejercicios al lector: }
 
 \begin{itemize}[leftmargin=*]
-    \item [✎] Probar que $(\mathbb{R}^n,d_1)$ y $(\mathbb{R}^n,d_{\infty})$ son espacios métricos.\\
+    \item  Probar que $(\mathbb{R}^n,d_1)$ y $(\mathbb{R}^n,d_{\infty})$ son espacios métricos.\\
 
     \begin{proof}
         $\bullet$ Sean $p,q \in \mathbb{R}^n$, tenemos que:
@@ -49,7 +49,7 @@ Muchos éxitos - mmanosalva y eochoaq
 
  
 
-    \item[✎]Sea $X$ un conjunto no vacío y $f: X \rightarrow \mathbb{R}$. Diremos que $f$ es una función acotada si existe $k>0$ tal que para todo $x \in X$ se tiene $|f(x)| \leq k$. Consideremos el conjunto $B(X)=\{f: X \rightarrow \mathbb{R}: f$ es acotada $\}$. Definamos:
+    \item Sea $X$ un conjunto no vacío y $f: X \rightarrow \mathbb{R}$. Diremos que $f$ es una función acotada si existe $k>0$ tal que para todo $x \in X$ se tiene $|f(x)| \leq k$. Consideremos el conjunto $B(X)=\{f: X \rightarrow \mathbb{R}: f$ es acotada $\}$. Definamos:
 
         $$
         \begin{aligned}
@@ -63,7 +63,7 @@ Muchos éxitos - mmanosalva y eochoaq
         \begin{proof}
             Es inmediato que $d(f,g)\geq 0$ por definición de supremo y porque $|f(x)-g(x)|\geq 0$. Como $|f(x)-g(x)|=|g(x)-f(x)|$, entonces también se tiene que $d(f,g)=d(g,f)$.
 
-            Tenemos que $|f(x)-g(x)|\geq 0$, luego por definición de supremo si $\sup_{x \in X}|f(x)-g(x)|=0$, entonces $|f(x)-g(x)|=0$ para todo $x\in X$, así $f=g$, o sea si $d(f,g)=0$, entonces $f=g$. Veamos ahora la desigualdad triangular ☠☠☠☠☠:
+            Tenemos que $|f(x)-g(x)|\geq 0$, luego por definición de supremo si $\sup_{x \in X}|f(x)-g(x)|=0$, entonces $|f(x)-g(x)|=0$ para todo $x\in X$, así $f=g$, o sea si $d(f,g)=0$, entonces $f=g$. Veamos ahora la desigualdad triangular :
             \begin{align*}
                 d(f,g)&=\sup_{x\in X}|f(x)-g(x)|\\
                 &=\sup_{x\in X}|f(x)-g(x)+h(x)-h(x)|\\
@@ -76,64 +76,10 @@ Muchos éxitos - mmanosalva y eochoaq
             
         \end{proof}
 
-        \item[✎] Dado $(E, d)$ un espacio métrico, toda bola abierta es un conjunto abierto. En efecto, dados $B_E(p, r)$ (con $r>0$ y $\left.p \in E\right)$ y $q \in B_E(p, r)$, tomamos $r^{\prime}=r-d(p, q)$ de donde se tiene que $B_E\left(q, r^{\prime}\right) \subset B_E(p, r)$ (verifique esta contenencia como ejercicio).
-
-       \begin{tikznt}
-       \centering
-       \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
-%uncomment if require: \path (0,472); %set diagram left start at 0, and has height of 472
-
-%Shape: Rectangle [id:dp36732556175622055] 
-\draw  [dash pattern={on 4.5pt off 4.5pt}] (158.57,81.29) -- (460.57,81.29) -- (460.57,371.29) -- (158.57,371.29) -- cycle ;
-%Shape: Ellipse [id:dp4665256155664408] 
-\draw   (167.85,226.09) .. controls (167.85,149.91) and (230.95,88.15) .. (308.79,88.15) .. controls (386.63,88.15) and (449.74,149.91) .. (449.74,226.09) .. controls (449.74,302.27) and (386.63,364.02) .. (308.79,364.02) .. controls (230.95,364.02) and (167.85,302.27) .. (167.85,226.09) -- cycle ;
-%Straight Lines [id:da9766682347288755] 
-\draw  [dash pattern={on 0.84pt off 2.51pt}]  (436.62,172.45) -- (301.2,236.7) ;
-%Shape: Ellipse [id:dp01457511604137074] 
-\draw   (240.62,139.43) .. controls (240.62,114.7) and (261.89,94.66) .. (288.12,94.66) .. controls (314.35,94.66) and (335.62,114.7) .. (335.62,139.43) .. controls (335.62,164.16) and (314.35,184.2) .. (288.12,184.2) .. controls (261.89,184.2) and (240.62,164.16) .. (240.62,139.43) -- cycle ;
-%Straight Lines [id:da776417097753616] 
-\draw  [dash pattern={on 0.84pt off 2.51pt}]  (302.22,99.3) -- (288.12,139.43) ;
-%Straight Lines [id:da7683663505583478] 
-\draw  [dash pattern={on 0.84pt off 2.51pt}]  (260.35,130.54) -- (300.82,233.1) ;
-%Straight Lines [id:da24390474713752863] 
-\draw  [dash pattern={on 0.84pt off 2.51pt}]  (260.35,130.54) -- (288.12,139.43) ;
-%Straight Lines [id:da17965772530026092] 
-\draw  [dash pattern={on 0.84pt off 2.51pt}]  (288.12,139.43) -- (302.59,238.19) ;
-
-% Text Node
-\draw (367.41,203.72) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle r$};
-% Text Node
-\draw (283.92,135.63) node [anchor=north west][inner sep=0.75pt]  [font=\Huge] [align=left] {.};
-% Text Node
-\draw (296.76,233.66) node [anchor=north west][inner sep=0.75pt]  [font=\Huge] [align=left] {.};
-% Text Node
-\draw (305.8,111.43) node [anchor=north west][inner sep=0.75pt]  [font=\small] [align=left] {$\displaystyle r^{'}$};
-% Text Node
-\draw (255.65,126.25) node [anchor=north west][inner sep=0.75pt]  [color={rgb, 255:red, 255; green, 0; blue, 0 }  ,opacity=1 ] [align=left] {{\Huge .}};
-% Text Node
-\draw (295.38,243.81) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize] [align=left] {$\displaystyle p$};
-% Text Node
-\draw (294.91,138.69) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize] [align=left] {$\displaystyle q$};
-% Text Node
-\draw (247.76,132.33) node [anchor=north west][inner sep=0.75pt]  [font=\footnotesize] [align=left] {$\displaystyle x$};
-% Text Node
-\draw (243.38,189.47) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize] [align=left] {$\displaystyle d( p,x)$};
-% Text Node
-\draw (257.67,112.25) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize,rotate=-12.85] [align=left] {$\displaystyle d( q,x)$};
-% Text Node
-\draw (304,188.52) node [anchor=north west][inner sep=0.75pt]  [font=\scriptsize] [align=left] {$\displaystyle d( p,q)$};
-% Text Node
-\draw (252.02,287.1) node [anchor=north west][inner sep=0.75pt]  [font=\small,color={rgb, 255:red, 74; green, 124; blue, 226 }  ,opacity=1 ,rotate=-359.68] [align=left] {$\displaystyle d( q,x) \leq r-d( p,q)$};
-% Text Node
-\draw (174,95) node [anchor=north west][inner sep=0.75pt]   [align=left] {$\displaystyle E$};
-
-
-\end{tikzpicture}
-       \end{tikznt}
-
-
+        \item  Dado $(E, d)$ un espacio métrico, toda bola abierta es un conjunto abierto. En efecto, dados $B_E(p, r)$ (con $r>0$ y $\left.p \in E\right)$ y $q \in B_E(p, r)$, tomamos $r^{\prime}=r-d(p, q)$ de donde se tiene que $B_E\left(q, r^{\prime}\right) \subset B_E(p, r)$ (verifique esta contenencia como ejercicio).\\
+       
         \begin{proof}
-            Sea $x \in B_E(q,r^{\prime})$, entonces;
+            Sea $x \in B_E(q,r^{\prime})$, entonces:
 
             \begin{align*}
                 d(p,x)&\leq d(p,q)+d(q,x)\\
@@ -190,7 +136,7 @@ Y como unión arbitraria de abiertos es abierto, entonces acabamos.
 \end{itemize}
 
 \begin{itemize}[leftmargin=*]
-\item[✎]Sea $(E,d)$ un espacio métrico $\{p\}=\bigcap_{r>0} B[p, r]$\\
+\item Sea $(E,d)$ un espacio métrico $\{p\}=\bigcap_{r>0} B[p, r]$\\
 
 \begin{proof}
 Suponga que $\{p\}\neq \bigcap_{r>0} B[p, r]$, luego existe $x\in \bigcap_{r>0} B[p, r]$ tal que $x\neq p$, entonces $x \in B[p,r]$ para todo $r>0$, pero $x\neq p$, por tanto $d(x,p)>0$, así existe $0<r<d(x,p)$ tal que $x\not \in B[p,r]$, contradicción.
@@ -198,10 +144,12 @@ Suponga que $\{p\}\neq \bigcap_{r>0} B[p, r]$, luego existe $x\in \bigcap_{r>0} 
 \end{itemize}
 
 
-\section{Quiz 4:}
+\subsection{Quiz 4:}
 
 \begin{itemize}[leftmargin=*]
-\item[✎] \textbf{Falso: }Observamos que vía la definición de abierto $\mathbb{Q}$ no puede ser abierto ya que toda bola con centro en un racional va a tener irracionales dentro que no están en $\mathbb{Q}$ y por tanto la bola no está contenida en $\mathbb{Q}$, luego no es abierto.
+\item  $\mathbb{Q}$ es abierto en $\left(\mathbb{R}, d_1\right)$.
+
+\textbf{Falso: }Observamos que vía la definición de abierto $\mathbb{Q}$ no puede ser abierto ya que toda bola con centro en un racional va a tener irracionales dentro que no están en $\mathbb{Q}$ y por tanto la bola no está contenida en $\mathbb{Q}$, luego no es abierto.
 
 De hecho es la forma de argumentar esto, vía la densidad de $\mathbb{Q}$ en $\mathbb{R}$ que ya conocemos de los cursos anteriores.
 
@@ -209,15 +157,18 @@ De manera más formal para todo $r>0$, $B(q,r)=(q-r,q+r) \not \subseteq \mathbb{
 
 Esto ocurre ya que estamos tomando bolas en $\mathbb{R}$. (Este argumento es para la métrica usual).
 
-\item[✎] \textbf{Verdadero: } \\
+\item  $\mathbb{Q}$ es abierto en $\left(\mathbb{R}, d_d\right)$.\\
+
 \begin{proof}
     Sea $q \in \mathbb{Q}$, consideremos $B(q,\frac{1}{2})$ entonces como estamos en la métrica discreta $B(q,\frac{1}{2})=\{x\in \mathbb{R}:d_d(q,x)<\frac{1}{2}\}=\{q\}$ por definición de la métrica y como podemos hacer esto para todo $q\in \mathbb{Q}$ y un conjunto es abierto si y solo si es unión de bolas abiertas, razonando inductivamente acabamos.
 \end{proof}
 
 
-\item[✎] \textbf{Verdadero: }$B(0,\frac{1}{2})=\{x\in \mathbb{R} : d_d(0,x)<\frac{1}{2}\}=\{0\}=\{x \in \mathbb{R} : d_d(0,x)\leq \frac{1}{4}\}=B[0,\frac{1}{4}]$
+\item $B\left(0, \frac{1}{2}\right)=B\left[0, \frac{1}{4}\right]$ en $\left(\mathbb{R}, d_d\right)$.\\
 
-\item[✎]\textbf{Verdadero: }\\
+\textbf{Verdadero: }$B(0,\frac{1}{2})=\{x\in \mathbb{R} : d_d(0,x)<\frac{1}{2}\}=\{0\}=\{x \in \mathbb{R} : d_d(0,x)\leq \frac{1}{4}\}=B[0,\frac{1}{4}]$
+
+\item $\mathbb{N}$ es cerrado en $\left(\mathbb{R}, d_1\right)$.\\
 
 \begin{tikznt}
 \centering
@@ -246,22 +197,20 @@ Esto ocurre ya que estamos tomando bolas en $\mathbb{R}$. (Este argumento es par
 \node[black!90] at (7.5,1) {$\ldots$};
 
 \end{tikzpicture}
-
 \end{tikznt}
 
 \begin{proof}
     Para ver que los naturales son cerrados con $d_1$, veamos que su complemento es abierto. Observe que:
 
-
     $$\displaystyle \mathbb{R}\setminus\mathbb{N}=(-\infty,0)\bigcup_{i \in \mathbb{N}}B\left(i+\frac{1}{2},\frac{1}{2}\right)$$
-
 
 Note que esas bolas son abiertas y unión arbitraria de abiertos es abierto, efectivamente esas bolas cubren $\mathbb{R}\setminus \mathbb{N}$ entonces acabamos.
     
 \end{proof}
 
 
-\item[✎]\textbf{Verdadero: } \\
+\item Todo conjunto es abierto y cerrado en $\left(\mathbb{R}, d_d\right)$.\\
+
 \begin{proof}
     Sea $X\subseteq R$ en $(R,d_d)$, $X$ es abierto ya que:
 
@@ -276,11 +225,16 @@ Note que esas bolas son abiertas y unión arbitraria de abiertos es abierto, efe
 
 Note que podemos escoger cualquier $r\leq 1$ y la prueba se mantiene.
 
-\item[✎] \textbf{Falso: }Queremos ver que $[0,\frac{1}{4})^C=[\frac{1}{4},\frac{1}{2})$ no es abierto, note que $B(\frac{1}{4},r)=(\frac{1}{4}-r,\frac{1}{4}+r)$ para todo $r>0$ no está contenida en $[\frac{1}{4},\frac{1}{2})$, entonces $[0,\frac{1}{4})$ no es cerrado en $([0,\frac{1}{2}),d|_{[0,\frac{1}{2})\text{x}[0,\frac{1}{2})})$ 
+\item  El conjunto $\left[0, \frac{1}{4}\right)$ es cerrado en $\left(\left[0, \frac{1}{2}\right),\left.d_1\right|_{\left[0, \frac{1}{2}\right) \times\left(0, \frac{1}{2}\right)}\right)$\\
 
-\item[✎] \textbf{Falso: }El conjunto $\left[0, \frac{1}{2}\right)$ es abierto en $\left(\left[0, \frac{1}{2}\right),\left.d_1\right|_{\left[0, \frac{1}{2}\right) \times\left[0, \frac{1}{2}\right)}\right)$, pero no en $(R,d_1)$
+\textbf{Falso: }Queremos ver que $[0,\frac{1}{4})^C=[\frac{1}{4},\frac{1}{2})$ no es abierto, note que $B(\frac{1}{4},r)=(\frac{1}{4}-r,\frac{1}{4}+r)$ para todo $r>0$ no está contenida en $[\frac{1}{4},\frac{1}{2})$, entonces $[0,\frac{1}{4})$ no es cerrado en $([0,\frac{1}{2}),d|_{[0,\frac{1}{2})\text{x}[0,\frac{1}{2})})$ 
 
-\item[✎]\textbf{Verdadero: }\\
+\item  Sean $(E, d)$ un espacio métrico, $A \subset E_1 \subset E$. Si $A$ es abierto en $\left(E_1,\left.d\right|_{E_1 \times E_1}\right)$, entonces $A$ es abierto en $(E, d)$.\\
+
+\textbf{Falso: }El conjunto $\left[0, \frac{1}{2}\right)$ es abierto en $\left(\left[0, \frac{1}{2}\right),\left.d_1\right|_{\left[0, \frac{1}{2}\right) \times\left[0, \frac{1}{2}\right)}\right)$, pero no en $(R,d_1)$
+
+\item Sean $(E, d)$ un espacio métrico, $A \subset E_1 \subset E$. Si $A$ es abierto en $(E, d)$, entonces $A$ es abierto en $\left(E_1,\left.d\right|_{E_1 \times E_1}\right)$.\\
+
 \begin{proof}
     Sea $A$ abierto en $(E,d)$, entonces:
 
@@ -297,22 +251,28 @@ Y acabamos esta sección.
 \end{itemize}
 
 
-\section{Quiz 5: }
+\subsection{Quiz 5: }
 
 \begin{itemize}[leftmargin=*]
-    \item[✎]\textbf{Verdadero: }\\
+    \item $\mathbb{Q}^{\prime}=\emptyset e n\left(\mathbb{R}, d_d\right)$.\\
+    
     \begin{proof}
         Sea $x \in \mathbb{R}$ entonces $(B(x,\frac{1}{3})\setminus \{x\})=\text{\O}$, luego $(B(x,\frac{1}{3})\setminus \{x\})\cap \mathbb{Q}=$\O, por tanto $\mathbb{Q}^{\prime}=$\O.\\ 
     \end{proof}
 
 
-    \item[✎] \textbf{Falso: }Sabemos que $S$ es cerrado si y solo si $\overline{S}=S$, antes probamos que $\mathbb{N}$ en $(\mathbb{R},d_1)$ es cerrado luego $$\overline{\mathbb{N}}=\mathbb{N}$$
+    \item  $\overline{\mathbb{N}}=\emptyset$ en $\left(\mathbb{R}, d_1\right)$.\\
+    
+    \textbf{Falso: }Sabemos que $S$ es cerrado si y solo si $\overline{S}=S$, antes probamos que $\mathbb{N}$ en $(\mathbb{R},d_1)$ es cerrado luego $$\overline{\mathbb{N}}=\mathbb{N}$$
 
 
-    \item[✎] \textbf{Falso: }Sabemos que $\partial \mathbb{Q}=$$\overline{\mathbb{Q}}\cap$$\overline{\mathbb{R}\setminus\mathbb{Q}}$ y como $\mathbb{Q}$ y $\mathbb{R}\setminus\mathbb{Q}=\mathbb{I}$ son densos en $\mathbb{R}$ entonces $\overline{\mathbb{Q}}=\mathbb{R}$ y $\overline{\mathbb{I}}=\mathbb{R}$, así $\partial \mathbb{Q}=\mathbb{R}$
+    \item  $\partial \mathbb{Q}=\emptyset$ en $\left(\mathbb{R}, d_1\right)$.\\
+ 
+    \textbf{Falso: }Sabemos que $\partial \mathbb{Q}=$$\overline{\mathbb{Q}}\cap$$\overline{\mathbb{R}\setminus\mathbb{Q}}$ y como $\mathbb{Q}$ y $\mathbb{R}\setminus\mathbb{Q}=\mathbb{I}$ son densos en $\mathbb{R}$ entonces $\overline{\mathbb{Q}}=\mathbb{R}$ y $\overline{\mathbb{I}}=\mathbb{R}$, así $\partial \mathbb{Q}=\mathbb{R}$
 
 
-    \item[✎] \textbf{Verdadero: }\\
+    \item $[0,1)^{\prime}=[0,1)$ en $\left([0,1),\left.d_1\right|_{(0,1) \times[0,1)}\right)$.\\
+
     \begin{proof}
         Tenemos que $x \in [0,1)^{\prime}$ si y solo si $x \in \overline{[0,1)-\{x\}}$, observe que:
         
@@ -325,16 +285,21 @@ Y acabamos esta sección.
         En efecto si $x\in [0,1)$, $x \in [0,1)^{\prime}$ 
     \end{proof}
 
-    \item[✎]\textbf{Verdadero: }$\partial \mathbb{R}=$$\overline{\mathbb{R}}\cap$$\overline{\text{\O}}=\mathbb{R}\cap$\O$=$\O
+    \item $\partial \mathbb{R}=\emptyset$ en $\left(\mathbb{R}, d_1\right)$.\\
+    
+    \textbf{Verdadero: }$\partial \mathbb{R}=$$\overline{\mathbb{R}}\cap$$\overline{\text{\O}}=\mathbb{R}\cap$\O$=$\O
 
 
-    \item[✎]\textbf{Verdadero: } \\
+    \item $\mathbb{R}^{\prime}=\emptyset$ en $\left(\mathbb{R}, d_d\right)$.\\
+    
     \begin{proof}
         Como en las pruebas anteriores note que si $r\leq1$ entonces para todo $x\in \mathbb{R}$, $B(x,r)\setminus\{x\}=$$\emptyset$ y por tanto $B(x,r)\setminus\{x\}\cap \mathbb{R}=$\O, luego $\mathbb{R}^{\prime}=$\O
     \end{proof}
 
 
-    \item[✎] \textbf{Falso: }Sea $(\mathbb{R},d_d)$ los reales con la métrica discreta, luego:
+    \item Sean $(E, d)$ espacio métrico, $a \in E$ y $r>0$. Entonces $\overline{B(a, r)}=B[a, r]$.\\
+    
+    \textbf{Falso: }Sea $(\mathbb{R},d_d)$ los reales con la métrica discreta, luego:
 
     $$\overline{B(0,1)}=\overline{\{0\}}=\{0\}$$
 
@@ -342,7 +307,8 @@ Mientras que:
 
 $$B[0,1]=\mathbb{R}$$
 
-    \item[✎]\textbf{Verdadero: }\\
+    \item $\mathbb{N}$ es cerrado en $\left(\mathbb{R}, d_{\infty}\right)$.\\ 
+    
     \begin{proof}
         Tenemos que: 
 
@@ -351,7 +317,7 @@ d_1(p, q)=\sum_{k=1}^n\left|p_k-q_k\right|
 $$
 $y$
 $$
-d_{\infty}(p, q)=\operatorname{máx}_{1 \leq k \leq n}\left|p_k-q_k\right| .
+d_{\infty}(p, q)=\operatorname{max}_{1 \leq k \leq n}\left|p_k-q_k\right| .
 $$
 
 Pero como en este caso estamos en $\mathbb{R}$, entonces 
@@ -364,7 +330,7 @@ Entonces como $\mathbb{N}$ es cerrado en $(\mathbb{R},d_1)$, también es cerrado
 
     \end{proof}
 
-    \item[✎]\textbf{Verdadero: }\\
+    \item Si $A \subset \mathbb{R}^n$ es cerrado en $\left(\mathbb{R}^n, d_{\infty}\right)$, entonces $A$ es cerrado en $\left(\mathbb{R}^n, d_2\right)$.\\
     
    \begin{proof}
          Tenemos que $A$ es cerrado en $(\mathbb{R}^n,d_{\infty})$, luego $A^C$ es abierto en $(\mathbb{R}^n,d_{\infty})$, así para todo $x\in A^C$ existe un $r_x$ tal que:
@@ -384,7 +350,7 @@ Entonces como $\mathbb{N}$ es cerrado en $(\mathbb{R},d_1)$, también es cerrado
     
 \end{itemize}
 \vspace{0.3cm}
- \section{Ejercicios adicionales.}
+ \subsection{Ejercicios adicionales.}
     
 \begin{note}
  los siguientes ejercicios fueron propuestos en 2022-2 en un parcial de Análisis, el propósito de esta sección es que sirva para que el estudiante pueda hacerse una idea del modelo de preguntas que se suelen hacer y esté preparado
@@ -395,29 +361,27 @@ Entonces como $\mathbb{N}$ es cerrado en $(\mathbb{R},d_1)$, también es cerrado
 
 \item[]\textbf{En cada caso determine si el enunciado es verdadero o falso. Si es verdadero demuéstrelo de lo contrario dé un contra ejemplo.}
 
-    \item[☠]Si $A \neq \varnothing$ es un subconjunto cerrado y acotado inferiormente en $\mathbb{R}$ con la métrica usual $|x-y|$ entonces $A$ tiene elemento mínimo.\\
-    
-    \textbf{Verdadero:}\\
-    
+    \item Si $A \neq \varnothing$ es un subconjunto cerrado y acotado inferiormente en $\mathbb{R}$ con la métrica usual $|x-y|$ entonces $A$ tiene elemento mínimo.\\
+        
     \begin{proof}
         Supongamos que $A$ es acortado inferiormente en $\mathbb{R}$, entonces existe $i=\inf(A)$, veamos que $i\in A$. Supongamos que $i \not \in A$, entonces $i \in \mathbb{R}\setminus A$, $\mathbb{R}\setminus A$ es abierto porque $A$ es cerrado, entonces existe $\epsilon>0$ tal que $B(i,\epsilon)=(i-\epsilon,i+\epsilon)\subseteq \mathbb{R}\setminus A$, por otro lado como $i=\inf(A)$ existe $b\in A$ tal que $i\leq b< i+\epsilon$, luego $b\in (i-\epsilon,i+\epsilon)\subseteq \mathbb{R}\setminus A$. Contradicción, luego $i \in A$, es decir $i=\min(A)$.
         
     \end{proof}
     
-    \item[☠]Sean $(X, d)$ un espacio métrico y $A, B$ subconjuntos de $X$ tales que $int($$A) \subseteq B \subseteq \bar{A}$ entonces $\bar{B}=\bar{A}$.\\
+    \item Sean $(X, d)$ un espacio métrico y $A, B$ subconjuntos de $X$ tales que $int($$A) \subseteq B \subseteq \bar{A}$ entonces $\bar{B}=\bar{A}$.\\
     
     \textbf{Falso: }Contraejemplo: Sean $(\mathbb{R},d_1)$, $\mathbb{N}=A$ y $\{0\}=B$, entonces como $int(\mathbb{N})=$\O, es claro que $int(\mathbb{N})\subseteq\{0\}$, por otro lado $\overline{\mathbb{N}}=\mathbb{N}$ ya que $\mathbb{N}$ es cerrado, y $\overline{\{0\}}=\{0\}$, en efecto $\{0\}\neq \mathbb{N}$.
     
-    \item[☠]Si $(X, d)$ es un espacio métrico entonces $d^{\prime}(x, y)=d^2(x, y)$ también define una métrica en $X^2$.
+    \item Si $(X, d)$ es un espacio métrico entonces $d^{\prime}(x, y)=d^2(x, y)$ también define una métrica en $X^2$.
     
     \textbf{Falso: }Contraejemplo: Tome $(\mathbb{R},d_1)$, veamos que $(\mathbb{R},d_1^2)$ no es un espacio métrico. Note que $d_1^2(3,1)>d_1^2(3,2)+d_1^2(2,1)$ $(4>1+1)$, lo que contradice la desigualdad triangular
     
-    \item[☠]$(X, d)$ un espacio métrico y $\left(A_j\right)_{j \in J}$ una familia de subconjuntos de $X$. Si $a \in \overline{A_j}$ para todo $j \in J$ entonces $a \in \overline{\bigcap_{j \in J} A_j}$.\\
+    \item $(X, d)$ un espacio métrico y $\left(A_j\right)_{j \in J}$ una familia de subconjuntos de $X$. Si $a \in \overline{A_j}$ para todo $j \in J$ entonces $a \in \overline{\bigcap_{j \in J} A_j}$.\\
     
     \textbf{Falso: }Contrajemplo: Sean $\mathbb{Q}, \mathbb{I}$, en $(\mathbb{R},d_1)$, y sea $x=\sqrt{2}$, como $\overline{\mathbb{Q}}=\overline{\mathbb{I}}=\mathbb{R}$, $x \in \overline{\mathbb{Q}}$ y $x\in \overline{\mathbb{I}}$, sin embargo $x\not \in \overline{\mathbb{Q}\cap \mathbb{I}}=\overline{\text{\O}}=$\O
 
     
-    \item[☠☠] Sean:
+    \item Sean:
     \begin{itemize}
         
 \item $X$ el espacio de las funciones acotadas $f: I \rightarrow \mathbb{R}$ definidas en el intervalo real $I=[0,1]$,
@@ -439,12 +403,11 @@ entonces $f_n \in B\left(f_0, \frac{3}{2}\right)$ para todo $n \in \mathbb{Z}^{+
         d(f_n,f_0)&=\sup_{x \in I}\left|x^2-\dfrac{x^2sen(2\pi nx)}{2\pi n}\right|\\
         &=\sup_{x \in I}\left|x^2\left(1-\dfrac{sen(2\pi nx)}{2\pi n}\right)\right|\\
         &\leq\sup_{x \in I}\left|1-\dfrac{sen(2\pi nx)}{2\pi n}\right| && (x^2\leq 1)\\
-        &\leq\left|1-\dfrac{1}{2\pi n}\right|&&(-1\leq sin(\theta)\leq 1)\\
-        &\leq \dfrac{3}{2}\\
-        &=1.5
+        &\leq\left|1+\dfrac{1}{2\pi n}\right|&&(-1\leq sin(\theta)\leq 1)\\
+        &< \dfrac{3}{2}
      \end{align*}
 
-Ya que $0<\frac{1}{2\pi n}< 1$ para todo $n \in \Z^+$
+Ya que $0<\frac{1}{2\pi n}< \dfrac{1}{2}$ para todo $n \in \Z^+$
 
     
 \end{proof}  
@@ -464,7 +427,7 @@ Los siguientes ejercicios fueron propuestos en 2023-1 en el primer parcial de an
 
 Sean $(X, d)$ es un espacio métrico y $A$ es un subconjunto de $X$. En cada caso determine si la proposición es verdadera o falsa y demuéstrela o dé un contra-ejemplo según sea el caso.
 
-\begin{itemize}[label={☠},leftmargin=*]
+\begin{itemize}[leftmargin=*]
 \item $X=\overline{A}\cup A^{C}$\\
 
 \begin{proof}
@@ -540,13 +503,13 @@ Note que en las notas hace falta hacer énfasis en esta definición, sin embargo
 Sobre este parcial como se puede notar los ejercicios no son tan complejos si se nos permite usar las propiedades de las notas (que se ven también en clase), pero es probable que para ser usadas en el parcial el estudiante deba demostrarlas, en cuyo caso recomendamos entender muy bien las ideas de cada una de las pruebas, la idea nunca es memorizar las pruebas o las propiedades sino entender un poco la geometría del asunto y las ideas principales de cada prueba.
 \end{note}
 
-\section{El conjunto de Cantor ☠☠☠☠☠}
+\section{El conjunto de Cantor }
 
 \begin{note}
 En esta sección solo trataremos el problema de probar que el conjunto de cantor es perfecto, es decir que todo elemento del conjunto pertenece a su derivado. Quizás luego pongamos un diagrama de la prueba de que no es contable, un resultado más fuerte que quizás se podría sugerir es revisar la prueba de que todo conjunto perfecto no puede ser contable.
 \end{note}
 
-\begin{itemize}[label={✎},leftmargin=*]
+\begin{itemize}[leftmargin=*]
 
 \item El conjunto de Cantor es perfecto:\\
 
@@ -567,11 +530,10 @@ Cuando se quita el tercio medio de $[a, b]$, se obtienen dos intervalos $\left[a
         \href{https://math.stackexchange.com/questions/201922/proof-that-a-perfect-set-is-uncountable}{\textcolor{blue}{Enlace.}} 
 \end{note}
 
-\item El conjunto de Cantor es no contable
         
 \end{itemize}
 
-\section{Sucesiones ☠☠☠☠☠}
+\section{Sucesiones}
 
 Este capítulo es cosa densa, mucho cuidado.
 
@@ -579,9 +541,9 @@ Este capítulo es cosa densa, mucho cuidado.
 
 En esta sección también hay algunos ejercicios que el libro dice que son triviales,pero lo que es trivial hay que demostrarlo.
 
-\begin{itemize}[label={✎},leftmargin=*]
+\begin{itemize}[leftmargin=*]
 
-\item Es fácil demostrar que $n_k\geq k$ (Inducción)
+\item Es fácil demostrar que $n_k\geq k$ (Inducción)\\
 
 \begin{proof}
 Supongamos que la secuencia comienza en $k=1$. Entonces, lo más pequeño que puede ser $n_1$ es 1. Por lo tanto, $n_k \geq k$ es verdadero para $k=1$. Ahora, asumimos por inducción que $n_k \geq k$ para algún $k$. Dado que lo más pequeño que puede ser $n_{k+1}$ es $n_k+1$, obtenemos
@@ -636,7 +598,7 @@ $$|-b_n+b|=|-1(b_n-b)|=|-1||b_n-b|=|b_n-b|<\epsilon$$
 Luego $(-b_n)_{n\in\N}$ es convergente y converge a $-b$
 \end{proof}
 
-Con este lema podemos hacer la prueba del teorema solo para $((a_n)_{n\in \N}+(b_n)_{n\in \N})_{n\in \N}$ ya que el caso de la resta es corolario de esto, note que basta considerar la sucesión $(-b_n)_{n\in \N}$ y usar el resultado para la suma.
+Con este lema podemos hacer la prueba del teorema solo para $((a_n)_{n\in \N}+(b_n)_{n\in \N})_{n\in \N}$ ya que el caso de la resta es corolario de esto, note que basta considerar la sucesión $(-b_n)_{n\in \N}$ y usar el resultado para la suma.\\
 
 \begin{proof}
     Tenemos que $(a_n)_{n\in N}$ y $(b_n)_{n\in \N}$ son convergentes, es decir para todo $\epsilon>0$ existen $N_1\in \N$ y $N_2\in \N$ tales que si $n>N_1$ $|a_n-a|<\frac{\epsilon}{2}$ y si $n>N_2$, $|b_n-b|<\frac{\epsilon}{2}$, luego si $n>\max\{N_1,N_2\}$, entonces.
@@ -736,7 +698,7 @@ Además todos estos $b_n=\sup X_n<\beta$ ya que la sucesión es acotada, para $a
 
 
 \begin{definition}
-Definimos el límite inferior (denotado por líminf $x_n$ ) y el límite superior (notado por $\left.\operatorname{lím} \sup x_n\right)$ de $\left(x_n\right)_{n \in \mathbb{N}}$ como
+Definimos el límite inferior (denotado por líminf $x_n$ ) y el límite superior (notado por $\left.\operatorname{lim} \sup x_n\right)$ de $\left(x_n\right)_{n \in \mathbb{N}}$ como
 $$
 \begin{aligned}
 & \liminf x_n=\sup a_n=\lim _{n \rightarrow \infty} a_n, \quad y \\
@@ -749,7 +711,7 @@ A continuación presentamos una definición un poco más chingona de límites su
 
 \begin{definition}
 
-Definimos el límite inferior (denotado por líminf $x_n$ ) y el límite superior (notado por $\left.\operatorname{lím} \sup x_n\right)$ de $\left(x_n\right)_{n \in \mathbb{N}}$ como:
+Definimos el límite inferior (denotado por liminf $x_n$ ) y el límite superior (notado por $\left.\operatorname{lim} \sup x_n\right)$ de $\left(x_n\right)_{n \in \mathbb{N}}$ como:
 
 $$    \begin{aligned}
 \lim \inf x_n & =\lim _{n \rightarrow \infty}\left(\inf _{k \geq n} x_k\right) \\
@@ -758,15 +720,16 @@ $$    \begin{aligned}
 
 \end{definition}
 
+No es difícil ver con la definición anterior que ambas son equivalentes, solo observe qué son $a_n$ y $b_n$ en la definición 1.
 
-\section{Quiz 6:}
+\subsection{Quiz 6:}
 
 \end{itemize}
 
-\begin{itemize}[label={✎},leftmargin=*]
-    \item Algún día pondré este punto xd
+\begin{itemize}[leftmargin=*]
+    \item  Sean $\left(a_n\right)$ sucesión acotada en $\left(\mathbb{R}^m, d_{\infty}\right)$ y $\left(b_n\right)$ una sucesión convergente en $\left(\mathbb{R}^m, d_2\right)$. Entonces $\left(a_n+b_n\right)$ es acotada en $\left(\mathbb{R}^m, d_2\right)$.\\
 
-    \item Verdadero:\\
+    \item Si la sucesión ( $\left.a_n\right)$ es convergente, con límite no nulo, en $\left(\mathbb{R}, d_2\right)$ y $a_{n+1}=2\left(a_n\right)^2-$ $a_{n-1}$ para $n \geq 3$, entonces $\operatorname{lim}_{n \rightarrow \infty} a_n=1$.\\
 
     \begin{proof}
     Tenemos que $(a_n)$ es convergente, luego:
@@ -782,7 +745,7 @@ $$    \begin{aligned}
     \end{proof}
 
 
-    \item Verdadero:\\
+    \item Sean ( $E, d$ ) espacio métrico, $\left(a_n\right)$ y $\left(b_n\right)$ sucesiones en $(E, d)$. Si $a_n=b_n$ para $n \geq m$ con $m \in \mathbb{N} y\left(a_n\right)$ es convergente, entonces $\left(b_n\right)$ es convergente.\\
 
     \begin{proof}
     Tenemos que existe $m\in \N$ tal que $a_n=b_n$ para todo $n\geq m$, luego como $a_n$ es convergente, para todo $\epsilon>0$, existe un $N\in \N$ tal que si $n>\max\{N,m\}$, entonces:
@@ -796,7 +759,9 @@ $$    \begin{aligned}
 Usamos el máximo ya si $m$ es el máximo entonces a partir del punto en que $a_n=b_n$ ya tenemos convergencia, si $N$ es el máximo entonces desde antes de tener convergencia ya teníamos que $a_n=b_n$, luego es conveniente escoger $n>\max\{N,m\}$, para que se de $n$ en adelante tengamos tanto convergencia como que las sucesiones son iguales.
 \end{note}
     
-    \item Falso: Considere $(\R,d_1)$, (note que en $\R$, $d_2=d_1$), entonces si tomamos una sucesión constante, $(x_n)_{n\in\N}=(-1)^na_n$ no converge, por ejemplo: si $(a_n)_{n\in \N}=1$, entonces:
+    \item Si la sucesión $\left(a_n\right)$ es convergente en $\left(\mathbb{R}^m, d_2\right)$, entonces $\left((-1)^n a_n\right)$ es convergente.\\
+    
+    Falso: Considere $(\R,d_1)$, (note que en $\R$, $d_2=d_1$), entonces si tomamos una sucesión constante, $(x_n)_{n\in\N}=(-1)^na_n$ no converge, por ejemplo: si $(a_n)_{n\in \N}=1$, entonces:
 
     $$(x_n)_{n\in \N}=\{-1,1,-1,1,-1,1,\ldots\}$$ 
 
@@ -805,7 +770,9 @@ Usamos el máximo ya si $m$ es el máximo entonces a partir del punto en que $a_
     Note que $\lim_{n \to \infty} \left( \inf_{k\geq n} x_k \right)=\lim_{n \to \infty} -a_n=\lim_{n \to \infty} -1=-1$ y por otro lado el \\
     $\lim_{n \to \infty} \left( \sup_{k\geq n} x_k\right)=\lim_{n \to \infty} a_n=\lim_{n \to \infty} 1=1$
 
-    \item Verdadero:\\ \begin{proof} 
+    \item $\limsup \frac{(-1)^n}{n}=0$\\
+    
+    \begin{proof} 
     Observe que para todo $\epsilon>0$, existe $N\in \N$ tal que $\frac{1}{N}<\epsilon$, entonces si $n>N$:
 
 
@@ -838,7 +805,9 @@ Usamos el máximo ya si $m$ es el máximo entonces a partir del punto en que $a_
     \end{proof} 
 
 
-    \item Falso: 
+    \item  $\liminf \frac{(-1)^n n}{n+1}=1$.\\
+ 
+ Falso: 
 
         $$\liminf \frac{(-1)^n n}{n+1}=\lim _{n \rightarrow \infty}\left(\inf_{k \geq n} \frac{(-1)^nn}{n+1}\right)$$
 
@@ -860,7 +829,9 @@ Usamos el máximo ya si $m$ es el máximo entonces a partir del punto en que $a_
 
 
 
-    \item Verdadero: Primero note que:
+    \item $\lim _{n \rightarrow \infty}(\sqrt{n+1}-\sqrt{n})=0$.\\
+ 
+    Primero note que:
 
     $$\sqrt{n+1}-\sqrt{n} \left(\frac{\sqrt{n+1}+\sqrt{n}  }{\sqrt{n+1}+\sqrt{n} } \right)=\frac{1}{\sqrt{n+1}+\sqrt{n}}<\frac{1}{2\sqrt{n}}$$
 
@@ -877,7 +848,9 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
 
     
 
-    \item Falso: Contraejemplo: Sea $A=\{(x,e^x) : x\in \R\}$ y $B=\{(y,0): y\in \R\}$, luego note que $\overline{B}=B$ y $\overline{A}=A$.
+    \item Si $A, B \subseteq \mathbb{R}^n$ entonces $\overline{A+B}=\bar{A}+\bar{B}$\\
+    
+     Falso: Contraejemplo: Sea $A=\{(x,e^x) : x\in \R\}$ y $B=\{(y,0): y\in \R\}$, luego note que $\overline{B}=B$ y $\overline{A}=A$.
 
     $$A+B=\{(z,e^w): z,w\in \R\}=\{(x,y): x,y\in \R, y>0 \}$$
 
@@ -931,8 +904,8 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
 
 \subsection{Algunos ejercicios al lector}
 
-\begin{itemize}[label={✎},leftmargin=*]
-    \item Si $(x_n)$ es una sucesión convergente, entonces $(x_n)$ es una sucesión de Cauchy.
+\begin{itemize}[leftmargin=*]
+    \item Si $(x_n)$ es una sucesión convergente, entonces $(x_n)$ es una sucesión de Cauchy.\\
 
     \begin{proof}
     Sea $(x_n)$ una sucesión convergente, entonces para todo $\epsilon>0$, existe $N\in \N$ tal que si $n,m>N$, entonces $d(x_n,L)<\frac{\epsilon}{2}$ y $d(x_m,L)<\frac{\epsilon}{2}$. Así:
@@ -940,7 +913,7 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
     $$d(x_n,x_m)\leq d(x_n,L)+d(L,x_m)<\frac{\epsilon}{2}+\frac{\epsilon}{2}=\epsilon$$
     \end{proof}
 
-    \item Si $(x_n)$ es una sucesión de Cauchy, entonces toda subsucesión también es de Cauchy.
+    \item Si $(x_n)$ es una sucesión de Cauchy, entonces toda subsucesión también es de Cauchy.\\
 
     \begin{proof}
         Sea $(x_n)$ una sucesión de Cauchy, entonces para todo $\epsilon>0$, existe $N\in \N$ tal que si $m,n\geq N$, $d(x_n,x_m)<\epsilon$.\\
@@ -950,27 +923,60 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
         $$d(x_{n_L},x_{n_M})<\epsilon$$ 
     \end{proof}
 
-    \item Sea $(X,d)$ un espacio métrico. Una función $f:X \longrightarrow X$ se dice contractiva si existe una constante $K \in (0,1)$ tal que $d(f(x),f(y))\leq Kd(x,y)$ para todo $x,y \in X$. Sea $x_0 \in X$ cualquiera y $x_n=f(x_{n-1})$ para $n \in \mathbb{Z}^+$. Muestre que si $f$ es contractiva, la sucesión $(x_n)$ es de Cauchy.
+    \item Sea $(X,d)$ un espacio métrico. Una función $f:X \longrightarrow X$ se dice una contracción en $X$, si existe una constante $K \in (0,1)$ tal que $d(f(x),f(y))\leq Kd(x,y)$ para todo $x,y \in X$. Sea $x_0 \in X$ cualquiera y $x_n=f(x_{n-1})$ para $n \in \mathbb{Z}^+$. Muestre que si $f$ es una contracción, la sucesión $(x_n)$ es de Cauchy.\\
+    
     \begin{proof}
-        Veamos que el conjunto $A=\{d(x_i,x_j)| i,j \in \mathbb{N}\}$ es acotado. Sean $x_i,x_j \in \{x_n\}_{n \in \mathbb{N}}$. Si $i=j$, entonces $d(x_i,x_j)=0$, así que tomemos $i \neq j$, sin pérdida de generalidad, supongamos que $i<j$, entonces
-        \begin{align*}
-            d(x_i,x_j)=d(f(x_{i-1},f(x_{j-1})) &\leq Kd(x_{i-1},x_{j-1})\\
-            &\leq K^2d(x_{i-2},x_{j-2})\\
-            &\vdots\\
-            &\leq K^id(x_0,x_{j-i})\\
-        \end{align*}
-        por lo tanto, $d(x_i,x_j)$ está acotado por 
-
-        
+      Sea $x_0 \in X$ cualquiera y la sucesión $(x_n)$ definida por $x_n=f(x_{n-1})$. Sean $m,n \in \mathbb{N}$ y, sin pérdida de generalidad, supongamos
+      %que ella a mi siempre me trasnocha y que yo la pienso a toda hora%.
+      que $n>m$. Tenemos que 
+      \begin{align*}
+          d(x_m,x_n)=d(f(x_{m-1}),f(x_{n-1}))&\leq Kd(x_{m-1},x_{n-1}),\\
+          &\leq K^2d(x_{m-2},x_{n-2}),\\
+          &\vdots\\
+          &\leq K^md(x_0,x_{n-m}).
+      \end{align*}
+      Ahora, note que 
+      \begin{align*}
+          d(x_0,x_{n-m})&\leq d(x_0,x_1)+d(x_1,x_{n-m}),\\
+          &\leq d(x_0,x_1)+Kd(x_0,x_{n-m-1}),\\
+          &\leq d(x_0,x_1)+Kd(x_0,x_1)+Kd(x_1,x_{n-m-1}),\\
+          &\leq d(x_0,x_1)+Kd(x_0,x_1)+K^2d(x_0,x_{n-m-2}),\\
+          &\vdots\\
+          &\leq d(x_0,x_1)+Kd(x_0,x_1)+K^2d(x_0,x_1)+\dotsb +K^{n-m-1}d(x_0,x_1),\\
+          &=(1+K+K^2+\dotsb +K^{n-m-1})d(x_0,x_1),\\
+          &=\left(\sum_{j=0}^{n-m-1} K^j\right)d(x_0,x_1).
+      \end{align*}
+      Usando la identidad 
+      \begin{align*}
+          \sum_{j=0}^{N} x^j=\frac{1-x^{N+1}}{1-x}, \hspace{2mm} x\neq 0,1,
+      \end{align*}
+      tenemos que
+      \begin{align*}
+          d(x_m,x_n)&\leq K^md(x_0,x_{n-m}),\\
+          &\leq K^m\left(\frac{1-K^{n-m}}{1-K}\right)d(x_0,x_1)\\
+          &=\frac{K^m-K^n}{1-K}d(x_0,x_1).
+      \end{align*}
+      Ahora, como $K \in (0,1)$, es fácil ver que la función $K^x$ tiende a $0$ cuando $x$ tiende a infinito. Por tanto, para todo $\epsilon>0$ existe $N \in \mathbb{N}$ tal que si $n>N$, entonces $K^n<\epsilon$. Tomando $ \displaystyle \epsilon_1=\frac{1-K}{2d(x_0,x_1)}\epsilon$, con $\epsilon>0$, existe $M \in \mathbb{N}$ tal que si $n,m >M$, entonces, $K^m,K^n<\epsilon_1$. De esta manera
+      \begin{align*}
+          d(x_m,x_n)&\leq\frac{K^m-K^n}{1-K}d(x_0,x_1),\\
+          &\leq \frac{K^m+K^n}{1-K}d(x_0,x_1),\\
+          &< \frac{2\epsilon_1}{1-K}d(x_0,x_1),\\
+          &=\frac{2d(x_0,x_1)}{1-K}\cdot \frac{1-K}{2d(x_0,x_1)}\epsilon =\epsilon.
+      \end{align*}
+      Así, concluimos que la sucesión $(x_n)$ es de Cauchy.
     \end{proof}
+    \begin{note}
+        Cuando el espacio métrico es un espacio completo, esto implica que la sucesión anterior es convergente. Es posible mostrar que, el punto $p$ al que converge esta sucesión, es un punto fijo de la función $f$ (es decir, $f(p)=p$) y además, este es único. Este resultado es conocido como el Teorema del Punto Fijo de Banach, o Teorema de Contracción de Banach.
+    \end{note}
 \end{itemize}
 
 
 
-\section{Quiz 7:}
+\subsection{Quiz 7:}
 
-\begin{itemize}[label={✎},leftmargin=*]
-    \item Verdadero:\\
+\begin{itemize}[leftmargin=*]
+    
+    \item $\mathbb{Z}$ es completo con la métrica usual.\\
 
     \begin{proof}
         Sea $(x_n)$ una sucesión de Cauchy en $(\Z,d_1)$, luego para todo $\epsilon>0$, existe $N\in \N$ tal que si $n,m\geq N$, entonces:
@@ -980,7 +986,9 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
         Por tanto $x_n=x_m$, es decir $(x_n)$ es eventualmente constante, entonces $\lim_{n \to \infty} x_n=x_m$, como $x_m \in \Z$, acabamos.
     \end{proof}
 
-    \item Verdadero: veamos un resultado más elegante. Sea $(X,d_d)$ donde $d_d$ es la métrica discreta, entonces $X$ es completo.\\
+    \item Toda sucesión de Cauchy en $\mathbb{Z}$ con la métrica discreta es convergente.\\
+    
+    Veamos un resultado más elegante. Sea $(X,d_d)$ donde $d_d$ es la métrica discreta, entonces $X$ es completo.\\
 
     \begin{proof}
         Sea $(x_n)$ una sucesión de Cauchy en $(X,d_d)$, entonces para todo $\epsilon>0$, existe $N\in\N$ tal que si $m,n\geq N$, entonces:
@@ -994,19 +1002,19 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
         Entonces $x_n=x_m$, luego $(x_n)$ es eventualmente constante, por tanto converge en $X$.
     \end{proof}
 
-    \item Verdadero:\\
+    \item $\mathbb{Q}$ no es completo con la métrica usual.\\
 
     \begin{proof}
         Supongamos que $\Q$ es completo. Considere una sucesión $(x_n)$ convergente definida en $\Q$, entonces es de Cauchy y como $\Q$ es completo, entonces $(x_n)$ converge en $\Q$, luego $\Q$ es cerrado, contradicción.
     \end{proof} 
 
-    \item Verdadero:\\ 
+    \item  Si $\left(a_n\right)$ es de Cauchy en $\left(\mathbb{R}^m, d_2\right)$ y $\left(b_n\right)$ es convergente en $\left(\mathbb{R}^m, d_2\right)$, entonces $\left(a_n+\right.$ $b_n$ ) es de Cauchy.\\
 
     \begin{proof}
         Sabemos que $(\R^m,d_2)$ es completo, luego si $(a_n)$ es de Cauchy, entonces es convergente, tenemos que $(b_n)$ es convergente, por tanto $(a_n+b_n)$ es convergente, y toda sucesión convergente es de Cauchy.
     \end{proof}
 
-    \item Verdadero:\\
+    \item  $\left(\mathbb{R}^n, d_{\infty}\right)$ es un espacio métrico completo.\\
 
     \begin{proof}
         Sabemos que $(R^m,d_2)$ es completo, luego si $(x_n)$ es una sucesión de Cauchy en $(\R^m,d_{\infty})$, para todo $\epsilon>0$, existe $N\in \N$ tal que si $n>N$:
@@ -1028,10 +1036,10 @@ Aquí toca tener particular cuidado con el teorema de Bolzano y sus implicacione
 
 
 
-\section{Quiz 8:}
+\subsection{Quiz 8:}
 
-\begin{itemize}[label={✎},leftmargin=*]
-    \item Verdadero:\\
+\begin{itemize}[leftmargin=*]
+    \item Sean $(E, d)$ espacio métrico y $F \subset E$. Si todo cubrimiento por conjuntos cerrados de $F$ admite un subcubrimiento finito, entonces $F$ es compacto.\\
 
     \begin{proof}
     Supongamos que todo cubrimiento de $F$ por conjuntos cerrados admite un subcubrimiento finito, entonces en particular el cubrimiento:
@@ -1042,7 +1050,8 @@ Aquí toca tener particular cuidado con el teorema de Bolzano y sus implicacione
      Admite un subcubrimiento finito, luego el conjunto $F$ es finito y todo conjunto finito es compacto.
     \end{proof}
 
-    \item Verdadero:\\
+    \item 
+El conjunto $(0,1]$ no es compacto en $\mathbb{R}$ con la métrica usual.\\
 
     \begin{proof}
     Considere el cubrimiento:
@@ -1055,19 +1064,27 @@ Aquí toca tener particular cuidado con el teorema de Bolzano y sus implicacione
     Note que por Heine-Borel esto es trivial.
     \end{proof}
 
-    \item Falso: Considere el intervalo $(0,1)$ en $(\R,d_1)$, este conjunto totalmente acotado en $\R$ ya que es acotado, pero no es completo porque no es cerrado.
+    \item Todo conjunto totalmente acotado es completo.\\
 
-    \item Falso: $(R,d_1)$ es completo, pero no es acotado y por tanto no es totalmente acotado.
+    Falso: Considere el intervalo $(0,1)$ en $(\R,d_1)$, este conjunto totalmente acotado en $\R$ ya que es acotado, pero no es completo porque no es cerrado.
 
-    \item Verdadero:\\
+    \item Todo conjunto completo es totalmente acotado.\\
+    
+    Falso: $(R,d_1)$ es completo, pero no es acotado y por tanto no es totalmente acotado.
+
+    \item Todo espacio métrico secuencialmente compacto es completo. \\
 
     \begin{proof}
     Sea $(X,d)$ un espacio métrico y $(x_n)$ una sucesión de Cauchy en $(X,d)$, como $(X,d)$ es secuencialmente compacto, $(x_n)$ tiene una subsucesión convergente, como $(x_n)$ es de Cauchy y tiene una subsucesión convegente, converge.
     \end{proof}
 
-    \item Falso: Note que $(\R,d_1)$ es completo, pero no es compacto por Heine-Borel
+    \item Todo espacio métrico completo es compacto.
+    
+    Falso: Note que $(\R,d_1)$ es completo, pero no es compacto por Heine-Borel
 
-    \item Falso: Sea $(\R,d_d)$ donde $d_d$ es la métrica discreta, luego $\R$ es cerrado y acotado ya que $\R\subseteq B(0,2)$, note que el cubrimiento de abiertos:
+    \item Todo subconjunto cerrado y acotado de un espacio métrico es compacto. \\ 
+    
+    Falso: Sea $(\R,d_d)$ donde $d_d$ es la métrica discreta, luego $\R$ es cerrado y acotado ya que $\R\subseteq B(0,2)$, note que el cubrimiento de abiertos:
 
     $$\R\subseteq \bigcup_{i \in \R}\{x\}$$
 
@@ -1075,7 +1092,7 @@ Aquí toca tener particular cuidado con el teorema de Bolzano y sus implicacione
 \end{itemize}
  
 \begin{note}
-No te preocupes si no entiendes la prueba de Heine-Borel, de hecho muy pocas veces un ejercicio de parcial será tan fácil como usar ese teorema, lo que recomendaría sería entender bien todos los conceptos aquí plasmados, en particular el teorema de Bolzano y las equivalencias presentadas al final de la sección.
+No te preocupes si no entiendes la prueba de Heine-Borel, de hecho muy pocas veces un ejercicio de parcial será tan fácil como usar ese teorema, lo que yo recomendaría sería entender bien todos los conceptos aquí plasmados, en particular el teorema de Bolzano y las equivalencias presentadas al final de la sección.
 \end{note}
 
 \begin{note}
@@ -1083,14 +1100,14 @@ A continuación presentamos una serie de ejercicios tanto de parciales anteriore
 \end{note}
 
 
-\section{Ejercicios adicionales:}
+\subsection{Ejercicios adicionales:}
 
 
 Esto es como una clase de preparación para lo que sería un segundo parcial.\\
 
 \textbf{Para cada una de las siguientes afirmaciones diga si es falso o verdadero, si es verdadero escriba la demostración y si es falso de el contraejemplo, si la afirmación dice demuestre pues esa sí demuéstrela xd:}
 
-\begin{itemize}[label={☠},leftmargin=*]
+\begin{itemize}[leftmargin=*]
 
 \item Sea (X,d) un espacio métrico, si $S\subseteq X$ es acotado entonces es totalmente acotado:\\
 
@@ -1185,9 +1202,9 @@ Note que esto fue aplicar desigualdad triangular varias veces pero de la forma a
 Muchos teoremas en cálculo requieren de conexidad en su hipótesis, por eso es importante este capítulo, nos ayuda a formalizar y entender la idea de conexidad sobre al menos espacios métricos. Como bien lo dicen las notas, esto intuitivamente se puede pensar como que el conjunto es un solo pedazo en caso sea conexo, en este capítulo al menos no hay mucho que decir, pasemos a los ejercicios.
 \end{note}
 
-\section{Quiz 9}
+\subsection{Quiz 9}
 
-\begin{itemize}[label={✎},leftmargin=*]
+\begin{itemize}[leftmargin=*]
 
 \item El espacio métrico $(\Z,d_1\mid_{\Z\times \Z})$ es conexo:\\
 
@@ -1197,7 +1214,7 @@ Falso: Sea $A=\{0\}$, note que $B(0,1)=\{0\}$, luego $A$ es abierto, Ahora obser
 
 Falso: Nuevamente $A=\{0\}$ es abierto y cerrado al tiempo.
 
-\item Si $A$ es conexo en $(\R^n,d_2)$, entonces $A$ es conexo en $(\R_n,d_1)$
+\item Si $A$ es conexo en $(\R^n,d_2)$, entonces $A$ es conexo en $(\R_n,d_1)$\\
 
 
 \begin{proof}
@@ -1229,10 +1246,277 @@ Falso: Sea $(\R,d_1)$, recuerde que $int(\N)=\emptyset$, que es conexo, pero $\N
 
 
 \section{Ejercicios 3:}
+\begin{itemize}[leftmargin=*]
+    \item Sea $V$ un espacio vectorial sobre $\mathbb{R}$. Una aplicación 
+        \begin{align*}
+            ||\cdot||:&V \longrightarrow \mathbb{R}\\
+            &x \longmapsto ||x||
+        \end{align*}
+        se denomina norma si:
+        \begin{enumerate}[(1)]
+            \item Para todo $x \in V$, $||x||\geq 0$ y $||x||=0$ si y sólo si $x=0$.
+            \item Para todo $ \in V$ y todo $\lambda \in \mathbb{R}$, $||\lambda x||=|\lambda|||x||$.
+            \item Para todo $x,y \in V$, $||x+y||\leq ||x||+||y||$.
+        \end{enumerate}
+        Demuestre que si $(V,||\cdot||)$ es un espacio vectorial normado, entonces $(V,d)$ es un espacio métrico con 
+        \begin{align*}
+            d:&V \times V \longrightarrow \mathbb{R}\\
+            &(x,y) \longmapsto d(x,y)=||x-y||.
+        \end{align*}
+        \begin{enumerate}[a)]
+            \item A fin de que una métrica de un espacio vectorial real $V$ provenga de una norma es necesario y suficiente que dados $y,x,a \in V$ y $\lambda \in \mathbb{R}$, $d(x+a,y+a)=d(x,y)$ y $d(\lambda x,\lambda y)=|\lambda|d(x,y)$.
+            \item Demuestre que todas las normas de $\mathbb{R}^n$ son equivalentes, es decir, dadas $||\cdot||_1$ y $||\cdot||_2$ normas en $\mathbb{R}^n$, existen $c,d>0$ tales que $c||x||_2\leq ||x||_1\leq d||x||_2$ para todo $x \in \mathbb{R}^n$.
+        \end{enumerate}
+    \item Si $(E,d)$ es un espacio métrico, defina
+    \begin{align*}
+        d': &E \times E \longrightarrow \mathbb{R}\\
+        &(x,y) \longmapsto d'(x,y)=\frac{d(x,y)}{1+d(x,y)}.
+    \end{align*}
+    Demuestre que $(E,d')$ es un espacio métrico.\\
+    
+    \begin{proof}
+    Verifiquemos las condiciones para que $d'$ sea una métrica.
+        \begin{itemize}
+            \item Veamos que $d'(x,y)=0$ si y sólo si $x=y$. En efecto, supongamos que $d'(x,y)=0$, por definición, $\displaystyle \frac{d(x,y)}{1+d(x,y)}=0$, de donde se deduce que $d(x,y)=0$. Como por hipótesis $d$ es métrica, entonces $x=y$. Si $x=y$, es trivial que $d'(x,y)=0$.
+            \item Ahora, veamos que $d'(x,y)=d'(y,x)$ para todo $x,y \in E$. Como $d$ es métrica, tenemos que $d(x,y)=d(y,x)$ para todo $x,y \in E$. esto implica que dados $x,y \in E$
+            \begin{align*}
+                d'(x,y)=\frac{d(x,y)}{1+d(x,y)}=\frac{d(y,x)}{1+d(y,x)}=d'(y,x),
+            \end{align*}
+            lo cual prueba la propiedad.
+            \item Veamos que para todo $x,y,z \in E$, se tiene que $d'(x,y)\leq d'(x,z)+d'(z,y)$. Para esto, primero veamos que, dados $a,b\geq 0$, si $a \leq b$, entonces $\displaystyle \frac{a}{1+a}\leq \frac{b}{1+b}$, en efecto
+            \begin{align*}
+                a&\leq b\\
+                \Rightarrow a + ab &\leq b+ab,\\
+                \Rightarrow a(1+b) &\leq b(1+a),\\
+                \Rightarrow \frac{a}{1+a}&\leq \frac{b}{1+b}.
+            \end{align*}
+            Ahora, como $d$ es métrica, sabemos que para todo $x,y,z \in E$, $d(x,y)\leq d(x,z)+d(z,y)$, usando el resultado anterior, tenemos que para todo $x,y,z \in E$
+            \begin{align*}
+                d'(x,y)=\frac{d(x,y)}{1+d(x,y)}&\leq \frac{d(x,z)+d(z,y)}{1+d(x,z)+d(z,y)}\\
+                &=\frac{d(x,z)}{1+d(x,z)+d(z,y)}+\frac{d(z,y)}{1+d(x,z)+d(z,y)}.
+            \end{align*}
+            Como $d(x,z),d(z,y)\geq 0$, es claro que
+            \begin{align*}
+                1+d(x,z)\leq 1+d(x,z)+d(z,y),\\
+                1+d(z,y) \leq 1+d(x,z)+d(z,y).
+            \end{align*}
+            Por lo tanto,
+            \begin{align*}
+                \frac{d(x,z)}{1+d(x,z)+d(z,y)}\leq \frac{d(x,z)}{1+d(x,z)},\\
+                \frac{d(z,y)}{1+d(x,z)+d(z,y)}\leq \frac{d(z,y)}{1+d(z,y)}.
+            \end{align*}
+            De esta manera
+            \begin{align*}
+                d'(x,y)=\frac{d(x,y)}{1+d(x,y)}&\leq \frac{d(x,z)}{1+d(x,z)+d(z,y)}+\frac{d(z,y)}{1+d(x,z)+d(z,y)},\\
+                &\leq \frac{d(x,z)}{1+d(x,z)}+\frac{d(z,y)}{1+d(z,y)}=d'(x,z)+d'(z,y),
+            \end{align*}
+            lo cual completa la demostración.
+        \end{itemize}
+        
+    \end{proof}
 
-\begin{note}
-Esta sección está pendiente
-\end{note}
+    \item Pruebe que en $(\mathbb{R},d_1)$:
+    \begin{enumerate}[a)]
+        \item $\displaystyle \lim_{n \rightarrow \infty} \sqrt[n]{n}=1$.\\
+
+        \begin{proof} Note que si $n\geq 1$, entonces $\sqrt[n]{n}=1+a_n$ con $a_n\geq 0$, luego:
+
+        \begin{align*}
+            n&=(1+a_n)^n=\sum_{i=0
+            }^n\binom{n}{i}1^{n-i}a_n^i,\\
+            &=1+n a_n+\dfrac{n(n-1)}{2}a_n^2+\ldots+a_n^n,\\
+            &\geq \dfrac{n(n-1)}{2}a_n^2,\\
+            &\geq 0.
+        \end{align*}
+
+De esto se sigue que $0\leq \dfrac{n(n-1)}{2}a_n^2\leq n$, es decir $0\leq a_n\leq \sqrt{\dfrac{2}{n-1}}$, sabemos que $\lim_{n\to \infty}\dfrac{1}{\sqrt{n-1}}=0$, luego:
+
+$$0\leq \lim_{n\to \infty}a_n\leq \sqrt{2}\lim_{n\to \infty}\dfrac{1}{\sqrt{n-1}}=0.$$
+
+Luego como $a_n$ tiende a 0, es claro que el límite es 1.
+        
+        \end{proof}
+        
+        \item $\displaystyle \lim_{n \rightarrow \infty} \frac{\nu(n)}{n}=0$, 
+        donde $\nu(n)$ es el número de divisores primos de $n$.\\
+
+        \begin{proof}
+            Sea  $\tau(n)=\displaystyle\sum_{j\mid n}1$, en efecto $0\leq  v(n)\leq\tau(n)$, para todo $n\in \Z^+$, ahora note que $\tau(n)\leq 2\sqrt{n}$, ya que para cada divisor de $n$ menor igual que $\sqrt{n}$ hay exactamente un divisor mayor igual que $\sqrt{n}$, es decir, si $j\mid n$ y $j\leq \sqrt{n}$, entonces $\dfrac{n}{j}\geq \sqrt{n}$ y además $\dfrac{n}{j}\mid n$. Luego:
+
+            \begin{align*}
+                0\leq \lim_{n\to \infty} \dfrac{v(n)}{n}\leq \lim_{n\to\infty}\dfrac{2\sqrt{n}}{n}=0
+            \end{align*}
+        \end{proof}
+        
+        \item La sucesión
+        \begin{align*}
+            \left(\frac{1}{2},\cfrac{1}{2+\cfrac{1}{2}},\cfrac{1}{2+\cfrac{1}{2+\cfrac{1}{2}}},...\right)
+        \end{align*}
+        es convergente.
+        \begin{proof}
+            Esta demostración es fina, pero sólo se le ocurre a uno después de estar en un estado de desesperación considerable.
+            
+            Note que
+            \begin{align}
+                \sqrt{2}=1+\frac{1}{\sqrt{2}+1}
+            \end{align}
+            Aplicando nuevamente la identidad (1.1) en el $\sqrt{2}$ que aparece en el denominador, tenemos
+            \begin{align*}
+                \sqrt{2}&=1+\cfrac{1}{\sqrt{2}+1}\\
+                &=1+\cfrac{1}{1+\cfrac{1}{\sqrt{2}+1}+1}\\
+                &=1+\cfrac{1}{2+\cfrac{1}{\sqrt{2}+1}}
+            \end{align*}
+            Realizando repetidamente este proceso, obtenemos
+            \begin{align*}
+                \sqrt{2}-1&=\cfrac{1}{\sqrt{2}+1},\\
+                &=\cfrac{1}{2+\cfrac{1}{\sqrt{2}+1}},\\
+                &=\cfrac{1}{2+\cfrac{1}{2+\cfrac{1}{\sqrt{2}+1}}},\\
+                &\vdots\\
+                &=\cfrac{1}{2+\cfrac{1}{2+\cfrac{1}{\ddots 2+ \cfrac{\empty}{2+\cfrac{1}{\sqrt{2}+1}}}}},
+            \end{align*}
+            que asintóticamente, es la misma sucesión que estamos considerando. Luego, la sucesión original converge y lo hace a $\sqrt{2}-1$.
+        \end{proof}
+        \begin{proof}
+            \textbf{Alternativa} Esta demostración no es tan fina, pero es más aterrizada. 
+
+            Note que la sucesión, se puede escribir de manera recursiva como $a_{n+1}=\dfrac{1}{2+a_{n}}$ para $n \in \mathbb{Z}^+$, con $a_1=\dfrac{1}{2}$. Es claro que $a_n \geq 0$ para todo $n \in \mathbb{Z}^+$, entonces $2+a_n\geq 2$ y así $\dfrac{1}{2}\geq\dfrac{1}{2+a_n}$. Esto acaba de probar que $0\leq a_n \leq \dfrac{1}{2}$ para todo $n \in \mathbb{Z}^+$, en otras palabras, la sucesión está contenida en $\left[0,\dfrac{1}{2}\right]$. 
+
+            Ahora, considere $\left(\left[0,\dfrac{1}{2}\right],d_1\right)$ como subespacio métrico de $\mathbb{R}$ y considere la función $f$ definida en  $\left(\left[0,\dfrac{1}{2}\right],d_1\right)$ como
+            \begin{align*}
+                f(x)=\frac{1}{2+x}.
+            \end{align*}
+            Es claro que la sucesión $(a_n)$ se puede escribir como $a_1=\dfrac{1}{2}$ y $a_{n+1}=f(a_n)$ para $n \in \mathbb{Z}^+$. Note además que la función $f$ es decreciente en $\left[0,\dfrac{1}{2}\right]$, por lo tanto, para todo $x \in \left[0,\dfrac{1}{2}\right]$, se tiene $\dfrac{2}{5}=f\left(\dfrac{1}{2}\right)\leq f(x) \leq f(0)=\dfrac{1}{2}$. Esto quiere decir que $Im (f)=\left[\dfrac{2}{5},\dfrac{1}{2}\right] \subseteq \left[0,\dfrac{1}{2}\right]$. Esto está un poquito enredado, pero esperen que es importante. 
+
+            Ahora, note que dados $x,y \in \left[0,\dfrac{1}{2}\right]$, tenemos que
+            \begin{align*}
+                d_1(f(x),f(y))=\left|\frac{1}{2+x}-\frac{1}{2+y}\right|=\left|\frac{y-x}{(2+x)(2+y)}\right|.
+            \end{align*}
+            Por lo que probamos antes, $f(x)=\dfrac{1}{2+x}\leq \dfrac{1}{2}$, y lo mismo sucede con $f(y)=\dfrac{1}{2+y}$, entonces
+            \begin{align*}
+                d_1(f(x),f(y))=\left|\frac{y-x}{(2+x)(2+y)}\right|\leq \frac{1}{4}|x-y|=\frac{1}{4}d_1(x,y).
+            \end{align*}
+            En resumen
+            \begin{align*}
+                f: \left(\left[0,\dfrac{1}{2}\right],d_1\right) \longrightarrow \left(\left[0,\dfrac{1}{2}\right],d_1\right)\\
+            \end{align*}
+            es tal que $d_1(f(x),f(y))\leq \dfrac{1}{4}d_1(x,y)$ para todo $x,y \in \left[0,\dfrac{1}{2}\right]$, es decir, dado que $\dfrac{1}{4} \in (0,1)$, $f$ es una contracción en $\left(\left[0,\dfrac{1}{2}\right],d_1\right)$. Por el tercer ejercicio de la \textbf{Sección 1.4.1}, tenemos que la sucesión $a_{n+1}=f(a_n)$ es de Cauchy. Además, como $\left[0,\dfrac{1}{2}\right]$ es compacto, entonces $\left(\left[0,\dfrac{1}{2}\right],d_1\right)$ es completo y por tanto, la sucesión $(a_n)$ converge.
+        \end{proof}
+    \end{enumerate}
+    \item Sean $(x_n)_{n \in \mathbb{N}}$ y $(y_n)_{n \in \mathbb{N}}$ sucesiones acotadas en $(\mathbb{R},d_1)$, y tomemos $a=\liminf x_n$, $A=\limsup x_n$, $b=\liminf y_n$ y $B=\limsup y_n$. Demuestre que 
+    \begin{enumerate}[a)]
+        \item $\limsup (x_n +y_n)\leq A+B$.
+        \item $\limsup(-x_n)=-a$.
+        \item $\liminf (x_n+y_n)\geq a+b$.
+        \item $\liminf(-x_n)=-A$.
+        \item $\liminf(x_n \cdot y_n)\geq ab$.
+    \end{enumerate}
+    
+    \item Encuentre el interior, la clausura, la frontera, los puntos de acumulación en $(\mathbb{R}, d1)$ de los siguientes conjuntos:
+    \begin{enumerate}[a)]
+        \item $\displaystyle A=\left\{\frac{1}{n}:n \in \mathbb{Z}^+\right\}$.
+        \begin{solution}
+            \begin{itemize}
+                \item \textbf{Interior.} Note que en $(\mathbb{R},d_1)$, los conjuntos abiertos deben ser no contables o ser vacío, por tanto, dado que $A$ es contable, no puede contener un conjunto abierto no vacío, es decir, $Int(A)=\emptyset$.
+                \item \textbf{Puntos de Acumulación}. Note que $A \subseteq (0,1]$ y que además, todos los puntos de $A$ son aislados, es decir, $A \cap A'= \emptyset$. Ahora, haciendo uso de la propiedad arquimediana de $\mathbb{R}$, sabemos que para todo $\epsilon>0$, existe $n \in \mathbb{Z}^+$ tal que $\displaystyle \frac{1}{n}<\epsilon$. Esto quiere decir que $\displaystyle \left| \frac{1}{n}-0\right|=d\left(\frac{1}{n},0\right)<\epsilon$, luego $0 \in A'$. Sabiendo que para todo $x \in (-\infty,0)\cup (1,\infty)$, la distancia a $A$ es siempre mayor que $0$, se tiene que $x\notin A'$. Así, $A'=\{0\}$.
+                \item \textbf{Clausura.} Usando el hecho de que $\overline{A}=A\cup A'$, tenemos que $\overline{A}=A\cup \{0\}$.
+                \item \textbf{Frontera.} Usando el hecho de que $\overline{A}=Int(A)\cup \partial A$, como $Int(A)=\emptyset$, entonces $\partial A=\overline{A}=A\cup \{0\}$.
+            \end{itemize}
+        \end{solution}
+        \item $\displaystyle B=\left\{\frac{1}{n}+\frac{1}{m}:n,m \in \mathbb{Z}^+\right\}$.
+        \begin{solution}
+            \begin{itemize}
+                \item \textbf{Interior.} Nuevamente, dado que $B$ es un conjunto contable, tenemos que $Int(B)=\emptyset$.
+            \end{itemize}
+        \end{solution}
+        \item $\mathbb{Q}$.
+        \item $\mathbb{I}$.
+        \item $[a,b)$.
+        \item $\{2^{-n}+5^{-m}:n,m \in \mathbb{Z}^+\}$.
+    \end{enumerate}
+    \item Dados $S,T$ subconjuntos de un espacio métrico $(E,d)$, pruebe que 
+    \begin{enumerate}[a)]
+        \item $Int(S\cap T)=Int(S)\cap Int(T)$.
+        \begin{proof}
+            El caso en que $Int(S \cap T)$ o $Int(S)\cap Int(T)$ son vacíos, verifican la propiedad de manera relativamente fácil.
+            
+            Sea $x \in Int(S \cap T)$, por definición, existe $r>0$ tal que $B(x;r) \subseteq S \cap T$. Como $S \cap T \subseteq S$ y $S \cap T \subseteq T$, entonces $B(x;r) \subseteq S$ y $B(x;r) \subseteq T$, es decir, $x \in Int(S)$ y $x \in Int(T)$, o lo que es lo mismo $x \in Int(S) \cap Int(T)$. Así, hemos probado que $Int(S \cap T)\subseteq Int(S) \cap Int(T)$.
+
+            Ahora, sea $y \in Int(S) \cap Int(T)$, por definición, $y \in Int(S)$ y $y \in Int(T)$, de esta manera, existen $r_1,r_2>0$ tales que $B(y;r_1)\subseteq S$ y $B(y;r_2)\subseteq T$. Considere $r=\min\{r_1,r_2\}$, luego $B(y;r)\subseteq B(y;r_1)$ y $B(y;r) \subseteq B(y;r_2)$. De esta manera, $B(y;r) \subseteq S \cap T$, es decir, $y \in Int(S \cap T)$. Hemos probado, entonces, que $Int(S) \cap Int(T) \subseteq Int(S \cap T)$, lo cual completa la demostración.
+        \end{proof}
+        
+        \item $Int(S) \cup Int(T) \subseteq Int(S \cup T)$.\\
+        
+        \begin{proof}
+            Igual que antes, dejamos al lector verificar el caso cuando es vacío.
+
+            Sea $x \in Int(S) \cup Int(T)$, por definición, $x \in Int(S)$ o $x \in Int(T)$. Veremos solamente el caso en el que $x \in Int(S)$, ya que el otro caso es análogo y lo puede desarrollar el lector con la idea que prosigue.
+
+            Si $x \in Int(S)$, entonces existe $r>0$ tal que $B(x;r) \subseteq S$. Como $S \subseteq S \cup T$, entonces $B(x;r)\subseteq S \cup T$, es decir, $x \in Int(S \cup T)$. Luego $Int(S) \cup Int(T) \subseteq Int(S \cup T)$.
+        \end{proof}
+        
+        \item $\overline{S\cap T}\subseteq \overline{S}\cap \overline{T}$.
+        \item $S'$ es cerrado.\\
+        
+        \begin{proof}
+            Esta demostración está en la sección 3.3 de las notas, sin embargo, vamos a realizar una prueba alternativa que, si se comprende bien, deja muy claro el concepto de derivado. Denotamos por $B^*(x;r)=B(x;r)\setminus \{x\}$. Vamos a mostrar que $(S')^c=E\setminus S'$ es un conjunto abierto. Tomemos $y \in (S')^c$, por definición, existe $r>0$ tal que $B^*(y;r)\cap S= \emptyset$, o lo que es lo mismo, $B(y;r)\cap S \subseteq \{y\}$. Veamos que $B(y;r) \subseteq (S')^c$.
+
+            Por contradicción, supongamos que $B(y,r)\cap S' \neq \emptyset$, entonces existe $x \in B(y,r)\cap S'$. Como $x \in S'$, para todo $r'>0$, $B^*(x;r')\cap S \neq \emptyset$, además, como $x \in B(y;r)$ y las bolas abiertas son conjuntos abiertos, existe $r_1>0$ tal que $B(x;r_1)\subseteq B(y;r)$. Ahora, como $y \notin S'$, entonces $x\neq y$, por tanto, $r_2=d(x,y)>0$ y sea $R=\min\{r_1,r_2\}$. Es claro que $B^*(x;R)\subseteq B(x;R) \subseteq B(y;r)$, entonces $B^*(x;R)\cap S \subseteq B(y;r)\cap S \subseteq \{y\}$, esto es una contradicción, ya que $y \notin B^*(x;R)$, lo cual implicaría que $B^*(x;R)\cap S = \emptyset$, lo que contradice el hecho de que $x \in S'$. De esta manera $B(y;r) \subseteq (S')^c$ y, dado que fue $y$ fue tomado de manera arbitraria, concluimos que $(S')^c$ es un conjunto abierto, es decir, $S'$ es cerrado. 
+        \end{proof}
+        \item $(S \cup T)'=S'\cup T'$.\\
+        
+        \item $(\overline{S})'=S'$
+
+    \end{enumerate}
+
+            \item Si $X \subseteq \mathbb{R}^n$ es no contable muestre que $X \cap X^{\prime} \neq \phi$ y $X^{\prime}$ es no contable
+        
+        \item Un conjunto $V \subset \mathbb{R}^n$ es convexo, si dados $u, v \in V$, entonces $t u+(1-t) v \in V$ para todo $t \in[0,1]$. Considerando $\left(\mathbb{R}^n, d_2\right)$ demuestre que:
+        
+        \begin{itemize}
+            \item Las bolas abiertas de $\left(R^n, d_2\right)$ son convexos de $\mathbb{R}^n$.
+            
+            \item El interior de un convexo, es convexo.
+            
+            \item La clausura de un convexo, es convexo.
+            \end{itemize}
+
+        \item Sea $(M, d)$ espacio métrico. Si $S, A \subset M$ son tales que $A \subset S \subset \bar{A}$, decimos que $A$ es denso en $S$.
+        
+        \begin{itemize}
+        
+        \item Considerando $\left(\mathbb{R}^n, d_2\right)$, pruebe que $\mathbb{Q}^n$ es denso en $\mathbb{R}^n$.
+        
+        \item Si $A$ es denso en $S$ y $B$ es abierto en $S$, muestre que $B \subset \overline{A \cap B}$.
+        
+    \end{itemize}
+    
+    \item Sea $(E, d)$ un espacio métrico.Si todo conjunto infinito de $E$ tiene un punto de acumulación en $(E, d)$ muestre que existe $B \subseteq E$ contable y $\bar{B}=E$ ( es decir $E$ es separable). Sugerencia:muestre que para $\delta_n=\frac{1}{n}$ existen $x_1^{(n)} \cdots, x_l^{(n)} \in E$ tales que $d\left(x_i^{(n)}, x_j^{(n)}\right)>\frac{1}{n}$ si $i \neq j$ y que $E=\cup B\left[x_i^{(n)}, \frac{1}{n}\right]$
+
+    \item Consideremos $\left(\mathbb{R}^n, d_2\right)$. Un subconjunto $S \subset \mathbb{R}^n$ es perfecto si $S^{\prime}=S$. Pruebe que si $S$ es perfecto, entonces $S$ no es enumerable. Sugerencia: use el teorema de Baire
+
+    \item Demuestre que el conjunto de Cantor es perfecto en $\left(\mathbb{R}, d_1\right)$.
+    
+    \item Sean $\left(\mathbb{R}^n, d_2\right)$ y $X \subseteq \mathbb{R}^n$. Muestre que todo cubrimiento abierto de $X$ admite un subrecubrimiento contable (Lindelöf).Sugerencia considere el conjunto $\{B(q, r)$ : $\left.q \in \mathbb{Q}^n, r \in \mathbb{Q}\right\}$
+    
+    \item Sean $U$ abierto en $(E, d)$ y $\left\{K_i\right\}_{i \in \mathbb{N}}$ una familia de compactos de $(E, d)$ tales que $K_1 \supset K_2 \supset K_3 \supset \cdots$. Si $K=\bigcap_{i \in \mathbb{N}} K_i \subset U$, entonces existe $i \in \mathbb{N}$ tal que $K_i \subset U$.
+    
+    \item Sean $(E, d)$ espacio métrico, $S, T \subset E$ tales que $S$ es cerrado y $T$ es compacto. Demuestre que $S \cap T$ es compacto.
+    \begin{proof}
+        Como $T$ es compacto, entonces $T$ es cerrado, y como $S$ también lo es $S\cap T$ es cerrado. Ahora, como $S\cap T \subseteq T$, y $T$ es compacto, entonces $S \cap T$ también es compacto, por ser un subconjunto cerrado de un compacto. 
+    \end{proof}
+    
+    \item Sean $(E, d)$ espacio métrico y $X, Y \subset E$. Si $X$ es conexo y $X \subset Y \subset \bar{X}$, entonces $Y$ es conexo. Concluya en particular que la adherencia de un conjunto conexo es conexo.
+    \begin{proof}
+        Por contradicción, supongamos que $Y$ no es conexo, entonces, por definición, existen $A$ y $B$ abiertos no vacíos en $Y$, tales que $A\cap B=\emptyset$ y $A \cup B=Y$. Como $X$ es conexo y $X \subseteq Y$, entonces se debe tener que $X \subset A$ o $X \subset B$. Sin pérdida de generalidad, supongamos que $X \subset A$. Como $B$ es abierto, para todo $b \in B$, existe $r>0$ tal que $B(b;r) \subset B$, esto quiere decir que $B(b;r)\cap A=\emptyset$ y por tanto, $B(b;r)\cap X=\emptyset$. Así, para todo $b \in B$, se tiene que $b \notin \overline{X}$, lo cuál contradice que $Y \subset \overline{X}$. Así, $Y$ debe ser conexo. 
+
+        En particular, note que si $X$ es un conjunto conexo, es trivial que $X \subset \overline{X} \subset \overline{X}$. Por el resultado anterior, se puede concluir que $\overline{X}$ es conexo.
+    \end{proof}
+
+    \item Describa todos los conjuntos conexos y enumerables de $\left(\mathbb{R}^n, d_2\right)$.
+    
+    \item Sean $C, X$ subconjuntos de un espacio métrico $(E, d)$. Si $C$ es conexo y tiene puntos en común con $X$ y con $E \backslash X$, entonces muestre que algún punto de $C$ pertenece a la frontera de $X$.
+\end{itemize}
+
 
 
 

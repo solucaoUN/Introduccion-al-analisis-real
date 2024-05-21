@@ -9,7 +9,7 @@
 
 \definecolor{titlepagecolor}{cmyk}{1,1,1,1}
 
-\DeclareFixedFont{\titlefont}{T1}{ppl}{b}{}{0.75in}
+\DeclareFixedFont{\titlefont}{T1}{ppl}{bx}{n}{0.75in}
 
 \makeatletter                       
 \def\printauthor{%                  
@@ -67,10 +67,14 @@
 \end{tikzpicture}%
 }
 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                          TABLA DE CONTENIDO                         %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 \usepackage{framed}
 \usepackage{titletoc}
 
-\patchcmd{\tableofcontents}{\contentsname}{\sffamily\contentsname}{}{}
+\patchcmd{\tableofcontents}{\contentsname}{\bfseries\contentsname}{}{}
 
 \renewenvironment{leftbar}
   {\def\FrameCommand{\hspace{6em}%
@@ -79,43 +83,43 @@
   }
  {\endMakeFramed}
 
-
-
 \titlecontents{chapter}
-  [-0em]{\Large\bfseries\vspace*{3\baselineskip}}
-  {\hspace{-2cm}\parbox{6.5em}{%
-    \hfill\Huge\sffamily\bfseries\color{black}\thecontentspage}%
-   \vspace*{-1.9\baselineskip}\leftbar\sffamily\bfseries}
+  [0.3em]{\Large\bfseries\vspace*{2\baselineskip}}
+  {\hspace{-1.2cm}\parbox{6.5em}{%
+    \hfill\Huge\bfseries\color{black}\thecontentslabel}%
+   \vspace*{-1.9\baselineskip}\leftbar\bfseries}
   {}{\endleftbar}
 \titlecontents{section}
   [11.4em]
-  {\sffamily\contentslabel{3em}}{}{} 
-  {\hfill \nobreak\itshape\color{black}\contentspage}
+  {\contentslabel{3em}}{}{} 
+  {\phantom{    }\dotfill \nobreak\itshape\color{black}\contentspage}
 \titlecontents{subsection}
   [13em]
-  {\sffamily\contentslabel{3em}}{}{}  
-  {\hfill \nobreak\itshape\color{black}\contentspage}
+  {\contentslabel{3em}}{}{}  
+  {\phantom{    }\dotfill \nobreak\itshape\color{black}\contentspage}
 
 
 \newcommand{\mychapter}[2]{
+
     \setcounter{chapter}{#1}
     \setcounter{section}{0}
     \chapter*{#2}
     \addcontentsline{toc}{chapter}{#2}
 }
 
-
 \usepackage{titlesec}
 
 \titleformat{\chapter}
-{\normalfont\centering\fontsize{50}{60}\bfseries}{}{0pt}{}
+{\vspace{-1.2cm}\normalfont\fontsize{30}{20}\bfseries}{}{0pt}{}
 
 \titleformat{\section}
-{\normalfont\Huge\bfseries}{~\thesection}{1em}{}
+{\normalfont\Large\bfseries}{~\thesection}{1em}{}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%                 CONFIGURACIÓN DEL ENCABEZADO                        %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \usepackage{fancyhdr}
-
-% Configuración de la página y el encabezado
 \pagestyle{fancy}
 \fancyhf{}  % Borra todos los encabezados y pies de página actuales
 
@@ -133,3 +137,12 @@
 \setlength{\headheight}{14.5pt}
 \addtolength{\topmargin}{-2.5pt}
 
+\setlength{\parindent}{0pt}
+\newcommand*{\blankpage}{
+{\newpage \vspace*{5cm}\thispagestyle{empty}\centering \bfseries  \textit{Esta página se dejó intencionalmente en blanco} \par}
+\vspace{\fill}}
+
+\setlength{\parindent}{0pt}
+\newcommand*{\blankpages}{
+{\newpage \vspace*{5cm}\thispagestyle{empty}\centering \bfseries  \textit{} \par}
+\vspace{\fill}}
