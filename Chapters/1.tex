@@ -1,4 +1,4 @@
-%!TEX root = main.tex
+%!TEX root = ../main.tex
 
 El curso de Introducción al Análisis Real es uno de los más pesados en la carrera de matemáticas y los estudiantes carecen casi que de toda ayuda (no hay monitorias y los espacios en clase a veces son insuficientes), por estos motivos decidimos hacer este solucionario de las notas de Introducción al Análisis Real de los profesores Leonardo Rendón y Serafín Bautista, esto más que un solucionario es una guía de lectura de las notas, aquí encontrarás muchos de los conceptos o ideas del curso desde un punto de vista más de estudiante que ha sufrido esa materia y que sabe lo compleja que puede llegar a ser.\\
 
@@ -858,6 +858,8 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
 
 \begin{tikznt}
 
+
+
 \centering
 \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
 
@@ -895,6 +897,89 @@ Luego en efecto $\lim_{n \to \infty} \sqrt{n+1}-\sqrt{n}=0   $
 \end{tikzpicture}
 
 \end{tikznt}
+
+\item Si $(a_n)$ es una sucesión de números reales positivos, entonces
+\begin{align*}
+    \liminf_{n\to \infty} \frac{a_{n+1}}{a_n}\leq \liminf_{n \to \infty} \sqrt[n]{a_n}\leq \limsup_{n\to \infty} \sqrt[n]{a_n}\leq \limsup_{n\to \infty} \frac{a_{n+1}}{a_n}.
+\end{align*}
+\begin{proof}
+    Póngale cuidado que esto es fino. Note que la desigualdad del medio es trivial, así que vamos a probar las desigualdades de los extremos.
+    \begin{itemize}
+        \item Vamos a empezar con la de la derecha porque tengo problemas psicológicos. Si $\displaystyle \limsup_{n\to \infty}\frac{a_{n+1}}{a_n}=\infty$, la desigualdad de la derecha se tiene de manera trivial. Supongamos que $\displaystyle \limsup_{n\to \infty}\frac{a_{n+1}}{a_n}=U<\infty$, entonces para todo $\epsilon>0$, existe $N\in \mathbb{Z}^+$, tal que si $n>N$, entonces 
+        \begin{align*}
+            \frac{a_{n+1}}{a_n}<U+\epsilon,
+        \end{align*}
+        Entonces, para $n>N$ y $m \in \mathbb{Z}^+$, se tiene $a_{n+m}<a_n(U+\epsilon)^m$ ¿por qué? Pues vamos a ver si me acuerdo. Dado $m \in \mathbb{Z}^+$ y $n>N$, tenemos
+        \begin{align*}
+            \frac{a_{n+1}}{a_n}<U+\epsilon, \hspace{5mm} \frac{a_{n+2}}{a_{n+1}}<U+\epsilon, \hspace{5mm} \dotsb \hspace{5mm}, \frac{a_{n+m}}{a_{n+m-1}}<U+\epsilon.
+        \end{align*}
+        Entonces tenemos que 
+        \begin{align*}
+            a_{n+1}&<a_n(U+\epsilon)\\
+            \frac{a_{n+2}}{a_{n+1}}&<U+\epsilon,
+        \end{align*}
+        Multiplicando las dos desigualdades, se obtiene
+        \begin{align*}
+            a_{n+2}<a_n(U+\epsilon)^2.
+        \end{align*}
+        Análogamente, ahora tomamos las desigualdades
+        \begin{align*}
+            a_{n+1}&<a_n(U+\epsilon)\\
+            \frac{a_{n+3}}{a_{n+2}}&<U+\epsilon,
+        \end{align*}
+        multiplicando se obtiene
+        \begin{align*}
+            a_{n+3}<a_n(U+\epsilon)^3.
+        \end{align*}
+        Realizando este proceso $m$ veces, obtenemos que
+        \begin{align*}
+            a_{n+m}<a_n(U+\epsilon)^m,
+        \end{align*}
+        y tomando la potencia $\dfrac{1}{n+m}$ a ambos lados se obtiene
+        \begin{align*}
+            (a_{n+m})^{\frac{1}{n+m}}<\left(a_n(U+\epsilon)^m\right)^{\frac{1}{n+m}}=(a_n)^{\frac{1}{n+m}}(U+\epsilon)^{\frac{m}{n+m}},
+        \end{align*}
+        de esta manera
+        \begin{align*}
+            \limsup_{m\to \infty} \left(a_{n+m}\right)^{\frac{1}{n+m}}\leq \limsup_{m\to \infty}(a_n)^{\frac{1}{n+m}}(U+\epsilon)^{\frac{m}{n+m}}=U+\epsilon
+        \end{align*}
+        Esto último porque $a_n>0$ para todo $n$ y $\displaystyle \lim_{m\to \infty}\sqrt[m]{a}=1$ para todo $a>0$ y del hecho de que $\displaystyle \lim_{m\to \infty}\frac{m}{n+m}=1$, luego
+        \begin{align*}
+            \limsup_{m\to \infty}(a_{n+m})^{\frac{1}{n+m}}=\limsup_{n\to \infty}\sqrt[n]{a_n}\leq U+\epsilon=\left(\limsup_{n\to \infty} \frac{a_{n+1}}{a_n}\right)+\epsilon,
+        \end{align*}
+        como $\epsilon$ es arbitrario y hay finitos $k$ menores que $N$, obtenemos
+        \begin{align*}
+            \limsup_{n\to \infty}\sqrt[n]{a_n}\leq \limsup_{n\to \infty} \frac{a_{n+1}}{a_n}
+        \end{align*}
+
+            \item Ahora, vamos a probar la desigualdad de la izquierda. Sea $\displaystyle\liminf_{n\to \infty}\frac{a_{n+1}}{a_n}=u$, por definición, dado $\epsilon>0$, existe $N\in \mathbb{Z}^+$ tal que si $n>N$, entonces
+            \begin{align*}
+                u-\epsilon<\frac{a_{n+1}}{a_n}.
+            \end{align*}
+            Nuevamente, realizando un procedimiento análogo al anterior, dados $n>N$ y $m \in \mathbb{Z^+}$ tenemos
+            \begin{align*}
+                (u-\epsilon)^ma_n\leq a_{n+m},
+            \end{align*}
+            luego
+            \begin{align*}
+                (u-\epsilon)^{\frac{m}{n+m}}(a_n)^{\frac{1}{n+m}}<(a_{n+m})^{\frac{1}{n+m}},
+            \end{align*}
+            de manera que
+            \begin{align*}
+                u-\epsilon=\liminf_{m\to \infty}(u-\epsilon)^{\frac{m}{n+m}}(a_n)^{\frac{1}{n+m}}\leq \liminf_{m\to \infty}(a_{n+m})^{\frac{1}{n+m}}.
+            \end{align*}
+            es decir,
+            \begin{align*}
+                u-\epsilon=\left(\liminf_{n\to \infty} \frac{a_{n+1}}{a_n}\right)-\epsilon\leq \liminf_{m\to \infty}(a_{n+m})^{\frac{1}{n+m}}=\liminf_{n\to \infty}\sqrt[n]{a_n}
+            \end{align*}
+            Nuevamente, como $\epsilon$ es arbitrario y hay finitos $k$ menores que $N$, tenemos que
+            \begin{align*}
+                \liminf_{n\to \infty} \frac{a_{n+1}}{a_n}\leq \liminf_{n\to \infty}\sqrt[n]{a_n}
+            \end{align*}
+    \end{itemize}
+    
+
+\end{proof}
 
 
 \end{itemize}
@@ -1264,9 +1349,106 @@ Falso: Sea $(\R,d_1)$, recuerde que $int(\N)=\emptyset$, que es conexo, pero $\N
             &(x,y) \longmapsto d(x,y)=||x-y||.
         \end{align*}
         \begin{enumerate}[a)]
-            \item A fin de que una métrica de un espacio vectorial real $V$ provenga de una norma es necesario y suficiente que dados $y,x,a \in V$ y $\lambda \in \mathbb{R}$, $d(x+a,y+a)=d(x,y)$ y $d(\lambda x,\lambda y)=|\lambda|d(x,y)$.
+            \item A fin de que una métrica de un espacio vectorial real $V$ provenga de una norma es necesario y suficiente que dados $x,y,z \in V$ y $\lambda \in \mathbb{R}$, $d(x+z,y+z)=d(x,y)$ y $d(\lambda x,\lambda y)=|\lambda|d(x,y)$.
             \item Demuestre que todas las normas de $\mathbb{R}^n$ son equivalentes, es decir, dadas $||\cdot||_1$ y $||\cdot||_2$ normas en $\mathbb{R}^n$, existen $c,d>0$ tales que $c||x||_2\leq ||x||_1\leq d||x||_2$ para todo $x \in \mathbb{R}^n$.
         \end{enumerate}
+
+        \begin{solution}
+            Sea $(V,||\cdot||)$ un espacio vectorial normado y $d(x,y):=||x-y||$ para $x,y \in V$.
+            \begin{itemize}
+                \item Si $d(x,y)=0$, por definición $||x-y||=0$, por tanto $x-y=0$, es decir, $x=y$, recíprocamente, si $x=y$, $d(x,y)=||x-y||=||0||=0$.
+                \item $d(x,y)=||x-y||=||-(y-x)||=|-1|\cdot||y-x||=||y-x||=d(y,x)$.
+                \item Sean $x,y,z \in V$, entonces
+                \begin{align*}
+                    d(x,y)=||x-y||=||x-z+(z-y)||\leq ||x-z||+||z-y||=d(x,z)+d(z,x).
+                \end{align*}
+            \end{itemize}
+            de esta manera, $d$ define una métrica en $V$
+            \begin{enumerate}[(a)]
+                \item Supongamos que $d$ es una métrica en $V$ que proviene de una norma, es decir, existe $||\cdot||$ norma en $V$ tal que $d(x,y)=||x-y||$ para todo $x,y \in V$. Sean $x,y,z \in V$, entonces
+                \begin{align*}
+                    d(x+z,y+z)=||(x+z)-(y+z)||=||x-y||=d(x,y).
+                \end{align*}
+                Si $\lambda \in \mathbb{R}$, entonces
+                \begin{align*}
+                    d(\lambda x,\lambda y)=||\lambda x-\lambda y||=||\lambda(x-y)||=|\lambda|\cdot||x-y||=|\lambda|d(x,y).
+                \end{align*}
+                De manera recíproca, supongamos que $d$ es una métrica en $V$ tal que para todo $x,y,z \in V$ y $\lambda \in \mathbb{R}$ se tiene $d(x+z,y+z)=d(x,y)$ y $d(\lambda x,\lambda y)=|\lambda|d(x,y)$. Para $x \in V$, definimos $||x||:=d(x,0)$ ($0$ el elemento neutro de la suma en el espacio vectorial $V$). Veamos que $||\cdot||$ define una norma en $V$.
+                \begin{itemize}
+                    \item $||x||\geq 0$ por definición de métrica. Supongamos que $||x||=0$, esto quiere decir que $||x||=d(x,0)=0$, como $d$ es métrica, esto quiere decir que $x=0$. De manera recíproca, si $x=0$, $||x||=d(x,0)=d(0,0)=0$.
+
+                    \item Si $\lambda\in \mathbb{R}$, tenemos 
+                    \begin{align*}
+                        ||\lambda x||=d(\lambda x,0)=d(\lambda x,\lambda 0)=|\lambda|d(x,0)=|\lambda|\cdot ||x||.
+                    \end{align*}
+
+                    \item Si $x,y \in V$, tenemos
+                    \begin{align*}
+                        ||x+y||=d(x+y,0)\leq d(x+y,y)+d(y,0)=d(x,0)+d(y,0)=||x||+||y||.
+                    \end{align*}
+                \end{itemize}
+                es decir, $||\cdot||$ define una norma en $V$. Sólo resta ver que $d(x,y)=||x-y||$ para todo $x,y \in V$, pero esto es inmediato ya que
+                \begin{align*}
+                    d(x,y)=d((x-y)+y,y)=d(x-y,0)=||x-y||.
+                \end{align*}
+
+                \item Considere $A=\{||\cdot||:\mathbb{R}^n\to [0,\infty):||\cdot|| \text{ es una norma en } \mathbb{R}^n\}$ y definimos la relación en $A$ dada por 
+                \begin{align*}
+                    ||\cdot||_1 \sim ||\cdot||_2 \hspace{5mm} \Longleftrightarrow \hspace{5mm} \text{existen } c_1,c_2\in \mathbb{R}^+ \text{ tales que } c_1||x||_2\leq ||x||_1\leq c_2||x||_2 \text{ para todo } x \in \mathbb{R}^n.
+                \end{align*}
+                veamos que la relación $\sim$ es una relación de equivalencia en $A$.
+                \begin{itemize}
+                    \item \textbf{Reflexividad:} Sea $||\cdot||\in A$, entonces $||x||\leq ||x||\leq ||x||$, es decir, tomando $c_1=c_2=1$, se tiene que $||\cdot||\sim ||\cdot||$.
+                    \item \textbf{Simetría:} Sean $||\cdot||_1, ||\cdot||_2 \in A$ tal que $||\cdot||_1\sim ||\cdot||_2$, por definición, existen $c_1,c_2 \in \mathbb{R}^+$ tales que $c_1||x||_2\leq ||x||_1\leq c_2||x||_2$ para todo $x \in \mathbb{R}^n$. Dado $x \in \mathbb{R}^n$, tenemos que $c_1||x||_2\leq ||x||_1$, como $c_1>0$, $||x||_2\leq \dfrac{1}{c_1}||x||_1$. Análogamente, como $||x||_1\leq c_2||x||_2$, tenemos $\dfrac{1}{c_2}||x||_1\leq ||x||_2$. Entonces definiendo $C_1:=\dfrac{1}{c_2}$ y $C_2:=\dfrac{1}{c_1}$, tenemos
+                    \begin{align*}
+                        C_1||x||_1\leq ||x||_2\leq C_2||x||_2,
+                    \end{align*}
+                    para todo $x \in \mathbb{R}^n$, es decir, $||\cdot||_2\sim ||\cdot||_1$.
+                    \item \textbf{Transitividad:} Sean $||\cdot||_1,||\cdot||_2,||\cdot||_3 \in A$ tales que $||\cdot||_1\sim ||\cdot||_2$ y $||\cdot||_2\sim ||\cdot||_3$. Por definición, existen $c_1,c_2,c_3,c_4 \in \mathbb{R}^+$ tales que
+                    \begin{align*}
+                        c_1||x||_2\leq ||x||_1\leq c_2 ||x||_2\\
+                        c_3||x||_3\leq ||x||_2\leq c_4||x||_3,
+                    \end{align*}
+                    la segunda cadena de desigualdades se escribe como
+                    \begin{align*}
+                        c_3||x||_3\leq ||x||_2 \hspace{5mm} \text{ y } \hspace{5mm} ||x||_2\leq c_4||x||_3
+                    \end{align*}
+                    dado que $c_1,c_2$ son positivos, multiplicando cada una de estas desigualdades, se obtiene
+                    \begin{align*}
+                        c_1c_3||x||_3\leq c_1||x||_2\\
+                        c_2||x||_2\leq c_2c_4||x||_3,
+                    \end{align*}
+                    por tanto, si definimos $C_1:=c_1c_3$ y $C_2:=c_2c_4$, tenemos
+                    \begin{align*}
+                        C_1||x||_3\leq c_1||x||_2\leq ||x||_1\leq c_2||x||_2\leq C_2||x||_3,
+                    \end{align*}
+                    para todo $x \in \mathbb{R}^n$ y por tanto, $||\cdot||_1\sim ||\cdot||_3$.
+                \end{itemize}
+                de esta manera, tenemos que $\sim$ es una relación de equivalencia en $A$. Ahora, es claro que 
+                \begin{align*}
+                    ||\cdot||_t:\mathbb{R}^n&\longrightarrow \mathbb{R}\\
+                    x=(x_1,...,x_n)&\longmapsto ||x||_t:=\sum_{k=1}^n|x_k|
+                \end{align*}
+                define una norma en $\mathbb{R}^n$. Sea $||\cdot||\in A$ cualquiera y $\mathcal{B}=\{e_1,...,e_n\}$ la base canónica de $\mathbb{R}^n$. Dado $x=(x_1,...,x_n) \in \mathbb{R}^n$, la expresión como combinación lineal en la base $\mathcal{B}$ es 
+                \begin{align*}
+                    x=x_1e_1+\dotsb+x_ne_n=\sum_{k=1}^nx_ke_k,
+                \end{align*}
+                de manera que, al ser $||\cdot||$ una norma
+                \begin{align*}
+                    ||x||=\left|\left|\sum_{k=1}^nx_ke_k\right|\right|\leq \sum_{k=1}^n||x_ke_k||=\sum_{k=1}^n|x_k|\cdot||e_k||
+                \end{align*}
+                Si tomamos $\displaystyle C_2=\max_{1\leq k\leq n} ||e_k||$, tenemos
+                \begin{align*}
+                    ||x||\leq \sum_{k=1}^n|x_k|\cdot||e_k||\leq C_2\sum_{k=1}^n |x_k|=C_2||x||_t.
+                \end{align*}
+                Ahora, queremos mostrar que existe una constante positiva $C_1$ tal que $C_1||x||_t\leq ||x||$ para todo $x \in \mathbb{R}^n$ y así concluir que $||\cdot||\sim ||\cdot||_t$. Note que esto es equivalente a que exista $C_1>0$ tal que $||x||\geq C_1$ para todo $x \in \mathbb{R}^n$ tal que $||x||_t=1$. En efecto, si existe $C_1>0$ tal que $C_1||x||_t\leq ||x||$ para todo $x \in \mathbb{R}^n$, si $||x||_t=1$, esto es $C_1\leq ||x||$. Recíprocamente, si $||x||\geq C_1$ para todo $x \in \mathbb{R}^n$ con $||x||_t=1$, con $C_1>0$, tomemos $y \in \mathbb{R}^n$ con $y\neq 0$, entonces $x=\dfrac{y}{||y||_t}$ cumple que $||x||_t=1$, por tanto $||x||\geq C_1$, pero siendo $||\cdot||$ una norma
+                \begin{align*}
+                    ||x||=\left|\left|\frac{y}{||y||_t}\right|\right|=\frac{1}{||y||_t}\cdot||y||\geq C_1\\
+                    \Rightarrow ||y||\geq C_1||y||_t.
+                \end{align*}
+                Entonces, si tomamos $S=\{x \in \mathbb{R}^n:||x||_t=1\}$, por la continuidad de las normas (ejercicio), la función $||\cdot||:S\to \mathbb{R}$ es continua y además, $S$ es compacto, entonces la función $||\cdot||$ alcanza mínimo en el conjunto $S$, es decir, existe $z\in S$ tal que $||x||\geq ||z||$ para todo $x \in \mathbb{R}^n$. Como $||z||_t=1$, $z\neq 0$ y por tanto $||z||>0$, entonces tomando $C_1=|z|$, se obtiene el resultado. De esta manera, una norma arbitraria $||\cdot||$ está relacionada con la norma $||\cdot||_t$, pero al ser $\sim$ una relación de equivalencia, quiere decir que la clase de equivalencia de $||\cdot||_t$ es todo $A$, por tanto, cualesquiera dos normas en $\mathbb{R}^n$ son equivalentes.
+            \end{enumerate}
+        \end{solution}
     \item Si $(E,d)$ es un espacio métrico, defina
     \begin{align*}
         d': &E \times E \longrightarrow \mathbb{R}\\
@@ -1352,7 +1534,8 @@ Luego como $a_n$ tiende a 0, es claro que el límite es 1.
         \begin{align*}
             \left(\frac{1}{2},\cfrac{1}{2+\cfrac{1}{2}},\cfrac{1}{2+\cfrac{1}{2+\cfrac{1}{2}}},...\right)
         \end{align*}
-        es convergente.
+        es convergente.\\
+
         \begin{proof}
             Esta demostración es fina, pero sólo se le ocurre a uno después de estar en un estado de desesperación considerable.
             
@@ -1374,8 +1557,9 @@ Luego como $a_n$ tiende a 0, es claro que el límite es 1.
                 &\vdots\\
                 &=\cfrac{1}{2+\cfrac{1}{2+\cfrac{1}{\ddots 2+ \cfrac{\empty}{2+\cfrac{1}{\sqrt{2}+1}}}}},
             \end{align*}
-            que asintóticamente, es la misma sucesión que estamos considerando. Luego, la sucesión original converge y lo hace a $\sqrt{2}-1$.
+            que asintóticamente, es la misma sucesión que estamos considerando. Luego, la sucesión original converge y lo hace a $\sqrt{2}-1$.\\
         \end{proof}
+
         \begin{proof}
             \textbf{Alternativa} Esta demostración no es tan fina, pero es más aterrizada. 
 
@@ -1435,7 +1619,8 @@ Luego como $a_n$ tiende a 0, es claro que el límite es 1.
     \end{enumerate}
     \item Dados $S,T$ subconjuntos de un espacio métrico $(E,d)$, pruebe que 
     \begin{enumerate}[a)]
-        \item $Int(S\cap T)=Int(S)\cap Int(T)$.
+        \item $Int(S\cap T)=Int(S)\cap Int(T)$.\\
+
         \begin{proof}
             El caso en que $Int(S \cap T)$ o $Int(S)\cap Int(T)$ son vacíos, verifican la propiedad de manera relativamente fácil.
             
@@ -1454,7 +1639,11 @@ Luego como $a_n$ tiende a 0, es claro que el límite es 1.
             Si $x \in Int(S)$, entonces existe $r>0$ tal que $B(x;r) \subseteq S$. Como $S \subseteq S \cup T$, entonces $B(x;r)\subseteq S \cup T$, es decir, $x \in Int(S \cup T)$. Luego $Int(S) \cup Int(T) \subseteq Int(S \cup T)$.
         \end{proof}
         
-        \item $\overline{S\cap T}\subseteq \overline{S}\cap \overline{T}$.
+        \item $\overline{S\cap T}\subseteq \overline{S}\cap \overline{T}$.\\
+
+        \begin{proof}
+            Tomemos $x \in \overline{S\cap T}$, por definición, para todo $r>0$, $B(x;r)\cap (S\cap T) \neq \emptyset$. Usando la conmutatividad y asociatividad de la intersección entre conjuntos, tenemos que $(B(x;r)\cap S)\cap T\neq \emptyset$ y $(B(x;r)\cap T)\cap S\neq \emptyset$, esto implica que $B(x;r)\cap S\neq \emptyset \neq \emptyset$ y $B(x:r)\cap T\neq \emptyset$ y como $r$ es arbitrario, concluimos que $x \in \overline{S}$ y $x \in \overline{T}$.
+        \end{proof}
         \item $S'$ es cerrado.\\
         
         \begin{proof}
@@ -1464,7 +1653,7 @@ Luego como $a_n$ tiende a 0, es claro que el límite es 1.
         \end{proof}
         \item $(S \cup T)'=S'\cup T'$.\\
         
-        \item $(\overline{S})'=S'$
+        \item $(\overline{S})'=S'$\\
 
     \end{enumerate}
 
@@ -1500,12 +1689,12 @@ Luego como $a_n$ tiende a 0, es claro que el límite es 1.
     
     \item Sean $U$ abierto en $(E, d)$ y $\left\{K_i\right\}_{i \in \mathbb{N}}$ una familia de compactos de $(E, d)$ tales que $K_1 \supset K_2 \supset K_3 \supset \cdots$. Si $K=\bigcap_{i \in \mathbb{N}} K_i \subset U$, entonces existe $i \in \mathbb{N}$ tal que $K_i \subset U$.
     
-    \item Sean $(E, d)$ espacio métrico, $S, T \subset E$ tales que $S$ es cerrado y $T$ es compacto. Demuestre que $S \cap T$ es compacto.
+    \item Sean $(E, d)$ espacio métrico, $S, T \subset E$ tales que $S$ es cerrado y $T$ es compacto. Demuestre que $S \cap T$ es compacto.\\
     \begin{proof}
         Como $T$ es compacto, entonces $T$ es cerrado, y como $S$ también lo es $S\cap T$ es cerrado. Ahora, como $S\cap T \subseteq T$, y $T$ es compacto, entonces $S \cap T$ también es compacto, por ser un subconjunto cerrado de un compacto. 
     \end{proof}
     
-    \item Sean $(E, d)$ espacio métrico y $X, Y \subset E$. Si $X$ es conexo y $X \subset Y \subset \bar{X}$, entonces $Y$ es conexo. Concluya en particular que la adherencia de un conjunto conexo es conexo.
+    \item Sean $(E, d)$ espacio métrico y $X, Y \subset E$. Si $X$ es conexo y $X \subset Y \subset \bar{X}$, entonces $Y$ es conexo. Concluya en particular que la adherencia de un conjunto conexo es conexo.\\
     \begin{proof}
         Por contradicción, supongamos que $Y$ no es conexo, entonces, por definición, existen $A$ y $B$ abiertos no vacíos en $Y$, tales que $A\cap B=\emptyset$ y $A \cup B=Y$. Como $X$ es conexo y $X \subseteq Y$, entonces se debe tener que $X \subset A$ o $X \subset B$. Sin pérdida de generalidad, supongamos que $X \subset A$. Como $B$ es abierto, para todo $b \in B$, existe $r>0$ tal que $B(b;r) \subset B$, esto quiere decir que $B(b;r)\cap A=\emptyset$ y por tanto, $B(b;r)\cap X=\emptyset$. Así, para todo $b \in B$, se tiene que $b \notin \overline{X}$, lo cuál contradice que $Y \subset \overline{X}$. Así, $Y$ debe ser conexo. 
 

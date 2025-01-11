@@ -1,4 +1,4 @@
-%!TEX root = main.tex
+%!TEX root = ../main.tex
 
 \section{Funciones continuas sobre espacios métricos}
 
@@ -392,15 +392,40 @@ $$
 
 Sugerencia: Para probar la convergencia uniforme dado $\epsilon>0$ usar la continuidad uniforme de $f$ en $[a, b]$ y que existen $x_0=a<x_1<\cdots<x_m=b$ tales que $\left|x_{j-1}-x_j\right|<\delta$; además existe $N \in \mathbb{N}$ tal que si $n \geq N \quad\left|f_n\left(x_j\right)-f\left(x_j\right)\right|<\frac{\epsilon}{5}, j=$ $0,1, \cdots, m$.
 
-\item Sean $f_n: E \rightarrow \mathbb{R}$ para $n=1, \cdots$ una sucesión de funciones continuas de valor real definidas en un espacio métrico compacto. Si $f$ es continua, $f_n \rightarrow f y$ $f_1 \leq f_2 \leq \cdots$ entonces muestre que $f_n \xrightarrow{u} f$.\\
+\item Sean $f_n: E \rightarrow \mathbb{R}$ para $n=1, \cdots$ una sucesión de funciones continuas de valor real definidas en un espacio métrico compacto. Si $f$ es continua, $f_n \rightarrow f$ y $f_1 \leq f_2 \leq \cdots$ entonces muestre que $f_n \xrightarrow{u} f$.\\
 
 Sugerencia : dado $\epsilon>0$ defina $K_n=\left\{x \in E: f(x)-f_n(x) \geq \epsilon\right\}$, muestre que $K_n$ es compacto y use un teorema de encaje.
 
 \item El cono $\left\{(x, y, z) \in \mathbb{R}^3: z \geq 0, x^2+y^2-z=0\right\}$ es homeomorfo a $\mathbb{R}^2$ ?
 
 \item ¿El conjunto de las matrices invertibles $n \times n$ es abierto en $\mathbb{R}^{n^2}$ ?
+
+\textbf{Verdadero:} Sabemos que una matriz $A$ en invertible si y sólo si $\det(A)\neq 0$ y además, la función determinante es continua (ejercicio). Es decir, si $L=\{A\in \mathbb{R}^{n^2}:A \text{ es invertible}\}$, entonces $L=\det^{-1}(\mathbb{R}\setminus \{0\})$ (imagen inversa) es abierto, dado que $\mathbb{R}\setminus \{0\}$ es abierto en $\mathbb{R}$.
+
+\item Sea $(X,d)$ un espacio métrico y $f:X\to \mathbb{R}$ una función con la siguiente propiedad: $\{x\in X:f(x)\leq t\}$ y $\{x \in X:f(x)>t\}$ son abiertos para todo $t \in \mathbb{Q}$. Pruebe que $f$ es continua.\\
+
+\begin{proof}
+    Primero, note que 
+    \begin{align*}
+        \{x \in X:f(x)\leq t\}=f^{-1}((-\infty,t]), \hspace{10mm} \{x \in X:f(x)>t\}=f^{-1}((t,\infty)).
+    \end{align*}
+    Sean $a,b \in \mathbb{R}$  con $a<b$, entonces $(a,b)=(-\infty,b)\cap (a,\infty)$. 
+
+    Usando la densidad de $\mathbb{Q}$ sobre $\mathbb{R}$, existe $a_1 \in \mathbb{Q}$ tal que $a_1\in (a,a+1)$. Sea $\delta_1=|a_1-a|$, que es mayor que $0$ por la elección que tomamos. De la misma manera, existe $a_2\in \mathbb{Q}$ tal que $a_2\in (a,a+\delta_1)$, de la misma manera, definimos $\delta_2=|a_2-a|>0$ y tomamos $a_3\in \mathbb{Q}$ con $\displaystyle a_3\left(a,a+\frac{\delta_2}{2}\right)$. En general, si tenemos $\delta_n=|a-a_n|$, tomamos $a_{n+1}$ un racional tal que $\displaystyle a_{n+1}\in \left(a,a+\frac{\delta_n}{n}\right)$. Por esta construcción, la sucesión de racionales $(a_n)$ es estrictamente decreciente, $a_n \to a$ y $a_n\neq a$ para todo $n \in \mathbb{Z}^+$. 
+
+    De la misma manera, es posible construir una sucesión de números racionales $(b_n)$ estrictamente creciente, tal que $b_n\to b$ y $b_n\neq b$ para todo $b \in \mathbb{Z}^+$. Por tanto
+    \begin{align*}
+        (-\infty,b)&=\bigcup_{n \in \mathbb{Z}^+}(-\infty ,b_n]\\
+        (a,\infty)&=\bigcup_{n\in \mathbb{Z}^+} (a_n,\infty),
+    \end{align*}
+    de manera que
+    \begin{align*}
+        f^{-1}((-\infty,b))=f^{-1}\left(\bigcup_{n \in \mathbb{Z}^+}(-\infty ,b_n]\right)=\bigcup_{n \in \mathbb{Z}^+}f^{-1}((-\infty,b_n]),
+    \end{align*}
+    por hipótesis, $f^{-1}(-\infty,b_n]$ es abierto para todo $n \in \mathbb{N}$, por tanto $f(-\infty,b)$ es abierto, al ser unión de abiertos. De la misma manera
+    \begin{align*}
+        f^{-1}((a,\infty))=f^{-1}\left(\bigcup_{n\in \mathbb{Z}^+} (a_n,\infty)\right)=\bigcup_{n\in \mathbb{Z}^+}f^{-1}((a_n,\infty)),
+    \end{align*}
+    y nuevamente por la hipótesis, $f^{-1}((a,\infty))$ resulta ser abierto en $(X,d)$. De esta manera $f^{-1}((a,b))=f^{-1}((-\infty,b)\cap (a,\infty))=f^{-1}((-\infty,b))\cap f^{-1}((a,\infty))$ es abierto, al ser intersección finita de abiertos. De esta manera, la imagen inversa de cualquier intervalo abierto, es abierta, y como todo abierto es unión de intervalos, la función $f$ ``devuelve'' abiertos de $\mathbb{R}$ en abiertos de $(X,d)$, es decir, $f$ es continua.
+\end{proof}
 \end{itemize}
-
-
-
-
